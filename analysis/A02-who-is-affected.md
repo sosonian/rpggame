@@ -87,9 +87,9 @@ more you learn. Only when you are close enough do you know **who** you saw or he
 | Sense | Far (inside the range) | Closer | Very close |
 |---|---|---|---|
 | **Seeing** | *That* something happens: "two people are fighting" (50–100 m) | **Who** it is, and **what** they do: "Hobb took the money" (15–30 m) | Small details: "he hid a coin in his sleeve" (2–5 m) |
-| **Hearing** | *That* someone is talking or shouting, but not the words | **What** is said: the words (normal talk 3–5 m; whisper 1 m) | **Who** is speaking, by the voice (proposal: as close as hearing the words, and only if you know that person's voice) |
+| **Hearing** | *That* someone is talking or shouting, but not the words | **What** is said: the words (normal talk 3–5 m; whisper 1 m) | **Who** is speaking, by the voice: as close as hearing the words, and **only if you know that person's voice** (owner confirmed) |
 
-- **Seeing and hearing can add up.** If you only **see** a conversation from 20 m, you know *"Hobb talked with
+- **Seeing and hearing add up (owner confirmed).** If you only **see** a conversation from 20 m, you know *"Hobb talked with
   the shopkeeper"*, but not what was said. If you only **hear** it through a wall, you know the words, and you know
   who spoke only if you know the voice.
 - **What you learn is stored with how sure you are** (EVENTS.md decision 35). From far away, the belief is
@@ -149,6 +149,8 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
   Sight ranges are unchanged for now.
 - **2026-11-27, question 3:** **closer means you know more.** When seeing, only a short enough distance tells you
   **who** you saw. **The same logic applies to hearing** (§9).
+- **2026-11-27, question 3 proposals confirmed:** (a) you recognise a voice **only if you know that person**;
+  (b) **seeing and hearing add up**: seeing tells you who, hearing tells you what.
 - Questions 4–5: still open. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
