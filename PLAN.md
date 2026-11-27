@@ -137,6 +137,7 @@ The **trait** and **relationship** systems follow the Crusader Kings model.
 
 ### 6.2 Traits (Crusader Kings–style)
 Traits are the heart of every character, the player and every AI person alike.
+The full table of traits is in [TRAITS.md](TRAITS.md); the names below are examples until each is defined there.
 
 - **Personality traits** (e.g. Brave/Craven, Honest/Deceitful, Ambitious/Content, Kind/Cruel, Generous/Greedy,
   Diligent/Lazy, Zealous/Cynical, Paranoid/Trusting, Gregarious/Shy):
