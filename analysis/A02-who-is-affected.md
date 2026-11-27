@@ -123,7 +123,7 @@ So two characters can stand side by side and see the same scene:
 - the **Observant** one **understands** what it means;
 - a character with both does both.
 
-**Proposals (not decided):**
+**Owner confirmed (2026-11-27):**
 - **Opposites:** Hawk Eye ↔ **Poor Sight**; Fox Ear ↔ **Hard of Hearing**; Observant ↔ **Oblivious** (already decided).
 - **How characters get them:** Hawk Eye and Fox Ear are mostly **born with** (congenital traits), but can also
   be gained by long practice, e.g. a hunter or a scout. They can be **lost**: old age, or a wound (a blow to the
@@ -181,7 +181,9 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
   information about things, or **the logic behind them**. New traits **Hawk Eye** (see more detail at a longer
   distance) and **Fox Ear** (hear more detail at a longer distance); both are very helpful in battle.
   *When Final, this changes the meaning of Observant in EVENTS.md (decisions 17, 18, 31).*
-- Question 5: still open. Also open: the proposals in §10.1, and whether the sight ranges are fine. Also open: are the sight ranges fine as they are?
+- **2026-11-27, §10.1 proposals confirmed:** opposites (Poor Sight, Hard of Hearing); mostly born with, can be
+  gained by practice and lost by age or wounds; their use in battle; about **1.5×** longer ranges.
+- Question 5: still open. Also open: whether the sight ranges are fine. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
