@@ -81,11 +81,19 @@ Distances are in metres on the game map (the map scale is not decided yet).
 | Seeing **who** it is, and **what** exactly they do | Sight | 15–30 m (daylight) | Recognising Hobb taking the money |
 | Small details (a hidden knife, a coin passed in secret) | Sight | 2–5 m | Seeing a pickpocket's hand |
 
-**Seeing and hearing give different knowledge (proposal):**
-- If you only **see** a conversation, you learn *"Hobb talked with the shopkeeper"*, but **not what was said**.
-- If you only **hear** it (e.g. behind a wall), you learn **what was said**, but may not be sure **who** said it.
-- If you are **far away**, you may see *that* something happened but not *who* did it. Your belief is stored as
-  uncertain (EVENTS.md decision 35: "how sure they are").
+**Closer means you know more (owner's decision, question 3).** For both senses, the shorter the distance, the
+more you learn. Only when you are close enough do you know **who** you saw or heard.
+
+| Sense | Far (inside the range) | Closer | Very close |
+|---|---|---|---|
+| **Seeing** | *That* something happens: "two people are fighting" (50–100 m) | **Who** it is, and **what** they do: "Hobb took the money" (15–30 m) | Small details: "he hid a coin in his sleeve" (2–5 m) |
+| **Hearing** | *That* someone is talking or shouting, but not the words | **What** is said: the words (normal talk 3–5 m; whisper 1 m) | **Who** is speaking, by the voice (proposal: as close as hearing the words, and only if you know that person's voice) |
+
+- **Seeing and hearing can add up.** If you only **see** a conversation from 20 m, you know *"Hobb talked with
+  the shopkeeper"*, but not what was said. If you only **hear** it through a wall, you know the words, and you know
+  who spoke only if you know the voice.
+- **What you learn is stored with how sure you are** (EVENTS.md decision 35). From far away, the belief is
+  uncertain: *"someone, maybe Hobb, was fighting"*.
 
 ## 10. What changes the range or the chance (proposal)
 
@@ -139,7 +147,9 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
 - **2026-11-27, question 2 (ranges):** the owner wants **shorter** hearing ranges: a whisper only within
   **1 m**, normal talk **3–5 m** (8 m is too far). Shouting and fighting were shortened to match (proposal).
   Sight ranges are unchanged for now.
-- Questions 3–5: still open.
+- **2026-11-27, question 3:** **closer means you know more.** When seeing, only a short enough distance tells you
+  **who** you saw. **The same logic applies to hearing** (§9).
+- Questions 4–5: still open. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
