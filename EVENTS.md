@@ -343,6 +343,32 @@ seconds of delay for big, sudden moments.
 [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
 (open question 10).
 
+### 5.7 Performance: is checking hundreds of characters every unit OK?
+**Yes, for a PC game this is fine.**
+- An event check is done by **rules, not the AI**: a few quick questions and a dice roll.
+- **Example:** 500 characters × about 10 possible events each is about 5,000 small checks per unit. That
+  probably takes a few milliseconds in total, even in Godot's own scripting language (GDScript).
+- **The checks are spread** across the 5 seconds of a unit (about 300 screen frames), so the player never
+  feels them (§5.4).
+- **The number of characters stays limited (decision 14 in [AI_CHARACTERS.md](AI_CHARACTERS.md)).**
+  Individual characters stay in the hundreds, even in larger later worlds. Far places are **group
+  characters** (one character for a whole town), so the checks don't grow with the size of the world.
+
+**What needs care (proposal):**
+
+| Risk | Fix |
+|---|---|
+| **Finding who is nearby or who saw something.** Comparing every character with every other gets slow (500 characters make about 250,000 pairs) | Group characters by **place** (market, tavern, barracks) and only compare people in the same place |
+| **Waiting for the AI.** An AI call takes 1–10 seconds | AI calls always run in the background; the character keeps doing its current action ([AI_CHARACTERS.md §11](AI_CHARACTERS.md)) |
+| **Memory growing over a long chapter.** Six hours of play means many memories, beliefs and rumours per character | Old, unimportant memories **fade or are summarised**, as already planned ([AI_CHARACTERS.md §3](AI_CHARACTERS.md)) |
+| **Battles** are heavier than event checks (200–300 soldiers updating several times per second) | Planned in [WARFARE.md §6](WARFARE.md) |
+
+**If it ever becomes slow:** run quick filters first (someone asleep at home skips market events), or move
+the busiest code to a faster language (Godot supports C# and C++). This is probably not needed for Chapter 1.
+
+**How to be sure:** once coding starts, the hidden `--autotest` mode can run a test town with 1,000 fake
+characters and measure the time. This fits milestone D2 (Characters & rules) in [PLAN.md §8](PLAN.md).
+
 ## 6. Example: from event to idea
 
 > **Event:** Hobb (Greedy, Deceitful) watches the tax officer collect tax from a farmer.

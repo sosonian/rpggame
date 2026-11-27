@@ -238,6 +238,9 @@ In short:
   **Their titles pass to their heirs**; only the player has a single life.
 - Opportunities for the player emerge from this, such as a lord dying without an heir, a weak border keep,
   a war that needs soldiers, or a widowed noble seeking a match.
+- **Individual characters stay in the hundreds,** even when later chapters make the world larger. **Far places
+  are group characters:** a whole town or village counts as one character, with its own traits, mood, needs and
+  intents. See [AI_CHARACTERS.md §2.3](AI_CHARACTERS.md).
 
 ### 6.10 Items, materials & economy
 Items have their own design document: [ITEMS.md](ITEMS.md) (**design in progress**). In short:
