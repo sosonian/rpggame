@@ -23,6 +23,7 @@
 | 9 | **More emotions:** **Ashamed** (shame), **Sad**, **Comforted** (comfort), **Envious** (envy), **Jealous** (jealousy) and **Joyful** (joy) (§2.2) | Owner | 2026-11-27 |
 | 10 | **Envious and Jealous are merged into one emotion, Jealous.** It covers both wanting what another person has (envy) and fearing to lose what you have (jealousy); its **reason** tells which (§2.2) | Owner | 2026-11-27 |
 | 11 | **Every emotion has a target and a reason:** **who** it is about and **what** it is about, e.g. *Angry at Edric, because he insulted me* (§2.5) | Owner | 2026-11-27 |
+| 12 | **The proposals for emotions are accepted** (§2.2, §2.4, §2.5): causes, effects, how they go away, the 3 levels, how levels go up and down, the links between emotions, body status and lasting traits, and target and reason. **Afraid and Fear are one emotion.** **No moral emotions:** *Proud* and *Guilty* are **not** added | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -64,7 +65,7 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 **The owner's list:** **Angry**, **Afraid** (fear), **Ashamed** (shame), **Sad**, **Comforted** (comfort),
 **Jealous** (envy and jealousy, merged: decision 10), **Joyful** (joy). (Cold and Hot are now **Body status**, §2.3.)
 
-**Proposals (not decided):**
+**Accepted by the owner (decision 12):**
 
 | Emotion | Possible causes | Possible effects | Goes away when |
 |---|---|---|---|
@@ -76,7 +77,7 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 | **Joyful** *(a good emotion)* | Good news, a success, a gift, praise, a promotion, a wedding, a victory | Better at work and talk; higher opinion of whoever caused it; more generous; at level 3 a little careless (notices less) | Time passes; bad news |
 | **Jealous** (envy and jealousy) | **Wants what another has** (rank, money, skill, praise, a lover), or **fears losing what he has** (a lover, a friend, the lord's favour) **to a rival** | **Shared:** lower opinion of the target; more chance to gossip, cheat or sabotage; at level 3 may attack the target. **By reason:** *wants what he has* → more chance to **start an idea** to get it or take it ([IDEAS.md](IDEAS.md)); *fears losing* → `watch` the loved one and the rival, suspicious questions | He gets what he wanted; the target loses it; trust comes back; the rival is gone; the truth comes out; time passes |
 
-**Ideas to decide later (proposals):**
+**Accepted ideas (decision 12):**
 - **Strength:** accepted (decision 8), see §2.4.
 - **How long:** e.g. minutes to a few game hours for Angry; until the cause is gone for Cold and Hot.
 - **Lasting traits change emotions:** e.g. a Vengeful character stays Angry longer; a Brave one is Afraid less.
@@ -87,9 +88,9 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 - **Envy and jealousy are one emotion (decision 10).** The **reason** (§2.5) keeps the difference:
   > *Jealous of Edric — wants his rank.* (envy)
   > *Jealous of Edric — fears losing Wenna to him.* (jealousy)
-- **Comforted and Joyful are different (proposal):** *comfort* is feeling **calm and safe**; *joy* is feeling
+- **Comforted and Joyful are different:** *comfort* is feeling **calm and safe**; *joy* is feeling
   **happy** because something good happened.
-- **More emotions:** e.g. Proud, Guilty (after hurting someone; [EVENTS.md §1.3](EVENTS.md) no. 10).
+- **No moral emotions (decision 12):** *Proud* and *Guilty* are **not** emotions in the game.
 
 ### 2.3 Body status (temporary traits, decision 7)
 
@@ -114,9 +115,9 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 ### 2.4 Strength levels and how they are linked (decision 8)
 
 **The owner's decision:** every emotion and body status has **strength levels**, and the levels are **linked**:
-one can make another come more easily, or make it stronger. The details below are **proposals**.
+one can make another come more easily, or make it stronger. The details below were **accepted by the owner** (decision 12).
 
-#### Levels (proposal)
+#### Levels
 
 Each one has **3 levels**. Only one level of the same emotion or status at a time.
 
@@ -134,20 +135,20 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Hungry** (Body status) | Peckish | Hungry | Starving |
 | **Thirsty** (Body status) | Dry | Thirsty | Parched |
 
-**What each level means (proposal):**
+**What each level means:**
 - **Level 1:** a small effect. Mostly flavour, and a small change in dialogue chances.
 - **Level 2:** a clear effect on work, fighting and choices (the effects in §2.2 and §2.3).
 - **Level 3:** a strong effect. The character may **lose control**: a Furious character may attack, a Terrified
   one may flee or freeze. A **body status at level 3 that lasts long** can cause illness, wounds or death
   (e.g. Starving in a siege, Freezing on a winter night, Parched in a battle in summer).
 
-**How levels go up and down (proposal):**
+**How levels go up and down:**
 - **Up:** each cause adds one level (an insult → Annoyed; a second insult → Angry). A big cause can add two or
   three levels at once (a lover killed → Furious; an ambush → Terrified).
 - **Down:** levels fade **one step at a time** as time passes, or drop at once when the cause is gone
   (eating removes Hungry; going inside removes Cold, step by step).
 
-#### Links between them (proposal)
+#### Links between them
 
 | When a character is… | …it makes this come more easily, or stronger |
 |---|---|
@@ -163,13 +164,13 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Joyful** | **Sad** and **Angry** go down **one level**; at level 3 (Elated), the character notices less (less chance of daily-life events, [EVENTS.md §1.6](EVENTS.md)) |
 | **Sad** (level 2–3) | **Joyful** is hard to reach, and fades faster |
 | **Hungry**, **Cold**, **Afraid** (level 2–3) | **Comforted** is hard to reach: it is hard to feel at ease while starving, freezing or in danger |
-| **Ashamed** | **Angry** at whoever shamed him (if Proud or Vengeful), or **Sad** (if not) |
+| **Ashamed** | **Angry** at whoever shamed him (if Vengeful), or **Sad** (if not) |
 | **Sad** (level 3, grief) | **Comforted** fades faster; **Angry** may follow if someone is to blame (revenge) |
 | **Jealous** (level 2–3) | **Angry** at the rival comes more easily; at level 3, **Furious** |
 | Someone else is **Joyful** about what he wanted | **Jealous** comes more easily |
 | **Jealous** for a long time | **Angry** at the target comes more easily |
 
-**Links with lasting traits (proposal):**
+**Links with lasting traits:**
 
 | Lasting trait | Effect on emotions and body status |
 |---|---|
@@ -181,7 +182,7 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Paranoid** / **Trusting** | Paranoid: **Jealous** (fear of losing) comes more easily. Trusting: less |
 | **Strong** / **Sickly** | Strong: body status hurts less at level 3. Sickly: falls ill sooner when Cold or Hungry |
 
-**Emotions can turn into lasting traits (proposal):** being Terrified often in battle may turn a character
+**Emotions can turn into lasting traits:** being Terrified often in battle may turn a character
 **Craven**; staying Furious at one person for a long time may make him **Vengeful**; being Jealous for a long
 time may make him **Greedy** or **Ambitious** ([EVENTS.md §3](EVENTS.md):
 events add or remove traits).
@@ -200,7 +201,7 @@ events add or remove traits).
 > *Afraid of the general (level 3), because his army is at the border.*
 > *Jealous of Edric (level 1), because he wants Edric's rank.*
 
-**Proposals (not decided):**
+**Accepted by the owner (decision 12):**
 - **The target changes what he does.** Being Angry at Edric makes rough options more likely **with Edric**, and
   only a little with others.
 - **Some emotions may have no person as target:** e.g. *Afraid of the dark*, *Sad about the burned farm*,
@@ -238,9 +239,8 @@ expecting the worst).
 2. **Observant / Oblivious:** how are they gained and lost?
 3. How should the *Cynical* clash in §3 be solved?
 4. Are the groups in §1 right (personality, senses and mind, body and health, education, lifestyle, fame, emotion)?
-5. **Emotions (§2.2):** are *Afraid* and *Fear* one emotion? (*Cold* and *Hot* are Body status: decision 7.)
-6. **Emotions and body status (§2.2–2.4):** which proposals are accepted: the 3 levels and their names, how
-   levels go up and down, the links between them, the links to lasting traits, and the list of other emotions?
-7. **Emotions and mood:** [AI_CHARACTERS.md](AI_CHARACTERS.md) mentions **mood** (e.g. a group's mood: angry
+5. **Body status (§2.3):** are the proposals accepted (causes, effects, how it goes away, more body status such
+   as Tired, Drunk, In Pain)? (The emotion proposals were accepted: decision 12.)
+6. **Emotions and mood:** [AI_CHARACTERS.md](AI_CHARACTERS.md) mentions **mood** (e.g. a group's mood: angry
    about high taxes) and [PLAN.md](PLAN.md) mentions **stress**. Are emotions the same thing as mood, or
    separate?
