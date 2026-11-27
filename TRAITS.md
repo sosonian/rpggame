@@ -24,6 +24,7 @@
 | 10 | **Envious and Jealous are merged into one emotion, Jealous.** It covers both wanting what another person has (envy) and fearing to lose what you have (jealousy); its **reason** tells which (§2.2) | Owner | 2026-11-27 |
 | 11 | **Every emotion has a target and a reason:** **who** it is about and **what** it is about, e.g. *Angry at Edric, because he insulted me* (§2.5) | Owner | 2026-11-27 |
 | 12 | **The proposals for emotions are accepted** (§2.2, §2.4, §2.5): causes, effects, how they go away, the 3 levels, how levels go up and down, the links between emotions, body status and lasting traits, and target and reason. **Afraid and Fear are one emotion.** **No moral emotions:** *Proud* and *Guilty* are **not** added | Owner | 2026-11-27 |
+| 13 | **Proud is a lasting (permanent) trait,** not an emotion. It is a personality trait, listed as a candidate (§3) | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -90,7 +91,8 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
   > *Jealous of Edric — fears losing Wenna to him.* (jealousy)
 - **Comforted and Joyful are different:** *comfort* is feeling **calm and safe**; *joy* is feeling
   **happy** because something good happened.
-- **No moral emotions (decision 12):** *Proud* and *Guilty* are **not** emotions in the game.
+- **No moral emotions (decision 12):** *Proud* and *Guilty* are **not** emotions in the game. **Proud** is a
+  lasting personality trait instead (decision 13, §3).
 
 ### 2.3 Body status (temporary traits, decision 7)
 
@@ -164,7 +166,7 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Joyful** | **Sad** and **Angry** go down **one level**; at level 3 (Elated), the character notices less (less chance of daily-life events, [EVENTS.md §1.6](EVENTS.md)) |
 | **Sad** (level 2–3) | **Joyful** is hard to reach, and fades faster |
 | **Hungry**, **Cold**, **Afraid** (level 2–3) | **Comforted** is hard to reach: it is hard to feel at ease while starving, freezing or in danger |
-| **Ashamed** | **Angry** at whoever shamed him (if Vengeful), or **Sad** (if not) |
+| **Ashamed** | **Angry** at whoever shamed him (if Proud or Vengeful), or **Sad** (if not) |
 | **Sad** (level 3, grief) | **Comforted** fades faster; **Angry** may follow if someone is to blame (revenge) |
 | **Jealous** (level 2–3) | **Angry** at the rival comes more easily; at level 3, **Furious** |
 | Someone else is **Joyful** about what he wanted | **Jealous** comes more easily |
@@ -222,7 +224,7 @@ These names appear in the documents as examples. Each still needs its effects, g
 | Group | Candidates | Where mentioned |
 |---|---|---|
 | **Personality pairs** | Brave / Craven · Honest / Deceitful · Ambitious / Content · Kind / Cruel · Generous / Greedy · Diligent / Lazy · Zealous / Cynical · Paranoid / Trusting · Gregarious / Shy | [PLAN.md §6.2](PLAN.md) |
-| **Other personality** | Vengeful · Cautious · Patient · Fair | [EVENTS.md](EVENTS.md) §1.2, §7.3 |
+| **Other personality** | Vengeful · Cautious · Patient · Fair · **Proud** (owner, decision 13; opposite e.g. **Humble**, proposal) | [EVENTS.md](EVENTS.md) §1.2, §7.3 |
 | **Education** | Strategist · Schemer · Administrator · Diplomat · Scholar | [PLAN.md §6.2](PLAN.md) |
 | **Lifestyle** | Blademaster · Hunter · Commander · Duelist · Mystic · Brawler · Blacksmith | [PLAN.md §6.2](PLAN.md), [ITEMS.md §5](ITEMS.md) |
 | **Body and health** | Wounded · Maimed · Scarred · Ill · Strong · Comely · Quick · Sickly | [PLAN.md §6.2](PLAN.md) |
