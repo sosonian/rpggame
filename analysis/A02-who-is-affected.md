@@ -135,7 +135,8 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
 5. Should **facing** (things behind you are harder to see) be in Chapter 1, or later?
 
 ## 15. The owner's decision
-*(to be filled in when Part 2 is Final)*
+- **2026-11-27, question 1:** **option C** (distance + walls + chance) is accepted.
+- Questions 2–5: still open.
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
