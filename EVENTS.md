@@ -25,6 +25,7 @@ These decisions were made in other documents. They are collected here because th
 | 8 | **Events happen by chance.** Each possible event has a chance (probability) of happening (§1.1) | Owner | 2026-11-27 |
 | 9 | **A major change in a character's life has a high chance of triggering an event for that character.** Example: their **lover** or a **close friend** is killed. The event can give a new intent (e.g. revenge) or **change how the character sees the world** (e.g. a naive character comes to believe the world is cruel) (§1.2) | Owner | 2026-11-27 |
 | 10 | **The player character gets major events in the same way** as other characters (§1.2) | Owner | 2026-11-27 |
+| 11 | **All 23 candidates in §1.3 are major changes** | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -82,14 +83,14 @@ The player still decides what to do next.
 
 How high the chance is will be decided later (open question 3).
 
-### 1.3 Candidate major changes (proposal)
-A list of **candidates** for the owner to choose from. Only the first two rows are decided (decision 9).
+### 1.3 The list of major changes (decision 11)
+All 23 rows are accepted as major changes. More may be added later.
 "Vital person" means family, lover, lord, mentor or best friend.
 
 | # | Group | Candidate | Possible reactions (examples) |
 |---|---|---|---|
-| 1 | **Loss** | Lover is killed *(decided)* | Revenge; grief; the world is cruel |
-| 2 | Loss | Close friend is killed *(decided)* | Revenge; grief; trusts fewer people |
+| 1 | **Loss** | Lover is killed | Revenge; grief; the world is cruel |
+| 2 | Loss | Close friend is killed | Revenge; grief; trusts fewer people |
 | 3 | Loss | A family member is killed or dies (parent, child, brother or sister) | Revenge; grief; protect the rest of the family |
 | 4 | Loss | Your lord or mentor is killed | Revenge; take their place; lose loyalty to the realm |
 | 5 | **Betrayal** | Betrayed by a vital person (lied to, sold out, left to die) | Revenge; becomes suspicious (Paranoid); never trusts again |
@@ -117,6 +118,25 @@ Notes:
   character's goals and view of the world.
 - Many of these come from **other characters' actions** (§2), e.g. a murder, a betrayal or a promotion.
 - The trait names here (Paranoid, Craven, Brave, Cruel) are examples; the trait list is not designed yet.
+- The reactions are examples (proposal), not fixed results.
+
+### 1.4 How does the game know a major change happened? (TBD, open question 4)
+Three ways to decide which characters get a major event:
+
+| Way | How it works | Good | Bad |
+|---|---|---|---|
+| **A. Rules only** | Each kind of change in §1.3 has a rule. When something happens, the rules look at the **relationship data** to find who is affected. Example: X is killed → the rules find that Y is X's lover → Y gets a major event | Cheap (no AI cost), fast, always the same, works for background characters too, easy to test | Each kind of change needs its own rule; may miss unusual cases nobody wrote a rule for |
+| **B. AI judges** | After each thing that happens, the AI is asked: *"Is this a major change for anyone?"* | Can notice unusual cases | Many AI calls, so costly and slow; may judge differently each time; can't serve background characters; harder to test |
+| **C. Mix (proposal)** | **The rules find** who is affected (as in A). **The AI decides how** an AI-played character reacts. Background characters react by rules | Cheap and reliable detection; rich, personal reactions where they matter | The reaction for background characters is simpler |
+
+**Proposal: way C.** It follows the golden rule of this project: *the AI proposes, the game decides*
+([AI_CHARACTERS.md §4.2](AI_CHARACTERS.md)). The relationship data (lover, friend, family, lord) already
+exists in the shared character data ([AI_CHARACTERS.md §3](AI_CHARACTERS.md)).
+
+**Proposal: the event starts when the character learns of the change**, not when it happens. Characters know
+only what they see or are told ([AI_CHARACTERS.md §5.2](AI_CHARACTERS.md)). If Wenna is killed far away,
+Aldric's major event starts when he sees the body, or when news or a rumour reaches him. A false rumour
+could even start a major event for something that never happened.
 
 ## 2. Where events come from
 
@@ -166,7 +186,7 @@ An event can have one or more of these results:
 
 The game runs in real time. [PLAN.md §7](PLAN.md) says that **dialogue and decision events pause the clock**,
 but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
-(open question 7).
+(open question 8).
 
 ## 6. Example: from event to idea
 
@@ -184,11 +204,13 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 2. **Chance (decision 8):** what raises or lowers an event's chance? For example: traits, the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
 3. **Major changes (decision 9):** which candidates in §1.3 should be used, and which are missing?
    **Later:** how high is "a high chance": almost always (like 90%), or just higher than normal?
-4. **Sources:** is the list in §2 right? What should be added or removed?
-5. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
-6. **How often:** how many events with choices should the player see per hour, so they stay special but the
+4. **Detecting major changes (§1.4):** rules only (A), AI judges (B), or a mix (C)? Does the event start when
+   the change happens, or when the character learns of it?
+5. **Sources:** is the list in §2 right? What should be added or removed?
+6. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
+7. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
-7. **The clock:** should events with choices always pause the game (§5)?
-8. **Traits:** which events and options does each trait open (decision 6)?
-9. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
+8. **The clock:** should events with choices always pause the game (§5)?
+9. **Traits:** which events and options does each trait open (decision 6)?
+10. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.
