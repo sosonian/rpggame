@@ -32,6 +32,9 @@ These decisions were made in other documents. They are collected here because th
 | 15 | **The main principle: every event is triggered by a stimulus**, something from outside that the character reacts to (§1) | Owner | 2026-11-27 |
 | 16 | **There are two kinds of stimuli: major changes** (the list in §1.3) and **daily-life stimuli**, small things the character notices in everyday life, like Hobb watching the tax officer (§1.6) | Owner | 2026-11-27 |
 | 17 | **Traits change how often daily-life events happen.** A character with **keen observation** gets them more often than other characters (§1.6) | Owner | 2026-11-27 |
+| 18 | The keen-observation trait is called **Observant**; its opposite, **Oblivious**, gets fewer daily-life events (§1.6) | Owner | 2026-11-27 |
+| 19 | **Other traits decide *what* a character notices**, e.g. Greedy notices chances for money, Kind notices people in need (§1.6) | Owner | 2026-11-27 |
+| 20 | **Daily-life events are usually small** (knowledge, an option, an idea), but **many small ones over time can change a trait** (§1.6) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -100,7 +103,7 @@ The player still decides what to do next.
   decide *which* reaction they get. A Vengeful character is more likely to want revenge; a Craven one may
   become afraid instead.
 
-How high the chance is will be decided later (open question 3).
+How high the chance is will be decided later (open question 4).
 
 ### 1.3 The list of major changes (decision 11)
 All 23 rows are accepted as major changes. More may be added later.
@@ -187,15 +190,19 @@ them knowledge, an option or an idea.
 daily-life events **more often** than other characters. Two characters can stand in the same market and
 see the same thing; only the observant one may get the event.
 
-**Proposals (not decided):**
-- Call the trait **Observant**. Its opposite could be **Oblivious** (rarely notices anything), which gets
-  fewer daily-life events.
-- **Other traits decide *what* a character notices**, not only how often. A Greedy character notices chances
-  for money; a Kind one notices people in need ([ACTIONS.md §2.2](ACTIONS.md)). So an Observant, Greedy
-  character notices many chances for money.
-- **Skills may also help**, e.g. a high Intrigue skill helps notice secrets and lies.
-- **Daily-life events are usually small:** knowledge, an unlocked option, or an idea. They rarely change
-  traits on their own, but many small ones over time might (e.g. seeing cruelty again and again).
+**The Observant trait (decision 18).** The keen-observation trait is called **Observant**. Its opposite is
+**Oblivious**: an Oblivious character rarely notices anything, so they get fewer daily-life events.
+
+**Other traits decide *what* a character notices (decision 19)**, not only how often. A Greedy character
+notices chances for money; a Kind one notices people in need ([ACTIONS.md §2.2](ACTIONS.md)). So an Observant,
+Greedy character notices many chances for money.
+
+**Small events add up (decision 20).** Daily-life events are usually small: knowledge, an unlocked option, or
+an idea. They rarely change traits on their own, but **many small ones over time can**. Example: a character
+who sees cruelty again and again may become hard-hearted.
+
+**Proposal (not decided):** **skills may also help** a character notice things, e.g. a high Intrigue skill
+helps notice secrets and lies (open question 3).
 
 ## 2. Where events come from
 
@@ -245,7 +252,7 @@ An event can have one or more of these results:
 
 The game runs in real time. [PLAN.md §7](PLAN.md) says that **dialogue and decision events pause the clock**,
 but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
-(open question 7).
+(open question 8).
 
 ## 6. Example: from event to idea
 
@@ -262,13 +269,15 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 1. **The owner's ideas for events:** to be added.
 2. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
    chance? For example: the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
-3. **Major changes (decisions 9 and 11):** are any major changes missing from §1.3?
+3. **Skills (§1.6, not decided):** should skills also help a character notice things, e.g. Intrigue for
+   secrets and lies?
+4. **Major changes (decisions 9 and 11):** are any major changes missing from §1.3?
    **Later:** how high is "a high chance": almost always (like 90%), or just higher than normal?
-4. **Sources:** is the list in §2 right? What should be added or removed?
-5. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
-6. **How often:** how many events with choices should the player see per hour, so they stay special but the
+5. **Sources:** is the list in §2 right? What should be added or removed?
+6. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
+7. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
-7. **The clock:** should events with choices always pause the game (§5)?
-8. **Traits:** which events and options does each trait open (decision 6)?
-9. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
+8. **The clock:** should events with choices always pause the game (§5)?
+9. **Traits:** which events and options does each trait open (decision 6)?
+10. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.
