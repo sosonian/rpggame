@@ -235,7 +235,7 @@ In short:
   (weapons, armour, machines, items).
 - **Command needs communication:** voice, flags and horns, messengers, plans prepared before the battle,
   and later the lord's **sand table**.
-- **Chapter 1** ends with a small battle of about 200–300 men. This is the current focus.
+- **Chapter 1** ends with a small battle of about 300–400 men (about 100 town soldiers against 200–300 enemies). This is the current focus.
 
 ### 6.9 World simulation
 - AI characters live full lives: they age, marry, have children, scheme, fight and die.
@@ -301,7 +301,7 @@ The order and scope are **TBD**.
 | D3 | Player & time | The player character, the real-time clock (10 game minutes = 5 real seconds), basic jobs and orders, death means game over |
 | D4 | Items & town economy | Item types with value, quality and durability; needs (food, tools); inventory and equipment; repair; production chains and the frontier-town market ([ITEMS.md](ITEMS.md)) |
 | D5 | Dialogue | Choice-based dialogue with options from traits and backgrounds, and hand-written fallback lines |
-| D6 | Battle prototype | Pure 2D, real-time battle with 200–300 individual soldiers: squads, melee and ranged, wounds, morale, basic equipment, the player as one person in one of the roles ([WARFARE.md §4](WARFARE.md)) |
+| D6 | Battle prototype | Pure 2D, real-time battle with 300–400 individual soldiers: squads, melee and ranged, wounds, morale, basic equipment, the player as one person in one of the roles ([WARFARE.md §4](WARFARE.md)) |
 | D7 | Story & invasion | The Chapter 1 plot, story characters, the invasion event and its effect on prices and supplies, the skirmishes and the final battle |
 | D8 | AI characters | AI-played story and encountered characters through a small server, with the cap and fallbacks |
 | D9 | Demo polish | Chapter ending, save/load, basic art and UI (moving towards 2.5D), playtesting |

@@ -33,7 +33,7 @@ From the other documents, the Chapter 1 map must support:
 | **Workplaces** for the economy | Bread, beer, tools and weapons are made in town | [ITEMS.md §5, §8](ITEMS.md) |
 | **Distances in metres, walls, light** | Who sees and hears what | [EVENTS.md §1.7](EVENTS.md) |
 | **Private and public spots** | Secrets, eavesdropping, crimes, hiding | [ACTIONS.md §3.6–3.7](ACTIONS.md) |
-| **Terrain for battle**: walls, roads, rivers, fords, hills, forest | The final battle (200–300 men) and skirmishes | [WARFARE.md §3–4](WARFARE.md) |
+| **Terrain for battle**: walls, roads, rivers, fords, hills, forest | The final battle (300–400 men) and skirmishes | [WARFARE.md §3–4](WARFARE.md) |
 | **The wild** around the town | Hunting, woodcutting, gathering, patrols, scouting | [ACTIONS.md §3.2, §3.5](ACTIONS.md) |
 | **The border** and the way the enemy comes | The invasion | [STORY.md §2](STORY.md) |
 
