@@ -27,6 +27,8 @@ These decisions were made in other documents. They are collected here because th
 | 10 | **The player character gets major events in the same way** as other characters (§1.2) | Owner | 2026-11-27 |
 | 11 | **All 23 candidates in §1.3 are major changes** | Owner | 2026-11-27 |
 | 12 | **A major event starts only when the character is aware of the change.** It starts **at once** if the character sees it or does it themselves; otherwise it starts when they learn of it. Until then, it is a normal day for them (§1.5) | Owner | 2026-11-27 |
+| 13 | **Way C (mix): the rules find who is affected** by a change, using the relationship data. **The AI decides how** an AI-played character reacts. Background characters react by rules (§1.4) | Owner | 2026-11-27 |
+| 14 | **False rumours** can start major events; **how the character learns** of a change affects the reaction; **hiding the truth** can become a plan (§1.5) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -121,16 +123,16 @@ Notes:
 - The trait names here (Paranoid, Craven, Brave, Cruel) are examples; the trait list is not designed yet.
 - The reactions are examples (proposal), not fixed results.
 
-### 1.4 How does the game know who is affected? (TBD, open question 4)
-Three ways to decide which characters get a major event:
+### 1.4 How does the game know who is affected? (decision 13: way C)
+Three ways were considered. **Way C was chosen.**
 
 | Way | How it works | Good | Bad |
 |---|---|---|---|
 | **A. Rules only** | Each kind of change in §1.3 has a rule. When something happens, the rules look at the **relationship data** to find who is affected. Example: X is killed → the rules find that Y is X's lover → Y gets a major event | Cheap (no AI cost), fast, always the same, works for background characters too, easy to test | Each kind of change needs its own rule; may miss unusual cases nobody wrote a rule for |
 | **B. AI judges** | After each thing that happens, the AI is asked: *"Is this a major change for anyone?"* | Can notice unusual cases | Many AI calls, so costly and slow; may judge differently each time; can't serve background characters; harder to test |
-| **C. Mix (proposal)** | **The rules find** who is affected (as in A). **The AI decides how** an AI-played character reacts. Background characters react by rules | Cheap and reliable detection; rich, personal reactions where they matter | The reaction for background characters is simpler |
+| **C. Mix (chosen)** | **The rules find** who is affected (as in A). **The AI decides how** an AI-played character reacts. Background characters react by rules | Cheap and reliable detection; rich, personal reactions where they matter | The reaction for background characters is simpler |
 
-**Proposal: way C.** It follows the golden rule of this project: *the AI proposes, the game decides*
+**Why way C:** it follows the golden rule of this project: *the AI proposes, the game decides*
 ([AI_CHARACTERS.md §4.2](AI_CHARACTERS.md)). The relationship data (lover, friend, family, lord) already
 exists in the shared character data ([AI_CHARACTERS.md §3](AI_CHARACTERS.md)).
 
@@ -146,12 +148,12 @@ exists in the shared character data ([AI_CHARACTERS.md §3](AI_CHARACTERS.md)).
 
 This fits the rule that characters know only what they see or are told ([AI_CHARACTERS.md §5.2](AI_CHARACTERS.md)).
 
-**Proposals (not decided):**
-- **A false rumour** could start a major event for something that never happened, e.g. a rival spreads the
+**More rules about awareness (decision 14):**
+- **A false rumour** can start a major event for something that never happened, e.g. a rival spreads the
   lie that Wenna is dead (`spread_rumour`, [ACTIONS.md §3.4](ACTIONS.md)).
-- **How it was learned can change the reaction.** Seeing it yourself hits harder than hearing a rumour, and a
+- **How it was learned changes the reaction.** Seeing it yourself hits harder than hearing a rumour, and a
   rumour may be doubted at first.
-- **Hiding the truth becomes a plan.** A murderer may try to keep the lover from finding out
+- **Hiding the truth can become a plan.** A murderer may try to keep the lover from finding out
   ([IDEAS.md](IDEAS.md)), and another character may decide when to tell them.
 
 ## 2. Where events come from
@@ -202,7 +204,7 @@ An event can have one or more of these results:
 
 The game runs in real time. [PLAN.md §7](PLAN.md) says that **dialogue and decision events pause the clock**,
 but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
-(open question 8).
+(open question 7).
 
 ## 6. Example: from event to idea
 
@@ -218,14 +220,13 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 
 1. **The owner's ideas for events:** to be added.
 2. **Chance (decision 8):** what raises or lowers an event's chance? For example: traits, the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
-3. **Major changes (decision 9):** which candidates in §1.3 should be used, and which are missing?
+3. **Major changes (decisions 9 and 11):** are any major changes missing from §1.3?
    **Later:** how high is "a high chance": almost always (like 90%), or just higher than normal?
-4. **Detecting major changes (§1.4):** rules only (A), AI judges (B), or a mix (C)?
-5. **Sources:** is the list in §2 right? What should be added or removed?
-6. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
-7. **How often:** how many events with choices should the player see per hour, so they stay special but the
+4. **Sources:** is the list in §2 right? What should be added or removed?
+5. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
+6. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
-8. **The clock:** should events with choices always pause the game (§5)?
-9. **Traits:** which events and options does each trait open (decision 6)?
-10. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
+7. **The clock:** should events with choices always pause the game (§5)?
+8. **Traits:** which events and options does each trait open (decision 6)?
+9. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.
