@@ -35,6 +35,9 @@ These decisions were made in other documents. They are collected here because th
 | 18 | The keen-observation trait is called **Observant**; its opposite, **Oblivious**, gets fewer daily-life events (§1.6) | Owner | 2026-11-27 |
 | 19 | **Other traits decide *what* a character notices**, e.g. Greedy notices chances for money, Kind notices people in need (§1.6) | Owner | 2026-11-27 |
 | 20 | **Daily-life events are usually small** (knowledge, an option, an idea), but **many small ones over time can change a trait** (§1.6) | Owner | 2026-11-27 |
+| 21 | **Every action of a character, and every impact on a character, has a chance to trigger an event** (§1) | Owner | 2026-11-27 |
+| 22 | **No script forces story events, not even the final battle of Chapter 1.** The battle comes from a character's event: the **enemy general** (an AI-played major character) receives an **order from the enemy emperor** to take the town, and so he starts the battle (§7) | Owner | 2026-11-27 |
+| 23 | **The player can change the story.** For example, the player has a chance to **persuade the general** not to start the war, **surrender the town** to avoid the battle, or choose other options (§7) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -43,6 +46,9 @@ An **event** is something that happens to a character, or that a character notic
 **The main principle (decision 15): every event is triggered by a stimulus.** A **stimulus** (plural:
 *stimuli*; Chinese 刺激) is something from outside that the character reacts to: something they see, hear,
 suffer or do. No stimulus, no event.
+
+**In other words (decision 21): every action of a character, and every impact on a character, has a chance to
+trigger an event.**
 
 **Two kinds of stimuli (decision 16):**
 
@@ -63,7 +69,7 @@ suffer or do. No stimulus, no event.
 - What raises or lowers the chance:
   - **major changes** have a high chance (§1.2)
   - for **daily-life stimuli**, **traits** change the chance; keen observation raises it (§1.6)
-  - **TBD:** what else (open question 2)
+  - **TBD:** what else (open question 4)
 - This is like dialogue options, which are also chosen by chance ([ACTIONS.md §2.4](ACTIONS.md)).
 
 ### 1.2 Major changes trigger events (decision 9)
@@ -103,7 +109,7 @@ The player still decides what to do next.
   decide *which* reaction they get. A Vengeful character is more likely to want revenge; a Craven one may
   become afraid instead.
 
-How high the chance is will be decided later (open question 4).
+How high the chance is will be decided later (open question 6).
 
 ### 1.3 The list of major changes (decision 11)
 All 23 rows are accepted as major changes. More may be added later.
@@ -202,7 +208,7 @@ an idea. They rarely change traits on their own, but **many small ones over time
 who sees cruelty again and again may become hard-hearted.
 
 **Proposal (not decided):** **skills may also help** a character notice things, e.g. a high Intrigue skill
-helps notice secrets and lies (open question 3).
+helps notice secrets and lies (open question 5).
 
 ## 2. Where events come from
 
@@ -217,8 +223,9 @@ The documents so far name these sources ([ACTIONS.md §2.1](ACTIONS.md)):
 | **Other characters' actions** | Someone insults you, helps you, lies to you, or tries to rob you |
 | **The world (proposal)** | Prices rise because of the invasion; bad weather; a sickness in town |
 
-**World events** happen on their own unless the world stops them. For example, the enemy army arrives at the
-border by a certain time, whatever the characters do ([AI_CHARACTERS.md §5.8](AI_CHARACTERS.md)).
+**World events** (proposal) happen on their own, without a character causing them: e.g. weather, a bad
+harvest, a sickness ([AI_CHARACTERS.md §5.8](AI_CHARACTERS.md)). **Big story events are different:** they
+come from characters, not from a script. Even the enemy's attack starts with the enemy general's decision (§7).
 
 ## 3. What an event can do
 
@@ -252,7 +259,7 @@ An event can have one or more of these results:
 
 The game runs in real time. [PLAN.md §7](PLAN.md) says that **dialogue and decision events pause the clock**,
 but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
-(open question 8).
+(open question 10).
 
 ## 6. Example: from event to idea
 
@@ -264,20 +271,60 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 > - the event matters to his ambition *become rich*, so the AI is asked → it writes the **false tax officer**
 >   idea ([IDEAS.md §2](IDEAS.md))
 
-## 7. Open questions
+## 7. Story events come from characters, not a script (decisions 22 and 23)
+
+Big story events follow the same principle as every other event: **a stimulus reaches a character, and the
+character acts.** There is no script that forces them to happen.
+
+### 7.1 Example: the final battle of Chapter 1
+The final battle is the big event of Chapter 1's story ([WARFARE.md](WARFARE.md) plans about 200–300 men).
+It happens like this:
+
+| Step | What happens | Kind |
+|---|---|---|
+| 1 | The **enemy emperor** sends an order to his **general**: *take the frontier town* | A stimulus for the general |
+| 2 | The general, an **AI-played major character**, gets an event from the order | Event |
+| 3 | The order gives him the intent *take the town*; his AI makes plans: gather troops, march, attack | Intent and ideas ([IDEAS.md](IDEAS.md)) |
+| 4 | The battle starts because of **his** decision, not because of a script | Result |
+
+### 7.2 The player can change it (decision 23)
+Because the battle comes from a character, **the player can act on that character.** Options include:
+- **persuade the general** not to start the war
+- **surrender the town**, so there is no battle
+- other options (to be designed)
+
+**Proposals (not decided):**
+- **More ways to change it:** delay the general (sabotage his supplies, spread false news), turn his officers
+  against him, warn the town so it is better prepared, or kill the general. Each is a normal action or idea.
+- **Reaching the general is hard.** He is in the enemy camp. The player may need a position (messenger,
+  officer, the lord's envoy), a disguise, or the help of other characters.
+- **If the general is stopped, the story goes on.** The emperor may send another general, or punish the first
+  one. This uses **story roles** ([AI_CHARACTERS.md §5.8](AI_CHARACTERS.md)): the role *the enemy commander*
+  can pass to another character.
+- **The general has his own personality.** Whether he can be persuaded depends on his traits, his loyalty to
+  the emperor, and what he fears. A loyal, proud general is very hard to persuade; a cautious one who fears
+  losing men may listen.
+- **Surrender is a choice with costs.** It avoids the battle but may anger the lord, make the player a traitor
+  in some eyes, and lead to a different chapter ending.
+
+## 8. Open questions
 
 1. **The owner's ideas for events:** to be added.
-2. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
+2. **The emperor's order (§7.1):** when does it come: at a set time, by chance, or because of what happens in
+   the world? Is the emperor a character in Chapter 1, or only a voice in letters?
+3. **Changing the battle (§7.2):** which of the proposals are wanted? How can the player reach the general?
+   What happens if the general is stopped, and what does surrender lead to?
+4. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
    chance? For example: the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
-3. **Skills (§1.6, not decided):** should skills also help a character notice things, e.g. Intrigue for
+5. **Skills (§1.6, not decided):** should skills also help a character notice things, e.g. Intrigue for
    secrets and lies?
-4. **Major changes (decisions 9 and 11):** are any major changes missing from §1.3?
+6. **Major changes (decisions 9 and 11):** are any major changes missing from §1.3?
    **Later:** how high is "a high chance": almost always (like 90%), or just higher than normal?
-5. **Sources:** is the list in §2 right? What should be added or removed?
-6. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
-7. **How often:** how many events with choices should the player see per hour, so they stay special but the
+7. **Sources:** is the list in §2 right? What should be added or removed?
+8. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
+9. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
-8. **The clock:** should events with choices always pause the game (§5)?
-9. **Traits:** which events and options does each trait open (decision 6)?
-10. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
+10. **The clock:** should events with choices always pause the game (§5)?
+11. **Traits:** which events and options does each trait open (decision 6)?
+12. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.

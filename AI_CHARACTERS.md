@@ -309,7 +309,10 @@ change the plot: a rival may kill the mentor, the traitor may flee early, the lo
 
 This means the plot is written as **situations and forces**, not a fixed script (proposal):
 - **World events driven by the world, not by characters.** Some events happen on their own unless the world
-  stops them, e.g. the enemy army arrives at the border by a certain time.
+  stops them, e.g. weather or a sickness. **But big story events come from characters, not from a script**
+  (owner's decision, 2026-11-27): the enemy attack in Chapter 1 starts because the enemy general receives an
+  order from his emperor, and the player may persuade him not to attack, or surrender the town
+  ([EVENTS.md §7](EVENTS.md)).
 - **Story roles, not just story characters.** A beat that needs "someone opens the gate" is written for a
   role (*the traitor*). If the planned traitor is dead or exposed, the game looks for another character whose
   intents, traits and situation fit, e.g. a desperate Greedy merchant. If nobody fits, the beat does not happen
