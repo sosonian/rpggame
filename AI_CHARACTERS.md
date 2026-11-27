@@ -65,6 +65,10 @@ Merely seeing a name in a list or on the map does **not** count.
 
 The AI never replaces this data. It only reads it and suggests changes, which the rules check.
 
+**Perception (owner's decision, 2026-11-27; details later):** characters also have **perceptions** of each
+other: what they believe about another character's traits. A character may know only some of another's
+traits, and may be wrong. See [EVENTS.md §7.3](EVENTS.md).
+
 | Part | Content | Example |
 |---|---|---|
 | Traits | Personality, education, lifestyle, health, fame (PLAN §6.2) | Brave, Greedy, Schemer, Wounded |
@@ -367,6 +371,9 @@ still open.** It strongly affects how long one life lasts:
 | 1 game week | 6 weeks | ~320 hours | Very long |
 | 1 game month | 6 months | ~80 hours | Close to a typical long strategy game |
 | 1 game season | 1.5 years | ~27 hours | Fast; a lifetime fits a few long sessions |
+
+**Chapter 1 length (owner's decision, 2026-11-27):** Chapter 1 lasts about **1 month of game time**
+([EVENTS.md §7.1](EVENTS.md)). For example, at 10 real minutes = 1 game day, that is about 5 real hours.
 
 **Options to consider (TBD):**
 - **Variable pace:** time slows during tense chapters (an invasion, a battle) and speeds up between them.

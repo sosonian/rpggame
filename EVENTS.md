@@ -41,6 +41,9 @@ These decisions were made in other documents. They are collected here because th
 | 24 | **The emperor's order has a deadline**, e.g. *take the town before June*. The general must act within that time (§7.1) | Owner | 2026-11-27 |
 | 25 | **The order is created when Chapter 1 is created**, at the start of the game. No messenger is created: **the general receives the order at once** (§7.1) | Owner | 2026-11-27 |
 | 26 | **The emperor is not a character in Chapter 1.** He exists only through his order, and **appears in a later chapter** (§7.1) | Owner | 2026-11-27 |
+| 27 | **The deadline is 1 month** of game time after the start. **Chapter 1 lasts about 1 month** of game time (§7.1) | Owner | 2026-11-27 |
+| 28 | **What the general does if he misses the deadline depends on his perception of the emperor**: what he believes about the emperor's traits (§7.3) | Owner | 2026-11-27 |
+| 29 | **Characters have perceptions of each other.** A character may know some of another character's traits, but not all; it depends on their perception of one another. To be designed in detail later (§7.3) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -297,7 +300,8 @@ first moment, the general already has the intent *take the town before the deadl
 **The emperor (decision 26).** The emperor is **not a character in Chapter 1**. He exists only through his
 order. He will **appear in a later chapter**.
 
-**The deadline (decision 24).** The order says *when*: e.g. *take the town before June*. So the battle is
+**The deadline (decisions 24 and 27).** The order says *when*: **within 1 month** of game time.
+Chapter 1 lasts about 1 month of game time, so the deadline falls near its end. So the battle is
 not forced at a fixed moment, but the general has a reason to act within that time.
 
 **Proposals (not decided):**
@@ -331,11 +335,33 @@ Because the battle comes from a character, **the player can act on that characte
 - **Surrender is a choice with costs.** It avoids the battle but may anger the lord, make the player a traitor
   in some eyes, and lead to a different chapter ending.
 
+### 7.3 If the general misses the deadline: perception (decisions 28 and 29)
+What the general does if he misses the deadline **depends on his perception of the emperor**.
+
+A **perception** (Chinese 认知) is what one character **believes** about another: which traits they think the
+other has, and what they expect the other to do. It may be **right, partly right, or wrong**.
+
+- **Characters know only some of each other's traits** (decision 29). How much they know, and how correct it
+  is, depends on their perception of one another.
+- So the general's choice comes from **what he believes** about the emperor, not from the emperor's real
+  traits.
+
+**Example (proposal):**
+
+| The general believes the emperor is… | If the deadline is near or missed, he may… |
+|---|---|
+| **Cruel** (punishes failure harshly) | Attack at any cost; or, if he cannot win, flee or change sides |
+| **Patient** or **Fair** | Write to explain the delay and ask for more time |
+| **Weak** | Ignore the deadline, or even start his own plans |
+
+**Perception will be designed in detail later.** It probably belongs with the shared character data
+([AI_CHARACTERS.md §3](AI_CHARACTERS.md)), and links to hidden intents ([AI_CHARACTERS.md §5.7](AI_CHARACTERS.md)).
+
 ## 8. Open questions
 
 1. **The owner's ideas for events:** to be added.
-2. **The emperor's order (§7.1):** what is the deadline in game time (e.g. how many months after the start)?
-   What happens if the general misses it?
+2. **Perception (§7.3, later):** how do characters form beliefs about each other's traits? How much does the
+   player see of what others believe? Is the example table in §7.3 the right idea?
 3. **Changing the battle (§7.2):** which of the proposals are wanted? How can the player reach the general?
    What happens if the general is stopped, and what does surrender lead to?
 4. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
