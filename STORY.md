@@ -20,6 +20,7 @@
 | 8 | **Who passes on to the next chapter depends on how the story develops.** The **important characters related to the player** are selected to pass on. Only a few pass on | Owner; [AI_CHARACTERS.md](AI_CHARACTERS.md) decision 15 | 2026-11-27 |
 | 9 | **Whatever position the player ends Chapter 1 in** (e.g. promoted to commander, a middle-ranking official, a peasant), **he moves to another place** for Chapter 2 | Owner | 2026-11-27 |
 | 10 | **Chapter 2 starts in the major city of the province** the frontier town belongs to. **If the player betrayed his country**, it starts in a **major city of a province of the enemy nation** | Owner | 2026-11-27 |
+| 11 | **Betraying the country is the player's choice.** What he did in Chapter 1 does not decide it on its own: even if he made the town surrender, he can still choose to **flee with other citizens to the province's capital**, stay in his own country, and **face his fate** in Chapter 2 | Owner | 2026-11-27 |
 
 ## 1. How the story works
 
@@ -59,10 +60,24 @@ warn and prepare the town, or kill the general.
 ### 3.1 Where the player goes (decisions 9 and 10)
 Whatever happens, **the player moves to a new place** for Chapter 2.
 
-| How Chapter 1 ended for the player | Chapter 2 starts in |
+**Which side is the player's choice (decision 11).** At the end of Chapter 1 he chooses whether to stay with his
+own country or go over to the enemy. What he did before (e.g. surrendering the town) does not decide it for him.
+
+| The player chooses to… | Chapter 2 starts in |
 |---|---|
-| Stayed loyal to his country (whatever his position: commander, official, peasant…) | **The major city of the province** the frontier town belongs to |
-| **Betrayed** his country, e.g. surrendered the town or helped the enemy | **A major city of a province of the enemy nation** |
+| **Stay with his country** (whatever his position: commander, official, peasant…) | **The major city of the province** the frontier town belongs to |
+| **Go over to the enemy** | **A major city of a province of the enemy nation** |
+
+**Facing his fate (decision 11).** A player who made the town surrender can still **flee with the other citizens**
+to the province's capital. There he must face what he did in Chapter 2.
+
+Proposals (not decided), how his past follows him:
+- People who know what he did judge him by their own traits and beliefs: some call him a coward or traitor;
+  others thank him for saving lives.
+- The lord or the city's officials may **investigate** him, put him on trial, or watch him.
+- **What people know depends on their memories** ([MEMORIES.md](MEMORIES.md)): those who saw it, those who heard a
+  rumour, and those who never heard of it. He may try to hide the truth (an idea, [IDEAS.md](IDEAS.md)).
+- The reverse also works: a player who stays loyal may be suspected anyway, if rumours say otherwise.
 
 **His position carries over.** Examples: promoted to commander, he arrives as an officer; a middle-ranking
 official, he serves in the city's offices; a peasant, he starts among the city's poor. (Proposal: what exactly
@@ -95,11 +110,10 @@ Two possible settings, depending on the player's choices in Chapter 1 (decision 
 ## 6. Open questions
 
 1. **Chapter 1:** the story outline, the final cast and the possible endings.
-2. **"Betrayal" (decision 10):** what counts as betraying the country? Surrendering the town? Helping the enemy?
-   Deserting? Is it the player's choice to go to the enemy, or a result of what he did?
-3. **Who passes on (§3.2):** how many, and by which rules? What happens to those who don't?
-4. **Position in Chapter 2 (§3.1):** what does each Chapter 1 ending position become in the city?
-5. **Between chapters:** how much time passes, and how is it shown (a summary, a short scene)?
-6. **Chapter 2:** its plot, length and story roles, for both settings A and B.
-7. **Death in Chapter 1:** the player's death ends the game. Is there any ending of Chapter 1 that does not lead
+2. **Who passes on (§3.2):** how many, and by which rules? What happens to those who don't?
+3. **Position in Chapter 2 (§3.1):** what does each Chapter 1 ending position become in the city?
+4. **Between chapters:** how much time passes, and how is it shown (a summary, a short scene)?
+5. **Chapter 2:** its plot, length and story roles, for both settings A and B.
+6. **Death in Chapter 1:** the player's death ends the game. Is there any ending of Chapter 1 that does not lead
    to Chapter 2 (other than death)?
+7. **Facing his fate (§3.1):** are the proposals right? How should the past follow the player into Chapter 2?
