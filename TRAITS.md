@@ -16,6 +16,7 @@
 | 2 | **Chapter 1 traits are developed one by one** in discussion | Owner | 2026-11-27 |
 | 3 | **Observant** means a character has **more chance to understand** the information about things, or **the logic behind them**. Its opposite is **Oblivious** | [A02 §10.1](analysis/A02-who-is-affected.md), [EVENTS.md](EVENTS.md) decision 18 | 2026-11-27 |
 | 4 | **Hawk Eye** (see further and in more detail) and **Fox Ear** (hear further and in more detail), with opposites **Poor Sight** and **Hard of Hearing** | [A02 §10.1](analysis/A02-who-is-affected.md) | 2026-11-27 |
+| 5 | **Good Memory** (memories fade **more slowly**) and its opposite **Forgetful** (memories fade **faster**) | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -43,6 +44,8 @@ The same properties for every trait, so they can be compared and built the same 
 | **Hard of Hearing** | Fox Ear | Hears **less far** and less detail | Born with; old age; wounds | — |
 | **Observant** | Oblivious | More chance to **understand** what is seen and heard: the information about things and **the logic behind them**. Gets daily-life events more often, and helps see through people who hide their true personality. Does **not** make sight or hearing longer | TBD | TBD |
 | **Oblivious** | Observant | Rarely understands what is going on; gets fewer daily-life events | TBD | TBD |
+| **Good Memory** | Forgetful | Memories **fade more slowly** | TBD | TBD |
+| **Forgetful** | Good Memory | Memories **fade faster** | TBD (proposal: also old age) | TBD |
 
 The ranges these traits change are in [EVENTS.md §1.7](EVENTS.md) (full analysis in
 [analysis/A02 Part 2](analysis/A02-who-is-affected.md)).

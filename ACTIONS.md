@@ -22,6 +22,7 @@
 | 10 | **Dialogue options are chosen by chance.** Each possible option gets a chance from the character's **personality** and the **situation**. The system shows the **top 5**. Example: lying to someone vital to you has a low chance, so it rarely appears (§2.4) | 2026-11-25 |
 | 11 | Dialogue details: options below a **threshold** chance are not shown, so there can be fewer than 5. Very rarely, a **surprising option** appears from outside the top 5. **The player sees only the options, never the chances** (§2.4) | 2026-11-25 |
 | 12 | **Every action takes a period of time, including conversations.** An action can cause an event; when the game checks for events is in [EVENTS.md §5](EVENTS.md) | 2026-11-27 |
+| 13 | **New action `recall`** (回憶): can be done **at any time**. It opens a **memory screen**; the player chooses one memory and the character **talks to himself** about it. Memories come from what the character **saw, heard and did** (§3.1) | 2026-11-27 |
 
 ## 1. What an action is
 
@@ -158,6 +159,24 @@ Some names may merge or split as we design them.
 | `relax` | Spend time at the tavern or at home; mood and stress, chance to meet people | Ch. 1 |
 | `equip` / `unequip` | Put on or take off weapons, armour, clothing | Ch. 1 |
 | `store` / `take` | Put items in or take them from home, a storehouse or a cart | Ch. 1 |
+| `recall` (回憶) | Look back on a memory: open the memory screen, choose a memory, and talk to yourself about it (see below) | Ch. 1 |
+
+**`recall` (回憶), decision 13:**
+- **When:** at any time.
+- **How:** opens the **memory screen**, a list of the character's memories. The player chooses one, and the
+  character **talks to himself** about it, as a short inner thought.
+- **Where memories come from:** what the character **saw, heard and did** ([EVENTS.md §1.7](EVENTS.md)), stored
+  with how sure they are. Memories **fade** over time; **Good Memory** and **Forgetful** change how fast
+  ([TRAITS.md](TRAITS.md)).
+- **Proposals (not decided):**
+  - The memory screen shows for each memory: what happened, when, how it was learned (seen, heard, did, told),
+    how sure the character is, and how faded it is.
+  - **Recalling refreshes the memory**, so it fades more slowly afterwards.
+  - The inner thought is **written by the AI** in the character's voice. It may **spark an idea**
+    ([IDEAS.md](IDEAS.md)) or an insight, e.g. an Observant character notices something they missed before.
+  - It may **change mood or stress**: a sad memory hurts; a proud one comforts.
+  - It takes a little time, e.g. one time unit (10 game minutes), like every action (decision 12).
+  - AI-played characters can `recall` too (the same list of actions for everyone).
 
 ### 3.2 Work and economy
 
@@ -296,7 +315,7 @@ These will be designed with the lordship milestone (PLAN.md M5).
 
 | Group | Ch. 1 | Later |
 |---|---|---|
-| Daily life and survival | 9 | — |
+| Daily life and survival | 10 | — |
 | Work and economy | 15 | — |
 | Learning | 2 | 1 |
 | Talking and relationships | 16 | 1 |
@@ -305,7 +324,7 @@ These will be designed with the lordship milestone (PLAN.md M5).
 | Crime | 7 | 1 |
 | Conflict and fighting | 9 | 2 |
 | Groups and plots | 5 | 1 |
-| **Total** | **82** | **10 + realm actions** |
+| **Total** | **83** | **10 + realm actions** |
 
 Paired actions (e.g. `buy` / `sell`) count as one. This list is long for a demo. We may want to cut or merge
 some, or mark them as "AI only" or "player only".

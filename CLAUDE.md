@@ -64,4 +64,5 @@ The owner sometimes thinks of a term in Chinese. Use these English words:
 | 几率 | **chance** (probability) | How likely something is to happen |
 | 刺激 | **stimulus** (plural: stimuli) | Something from outside that a character reacts to |
 | 认知 | **perception** (not "recognition") | What one character believes about another, e.g. their traits |
+| 回憶 | **recall** (the action `recall`) | Looking back on a memory |
 
