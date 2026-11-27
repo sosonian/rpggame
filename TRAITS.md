@@ -24,7 +24,7 @@
 | 10 | **Envious and Jealous are merged into one emotion, Jealous.** It covers both wanting what another person has (envy) and fearing to lose what you have (jealousy); its **reason** tells which (§2.2) | Owner | 2026-11-27 |
 | 11 | **Every emotion has a target and a reason:** **who** it is about and **what** it is about, e.g. *Angry at Edric, because he insulted me* (§2.5) | Owner | 2026-11-27 |
 | 12 | **The proposals for emotions are accepted** (§2.2, §2.4, §2.5): causes, effects, how they go away, the 3 levels, how levels go up and down, the links between emotions, body status and lasting traits, and target and reason. **Afraid and Fear are one emotion.** **No moral emotions:** *Proud* and *Guilty* are **not** added | Owner | 2026-11-27 |
-| 13 | **Proud is a lasting (permanent) trait,** not an emotion. It is a personality trait, listed as a candidate (§3) | Owner | 2026-11-27 |
+| 13 | **Proud is a lasting (permanent) trait,** not an emotion. It is a personality trait, listed as a candidate (§3). The short **feeling of pride** is covered by **Joyful** with a reason, e.g. *Joyful, because I won the duel*. A Proud character feels **stronger Joy about his own successes** and is **hurt more by shame** (§2.4) | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -92,7 +92,8 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 - **Comforted and Joyful are different:** *comfort* is feeling **calm and safe**; *joy* is feeling
   **happy** because something good happened.
 - **No moral emotions (decision 12):** *Proud* and *Guilty* are **not** emotions in the game. **Proud** is a
-  lasting personality trait instead (decision 13, §3).
+  lasting personality trait instead (decision 13, §3); the short feeling of pride is **Joyful** with a reason
+  (*Joyful, because I won the duel*).
 
 ### 2.3 Body status (temporary traits, decision 7)
 
@@ -179,6 +180,7 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Brave** / **Craven** | Brave: Afraid is **one level lower**. Craven: Afraid is **one level higher** |
 | **Vengeful** | Angry fades **more slowly** |
 | **Patient** | Angry comes **more slowly** (needs one more cause per level) |
+| **Proud** | **Joyful** about his own successes comes **one level higher**. **Ashamed** comes **one level higher**, and turns into **Angry** at whoever shamed him (decision 13) |
 | **Honest** / **Deceitful** | Honest: more **Ashamed** when caught lying. Deceitful: less |
 | **Greedy** / **Ambitious** / **Content** | Greedy and Ambitious: **Jealous** (wanting what another has) comes more easily. Content: less |
 | **Paranoid** / **Trusting** | Paranoid: **Jealous** (fear of losing) comes more easily. Trusting: less |
