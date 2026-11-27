@@ -2,6 +2,7 @@
 
 > Companion to [PLAN.md](PLAN.md) (§6.2 Traits, §6.3 Relationships).
 > Covers how characters are driven by rules and by AI language models (LLMs), and what that costs.
+> The cost analysis is in [analysis/A01](analysis/A01-ai-characters-and-cost.md).
 > Items marked **(proposal)** are suggestions waiting for a decision.
 >
 > Prices are Anthropic Claude API list prices as of November 2026. They change over time; re-check before
@@ -435,67 +436,24 @@ low officer.
 
 The demo limits the AI cast to **about 20–27 characters**.
 
-### 8.2 Estimated AI calls per hour of play (updated for real-time play)
-
-Real-time play with intents (§5) adds **planning calls**, and full AI everywhere (decision 11) means distant
-characters plan as often as nearby ones. Estimate for ~25 AI-played characters:
-
-| Call type | Per hour (estimate) | Notes |
-|---|---|---|
-| Planning and re-planning (§5.3–5.4) | ~520 | ~25 characters × about 3–4 per 10 real minutes, wherever they are |
-| Important decisions | ~60 | Only when a decision is pending |
-| AI-to-AI exchanges (§5.5) | ~60 | |
-| Dialogue exchanges with the player | ~40 | e.g. ~10 conversations × 3–4 exchanges |
-| Event text, profile and memory updates | ~30 | Optional parts included |
-| **Total** | **~700** | Previously ~130, before real-time play |
-
-### 8.3 Estimated cost
-
-Assumptions per call:
-- about 3,000 cached tokens (game rules plus the chapter's world and story description)
-- about 1,500 uncached tokens (profile, memories, intents, knowledge, situation)
-- about 300 output tokens (planning calls are a little longer than before)
-
-| Model | Cost per call | **Per hour of play** | **Per demo playthrough (~2 hours)** |
-|---|---|---|---|
-| Claude Haiku 5.5 for everything | ≈ $0.0003 | ≈ $0.23 | **≈ $0.45** |
-| Claude Sonnet 5.5 for everything | ≈ $0.0063 | ≈ $4.40 | **≈ $8.80** |
-| Claude Opus 5.5 for everything | ≈ $0.013 | ≈ $8.80 | **≈ $18** |
-| **Mix:** Sonnet 5.5 for dialogue with the player, Haiku 5.5 for planning and the rest | — | ≈ $0.47 | **≈ $0.95** |
-
-- Thinking (the model reasoning before answering) can make outputs 1.5–3× longer. Use low effort for planning.
-- **The mix is the recommended setup:** planning outputs are structured lists of actions, which the cheaper model handles
-  well, while the player-facing dialogue gets the better writer.
-- **Ways to lower cost further (proposal):** skip the regular review when nothing has changed, and let the rules
-  handle obvious re-plans (e.g. the shop is closed, so come back tomorrow).
-- **Development and testing** of the demo would likely cost a few tens of dollars in total. Testing the fully
-  free plot with many `--autotest` runs adds to that; those runs can use the cheapest model.
-
-**Conclusion:** real-time play everywhere makes AI use about **5× higher** than the earlier estimate. With the
-mix, a full demo playthrough still costs **about a dollar** per player.
+### 8.2 Cost (summary)
+The full analysis is in **[analysis/A01](analysis/A01-ai-characters-and-cost.md)**. In short:
+- About **700 AI calls per real hour** of play, with about 25 AI-played characters.
+- **Recommended setup (the mix):** a better model (Sonnet 5.5) for dialogue with the player, a cheaper model
+  (Haiku 5.5) for planning and the rest. About **$0.47 per real hour**.
+- **Chapter 1 (about 6 real hours): about $2.80** per playthrough with the mix. Using the better model for
+  everything would be about $26.
 
 ---
 
-## 9. Cost reference (full game)
-
-Prices are per million tokens (MTok). A token is about ¾ of an English word.
-
-| Model | Input | Cached input | Output | Suggested use |
-|---|---|---|---|---|
-| Claude Haiku 5.5 (`claude-haiku-5-5`) | $0.10 | ≈ $0.01 (assumed ~10%) | $0.50 | Planning, decisions, event text, summaries |
-| Claude Sonnet 5.5 (`claude-sonnet-5-5`) | $2.00 | $0.10 | $10.00 | Dialogue with the player |
-| Claude Opus 5.5 (`claude-opus-5-5`) | $4.00 | $0.20 | $20.00 | Probably unnecessary for NPCs |
-
-With the tier system, the full game's AI cast stays at about 25–35 characters. Costs therefore stay in the same
-range as the demo: **roughly $0.25–$6 per hour of play** depending on the model, or about **$0.50 per hour with
-the mix**. A 40-hour playthrough would cost about **$20 with the mix**.
-
-For comparison, letting AI drive *every* character (500+) in real time would cost far more and would not be fast
-enough. That option stays rejected.
+## 9. Cost reference (full game, summary)
+The AI cast stays at about 25–35 characters, so costs stay about **$0.50 per real hour with the mix**: a
+40-hour playthrough costs about $20. Model prices and details are in
+[analysis/A01](analysis/A01-ai-characters-and-cost.md).
 
 ---
 
-## 10. Approaches considered (summary of the earlier analysis)
+## 10. Approaches considered (summary of [analysis/A01](analysis/A01-ai-characters-and-cost.md))
 
 | Approach | Verdict |
 |---|---|

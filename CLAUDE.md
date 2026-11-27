@@ -22,8 +22,21 @@ demo**: a frontier town in one county, facing an enemy invasion.
 | [EVENTS.md](EVENTS.md) | Events: where they come from, what they do, how they start ideas (first draft) |
 | [WARFARE.md](WARFARE.md) | War and battle design (in progress) |
 | [ITEMS.md](ITEMS.md) | Items, materials, production and the economy (in progress) |
+| [analysis/](analysis/README.md) | **Analysis reports**, one per piece of analysis work, with an index and a template |
 
 Each design document starts with a **"Decisions so far"** table and ends with **open questions**.
+
+## Plan documents and analysis reports
+The **plan documents** (the files above, except `analysis/`) hold only the **agreed design**.
+**Analysis work goes into a separate report**, never straight into the plan documents.
+
+1. When the owner asks for analysis (comparing options, cost, performance, …), write a **new report** in
+   `analysis/`, named `A<number>-<short-name>.md` (next free number), using the template in
+   [analysis/README.md](analysis/README.md). Status: **Draft**. Add it to the index in the README.
+2. **Do not change the plan documents** while the report is a Draft.
+3. When the owner decides, mark the report **Final** and record the decision and the date in it.
+4. **Only then update the plan documents**: the decision in the decisions table, a short summary, and a link to
+   the report. List the changed plan documents at the end of the report.
 
 ## How to work on this project
 - **Plan before coding.** Do not write game code until the owner approves a plan. The current work is design.

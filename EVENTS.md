@@ -164,13 +164,11 @@ Notes:
 - The reactions are examples (proposal), not fixed results.
 
 ### 1.4 How does the game know who is affected? (decision 13: way C)
-Three ways were considered. **Way C was chosen.**
-
-| Way | How it works | Good | Bad |
-|---|---|---|---|
-| **A. Rules only** | Each kind of change in §1.3 has a rule. When something happens, the rules look at the **relationship data** to find who is affected. Example: X is killed → the rules find that Y is X's lover → Y gets a major event | Cheap (no AI cost), fast, always the same, works for background characters too, easy to test | Each kind of change needs its own rule; may miss unusual cases nobody wrote a rule for |
-| **B. AI judges** | After each thing that happens, the AI is asked: *"Is this a major change for anyone?"* | Can notice unusual cases | Many AI calls, so costly and slow; may judge differently each time; can't serve background characters; harder to test |
-| **C. Mix (chosen)** | **The rules find** who is affected (as in A). **The AI decides how** an AI-played character reacts. Background characters react by rules | Cheap and reliable detection; rich, personal reactions where they matter | The reaction for background characters is simpler |
+Three ways were compared in **[analysis/A02](analysis/A02-who-is-affected.md)**. **Way C was chosen:**
+- **The rules find who is affected**, using the relationship data. Example: X is killed → the rules find that
+  Y is X's lover → Y gets a major event.
+- **The AI decides how** an AI-played character reacts.
+- **Background characters** react by rules.
 
 **Why way C:** it follows the golden rule of this project: *the AI proposes, the game decides*
 ([AI_CHARACTERS.md §4.2](AI_CHARACTERS.md)). The relationship data (lover, friend, family, lord) already
@@ -281,28 +279,14 @@ An event can have one or more of these results:
   ([AI_CHARACTERS.md §7](AI_CHARACTERS.md)). Battles use finer steps.
 - An event **starts at once** when the character sees or does the change (decision 12).
 
-The question is when the game should **check** whether an event happens (roll the chance):
-**A. after every action is done**, or **B. every time a time unit goes by**?
+### 5.2 How this was decided
+Two options were compared in **[analysis/A03](analysis/A03-event-check-timing.md)**: **A.** check after every
+action is done, or **B.** check every time unit. Checking after every action leaves gaps during long actions
+and misses slow changes. Checking every 10 game minutes works for almost everything, but adds a few seconds of
+delay for big, sudden moments. So B was chosen, with two extra checks (§5.4).
 
-### 5.2 Option A: check after every action is done
-
-| Good | Bad |
-|---|---|
-| **Fits the main principle.** Events come from stimuli (decision 15), and most stimuli come from actions | **Long actions leave gaps.** A character who works at the market for 8 hours is checked only at the end. If he sees a murder at 9 o'clock, he reacts at 3 o'clock. This breaks "at once" (decision 12) |
-| **Clear cause.** The game knows which action caused the event ("Hobb watched the tax officer → idea") | **Unfair chances.** A character doing many short actions gets many more checks, so many more events, than one doing a few long actions |
-| **Reactions are quick** after short actions | **Misses stimuli that are not actions:** hunger growing, a deadline coming closer, news spreading through town, the weather |
-
-### 5.3 Option B: check every time unit (every 10 game minutes = 5 real seconds)
-
-| Good | Bad |
-|---|---|
-| **Simple, steady and fair.** Everyone is checked at the same rhythm, whatever they do | **A short delay.** Up to 10 game minutes (5 real seconds). For small things this doesn't matter. For a major change seen with one's own eyes it can look odd: a man watches his lover killed and stands still for a few seconds |
-| **Fine enough.** A unit is only 10 game minutes, so it holds at most one or two actions, and the cause is usually clear | **Order inside one unit is lost.** Two things in the same 10 minutes come out together |
-| **Catches stimuli that are not actions:** hunger, deadlines, rumours spreading, weather, prices | **Many checks:** about 100 characters every 5 real seconds. This is fine for the rules (cheap), but the checks should be spread out (below) |
-| **No gaps in long actions.** An 8-hour job gets 48 checks | |
-
-With a 10-game-minute unit, **option B is good for almost everything**. Its only real weakness is the few
-seconds of delay for big, sudden moments.
+### 5.3 (moved)
+The detailed comparison is now in [analysis/A03](analysis/A03-event-check-timing.md).
 
 ### 5.4 Chosen (decision 38): B, plus checks at once and at the end of actions
 
@@ -344,30 +328,14 @@ seconds of delay for big, sudden moments.
 (open question 10).
 
 ### 5.7 Performance: is checking hundreds of characters every unit OK?
-**Yes, for a PC game this is fine.**
-- An event check is done by **rules, not the AI**: a few quick questions and a dice roll.
-- **Example:** 500 characters × about 10 possible events each is about 5,000 small checks per unit. That
-  probably takes a few milliseconds in total, even in Godot's own scripting language (GDScript).
-- **The checks are spread** across the 5 seconds of a unit (about 300 screen frames), so the player never
-  feels them (§5.4).
-- **The number of characters stays limited (decision 14 in [AI_CHARACTERS.md](AI_CHARACTERS.md)).**
-  Individual characters stay in the hundreds, even in larger later worlds. Far places are **group
-  characters** (one character for a whole town), so the checks don't grow with the size of the world.
-
-**What needs care (proposal):**
-
-| Risk | Fix |
-|---|---|
-| **Finding who is nearby or who saw something.** Comparing every character with every other gets slow (500 characters make about 250,000 pairs) | Group characters by **place** (market, tavern, barracks) and only compare people in the same place |
-| **Waiting for the AI.** An AI call takes 1–10 seconds | AI calls always run in the background; the character keeps doing its current action ([AI_CHARACTERS.md §11](AI_CHARACTERS.md)) |
-| **Memory growing over a long chapter.** Six hours of play means many memories, beliefs and rumours per character | Old, unimportant memories **fade or are summarised**, as already planned ([AI_CHARACTERS.md §3](AI_CHARACTERS.md)) |
-| **Battles** are heavier than event checks (200–300 soldiers updating several times per second) | Planned in [WARFARE.md §6](WARFARE.md) |
-
-**If it ever becomes slow:** run quick filters first (someone asleep at home skips market events), or move
-the busiest code to a faster language (Godot supports C# and C++). This is probably not needed for Chapter 1.
-
-**How to be sure:** once coding starts, the hidden `--autotest` mode can run a test town with 1,000 fake
-characters and measure the time. This fits milestone D2 (Characters & rules) in [PLAN.md §8](PLAN.md).
+**Yes, for a PC game this is fine.** The full analysis is in
+**[analysis/A04](analysis/A04-event-check-performance.md)**. In short:
+- Event checks are done by **rules, not the AI**, so they are cheap: thousands per unit take only milliseconds.
+- **The checks are spread** across the 5 seconds of a unit, so the player never feels them (§5.4).
+- **The number of characters stays limited** (decision 14 in [AI_CHARACTERS.md](AI_CHARACTERS.md)): individual
+  characters stay in the hundreds, and far places are **group characters**.
+- **Points for when coding starts (proposal):** find nearby characters by place; never wait for the AI; let old
+  memories fade; test with 1,000 fake characters in `--autotest` (milestone D2).
 
 ## 6. Example: from event to idea
 
