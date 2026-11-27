@@ -25,6 +25,7 @@ demo**: a frontier town in one county, facing an enemy invasion.
 | [ITEMS.md](ITEMS.md) | Items, materials, production and the economy (in progress) |
 | [TRAITS.md](TRAITS.md) | The table of traits: defined ones and candidates, developed one by one |
 | [STORY.md](STORY.md) | The story and plot: chapters, settings, how one chapter leads to the next |
+| [MAP.md](MAP.md) | Maps and places: the Chapter 1 frontier town, its places and surroundings (started) |
 | [MEMORIES.md](MEMORIES.md) | The memory (information storage) system: what is stored, forgetting, the memory inventory |
 | [analysis/](analysis/README.md) | **Analysis reports**, one per piece of analysis work, with an index and a template |
 

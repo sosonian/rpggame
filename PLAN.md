@@ -338,7 +338,7 @@ The order and scope are **TBD**.
 2. How long should a typical journey take from soldier to small lord, in play time and in game years?
 3. **Battle:** see the open questions in [WARFARE.md §8](WARFARE.md).
 4. **Items & economy:** see the open questions in [ITEMS.md §10](ITEMS.md).
-5. Map granularity for the demo: individual villages and keeps as locations?
+5. Map granularity for the demo: individual villages and keeps as locations? (Now designed in [MAP.md](MAP.md).)
 6. Character creation: can the player choose traits, background and starting location?
 7. Should there be a "retire" ending, or only death?
 8. Should the game include stress (a mechanic from Crusader Kings) and secrets/leverage?

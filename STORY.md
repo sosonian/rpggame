@@ -53,6 +53,8 @@ elder, a merchant or spy, the enemy general, an enemy scout or a traitor.
 [EVENTS.md §7.2](EVENTS.md)): persuade the general, surrender the town, delay the general past his deadline,
 warn and prepare the town, or kill the general.
 
+**The town's map and places** are designed in [MAP.md](MAP.md).
+
 **TBD:** the story outline, the final cast, and the possible endings.
 
 ## 3. From Chapter 1 to Chapter 2
