@@ -346,7 +346,16 @@ other has, and what they expect the other to do. It may be **right, partly right
 - So the general's choice comes from **what he believes** about the emperor, not from the emperor's real
   traits.
 
-**Example (proposal):**
+**The owner's example:** the general believes the emperor is **Ambitious** and **cares about his people**:
+a certain kind of ruler. If he misses the deadline, he thinks about this personality to decide what to do.
+Two beliefs can pull different ways (proposal):
+- *Ambitious:* "He wants this town badly. Failing him is dangerous." → push to attack soon
+- *Cares about his people:* "He doesn't want his soldiers wasted." → a careful delay that saves men may be
+  forgiven
+- The general, played by AI, weighs both, together with his own traits (e.g. Brave or Cautious), and
+  chooses. A different general with different beliefs could choose differently.
+
+**More examples (proposal):**
 
 | The general believes the emperor is… | If the deadline is near or missed, he may… |
 |---|---|
