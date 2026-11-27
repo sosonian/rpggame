@@ -67,7 +67,8 @@ The AI never replaces this data. It only reads it and suggests changes, which th
 
 **Perception (owner's decision, 2026-11-27; details later):** characters also have **perceptions** of each
 other: what they believe about another character's traits. A character may know only some of another's
-traits, and may be wrong. See [EVENTS.md §7.3](EVENTS.md).
+traits, and may be wrong. Characters may also **hide** their true ideas and personality, and an Observant
+character sees through others more easily. See [EVENTS.md §7.3 and §8](EVENTS.md).
 
 | Part | Content | Example |
 |---|---|---|

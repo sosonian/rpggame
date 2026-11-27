@@ -44,6 +44,8 @@ These decisions were made in other documents. They are collected here because th
 | 27 | **The deadline is 1 month** of game time after the start. **Chapter 1 lasts about 1 month** of game time (§7.1) | Owner | 2026-11-27 |
 | 28 | **What the general does if he misses the deadline depends on his perception of the emperor**: what he believes about the emperor's traits (§7.3) | Owner | 2026-11-27 |
 | 29 | **Characters have perceptions of each other.** A character may know some of another character's traits, but not all; it depends on their perception of one another. To be designed in detail later (§7.3) | Owner | 2026-11-27 |
+| 30 | **Characters may hide their true ideas and their true personality** from others (§8) | Owner | 2026-11-27 |
+| 31 | **To learn another character's true personality, a character needs a way to see through them**, e.g. the **Observant** trait lets them learn more details about the other character (§8) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -366,11 +368,46 @@ Two beliefs can pull different ways (proposal):
 **Perception will be designed in detail later.** It probably belongs with the shared character data
 ([AI_CHARACTERS.md §3](AI_CHARACTERS.md)), and links to hidden intents ([AI_CHARACTERS.md §5.7](AI_CHARACTERS.md)).
 
-## 8. Open questions
+## 8. Perception: hiding and seeing through (decisions 29–31)
+
+### 8.1 Characters can hide (decision 30)
+A character may **hide their true ideas** (plans, intents) and **their true personality** (traits).
+So what others believe about them (their perception, §7.3) can be **wrong**.
+
+- Example: a Deceitful, Ambitious officer acts loyal and humble in front of the captain. The captain's
+  perception: *"loyal, humble"*. The truth: *"ambitious, waiting for a chance"*.
+- This links to hidden intents ([AI_CHARACTERS.md §5.7](AI_CHARACTERS.md)): intents are hidden until learned.
+
+### 8.2 Seeing through (decision 31)
+To learn another character's **true** personality, a character needs a way to see through them.
+- The **Observant** trait (§1.6) helps: an Observant character **learns more details** about others.
+
+**More ways to learn the truth (proposal), many already in [AI_CHARACTERS.md §5.7](AI_CHARACTERS.md):**
+
+| Way | Example |
+|---|---|
+| **Watching** what they do over time | He says he is brave, but he ran from the brawl |
+| **Talking** to them, or to their friends | A friend lets slip that the officer wants the captain's post |
+| **Rumours** (may be false) | *"They say the miller cheats on his flour."* |
+| **Spying:** `follow`, `eavesdrop`, `search` ([ACTIONS.md §3.6](ACTIONS.md)) | Overhearing the officer's secret meeting |
+| **Skills**, e.g. Intrigue (not decided, open question 5) | Noticing a lie in a conversation |
+| **Time and closeness** | Family and old friends know each other better than strangers do |
+
+**Proposals (not decided):**
+- **Hiding is a contest.** A Deceitful character is good at hiding; an Honest one is bad at it. When an
+  Observant character watches a Deceitful one, the rules compare them, and the truth may or may not come out.
+- **Each learned trait is stored with how it was learned** (seen, told, rumour), like intents
+  ([AI_CHARACTERS.md §5.7](AI_CHARACTERS.md)). A belief from a rumour may be wrong.
+- **Learning a hidden truth can be a stimulus.** Finding out that a friend is not what he seemed can start an
+  event, even a major one (§1.3, row 5: betrayal).
+- **The player sees the other characters through the player character's perception**, not the truth: the
+  character page shows what the player character believes, and how sure they are.
+
+## 9. Open questions
 
 1. **The owner's ideas for events:** to be added.
-2. **Perception (§7.3, later):** how do characters form beliefs about each other's traits? How much does the
-   player see of what others believe? Is the example table in §7.3 the right idea?
+2. **Perception (§7.3 and §8):** which ways of seeing through (§8.2) and which proposals are wanted?
+   Is the example table in §7.3 the right idea?
 3. **Changing the battle (§7.2):** which of the proposals are wanted? How can the player reach the general?
    What happens if the general is stopped, and what does surrender lead to?
 4. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
