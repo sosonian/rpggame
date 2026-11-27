@@ -1,6 +1,7 @@
 # Crowns of Ashvale — Game Guideline
 
-> Working title. This is the vision and guideline document for the game.
+> **Working title only. The name will be changed later:** the owner found a book with almost the same name
+> (noted 2026-11-27). This is the vision and guideline document for the game.
 > Sections marked **TBD** are to be designed step by step. Update this file whenever a decision changes.
 
 ## 1. Vision
@@ -342,3 +343,5 @@ The order and scope are **TBD**.
 9. Chapter 1 story outline and cast list.
 10. Is AI a core part of the demo or an on/off option, and who pays for AI calls?
 11. Art direction for the demo.
+12. **The game's real name.** "Crowns of Ashvale" is only a working title, because a book has almost the same
+    name. Before choosing, check that the new name is not already used by a book, game or trademark.

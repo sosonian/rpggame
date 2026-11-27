@@ -1,6 +1,7 @@
 # Crowns of Ashvale: notes for Claude
 
-This repository holds the **planning documents** for a game called *Crowns of Ashvale* (a working title).
+This repository holds the **planning documents** for a game called *Crowns of Ashvale*. This is **only a
+working title and will be changed later**: a book has almost the same name (PLAN.md open question 12).
 It will be made in Godot 4 with GDScript. The project is in the **planning stage**: only the design documents
 are tracked here. Draft code exists on the owner's laptop but is not in this repository.
 
