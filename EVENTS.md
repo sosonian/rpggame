@@ -38,6 +38,7 @@ These decisions were made in other documents. They are collected here because th
 | 21 | **Every action of a character, and every impact on a character, has a chance to trigger an event** (§1) | Owner | 2026-11-27 |
 | 22 | **No script forces story events, not even the final battle of Chapter 1.** The battle comes from a character's event: the **enemy general** (an AI-played major character) receives an **order from the enemy emperor** to take the town, and so he starts the battle (§7) | Owner | 2026-11-27 |
 | 23 | **The player can change the story.** For example, the player has a chance to **persuade the general** not to start the war, **surrender the town** to avoid the battle, or choose other options (§7) | Owner | 2026-11-27 |
+| 24 | **The emperor's order has a deadline**, e.g. *take the town before June*. The general must act within that time (§7.1) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -282,10 +283,23 @@ It happens like this:
 
 | Step | What happens | Kind |
 |---|---|---|
-| 1 | The **enemy emperor** sends an order to his **general**: *take the frontier town* | A stimulus for the general |
+| 1 | The **enemy emperor** sends an order to his **general**: *take the frontier town before a deadline* (e.g. before June) | A stimulus for the general |
 | 2 | The general, an **AI-played major character**, gets an event from the order | Event |
 | 3 | The order gives him the intent *take the town*; his AI makes plans: gather troops, march, attack | Intent and ideas ([IDEAS.md](IDEAS.md)) |
 | 4 | The battle starts because of **his** decision, not because of a script | Result |
+
+**The deadline (decision 24).** The order says *when*: e.g. *take the town before June*. So the battle is
+not forced at a fixed moment, but the general has a reason to act within that time.
+
+**Proposals (not decided):**
+- **The deadline puts pressure on the general.** As it comes closer, he is more likely to attack, even if he
+  is not fully ready.
+- **Missing the deadline has costs for him:** the emperor may be angry, replace him, or punish him. A general
+  who fears the emperor will try hard not to miss it.
+- **The player can use the deadline.** Delaying the general past it (sabotage, false news, talks) may change
+  his choices, or make the emperor recall him.
+- **The town can learn of the deadline** through spies, prisoners or rumours, and plan around it.
+
 
 ### 7.2 The player can change it (decision 23)
 Because the battle comes from a character, **the player can act on that character.** Options include:
@@ -310,8 +324,8 @@ Because the battle comes from a character, **the player can act on that characte
 ## 8. Open questions
 
 1. **The owner's ideas for events:** to be added.
-2. **The emperor's order (§7.1):** when does it come: at a set time, by chance, or because of what happens in
-   the world? Is the emperor a character in Chapter 1, or only a voice in letters?
+2. **The emperor's order (§7.1):** when does the order arrive, and what is the deadline (in game time)?
+   What happens if the general misses it? Is the emperor a character in Chapter 1, or only a voice in letters?
 3. **Changing the battle (§7.2):** which of the proposals are wanted? How can the player reach the general?
    What happens if the general is stopped, and what does surrender lead to?
 4. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
