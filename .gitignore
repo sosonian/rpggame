@@ -1,0 +1,5 @@
+# Planning stage: only the planning documents are tracked.
+# Everything else (draft code, Godot files) stays local for now.
+/*
+!/.gitignore
+!/*.md
