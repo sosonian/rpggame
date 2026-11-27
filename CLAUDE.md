@@ -38,6 +38,8 @@ Each design document starts with a **"Decisions so far"** table and ends with **
 - **Write plainly.** Use short sentences and simple words; the owner reads English as a second language.
   Explain game-design jargon the first time it appears.
 - **Never put API keys or secrets in any file.**
+- **After updating files, show a link to each changed file**, both the local file and the GitHub page
+  (`https://github.com/sosonian/rpggame/blob/main/<file>`), so the owner can check them easily.
 
 ## Words used in the documents
 The owner sometimes thinks of a term in Chinese. Use these English words:
