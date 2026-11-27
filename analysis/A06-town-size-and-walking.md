@@ -1,7 +1,7 @@
 # A06 — The size of the town, and how long walking takes
 
 > **Status:** Draft
-> **Date:** 2026-11-27
+> **Date:** 2026-11-27 (updated the same day with the owner's size decisions)
 > **Asked by the owner:** "I would like to continue the design of the map of town. And we continue to plan the
 > size of this town. I would like the number of the inhabitants is 100, and the soldier is also 100."
 > **Related plan documents:** [MAP.md §1.1, open question 2](../MAP.md), [AI_CHARACTERS.md §7](../AI_CHARACTERS.md)
@@ -33,7 +33,7 @@ Question 2 turns out to be the hard one, because of the speed of the game clock 
 
 | Part | How many | Why |
 |---|---|---|
-| **Homes** | 20–25 houses | 100 inhabitants, 4–5 people per family |
+| **Homes** | **30 households** (owner's decision, §8) | 100 inhabitants, so about 3–4 people per household |
 | **Workshops** | 8–10 (smithy, bakery, brewery, butcher, tannery, carpenter, weaver, mill…) | [ITEMS.md §8](../ITEMS.md). Many craftsmen live in their workshop, so some homes and workshops are the same building |
 | **Market square** | 1 | Market day |
 | **Tavern / inn, shrine, storehouse** | 1 each | [ACTIONS.md §3.1](../ACTIONS.md) |
@@ -41,34 +41,45 @@ Question 2 turns out to be the hard one, because of the speed of the game clock 
 | **The keep** (the lord's small castle) | 1 | [WARFARE.md §4](../WARFARE.md) |
 | **Town wall with 1–2 gates** | 1 | If the town has walls (MAP.md open question 4) |
 
-About **40–50 buildings** in all.
+About **50–55 buildings** in all.
 
-### 3.2 Size in metres (proposal)
+### 3.2 Size in metres (owner's decision, §8)
 
-Real medieval towns held very roughly **100–200 people per hectare** (1 hectare = 100 m × 100 m) inside the
-walls. With about 200 people, plus the keep, barracks and the market:
-
-| Area | Size (proposal) |
+| Area | Size |
 |---|---|
-| **Inside the walls** | about **150 m × 150 m** (2–3 hectares) |
-| **Fields and farms around the walls** | out to about **500 m** from the wall |
-| **The wider map** (forest, river and ford, roads, the border road, room for the enemy camp) | about **2 km × 2 km** |
+| **The town** | **1 km × 1 km** (1 km², 100 hectares) |
+| **The whole Chapter 1 map** (the town, fields, forest, river, roads, the border, room for the enemy camp) | **4 km × 4 km** (16 km²) |
 
-This fits the earlier proposal in MAP.md (150–250 m across). At this size, from the market you can **see that
-something happens** in most of the town (50–100 m), but you see **who** it is only in your own street (10–20 m).
-So walls and houses matter a lot for secrets and eavesdropping. That is good for the game.
+The first draft proposed 150 m × 150 m for the town. The owner chose a much bigger town.
+
+### 3.3 What a 1 km town means (notes for the owner)
+
+- **The town is spread out.** Real medieval towns held about 100–200 people per hectare inside the walls, so
+  200 people would fill about 2–3 hectares. A 1 km town has 100 hectares, so most of it is **not houses**: it is
+  gardens, fields, orchards, pasture, yards and empty ground between the buildings.
+- **Walls:** a wall around the whole 1 km square is **4 km long**. With 100 soldiers, that is **1 soldier every
+  40 m**: too thin to defend. **Possible ways (proposals):**
+  - **a small walled core** (keep, barracks, market, some houses) inside the 1 km town, with the rest open; or
+  - **a wooden fence or ditch** around the whole town, and a stronger wall only around the keep; or
+  - **no wall,** and the soldiers defend from the keep and chosen places (bridge, ford, streets).
+  This is part of MAP.md open question 4 (walls or no walls).
+- **Seeing and hearing:** with buildings far apart, most of the town is **out of sight and hearing** of most
+  people (you see *that* something happens at 50–100 m). Good for secrets, crimes and hiding. Bad for alarms:
+  a bell or horn (heard for hundreds of metres) becomes important.
+- **Map size for the computer (note):** 4 km × 4 km with 1 m tiles is 16 million tiles; with 2 m tiles, 4 million.
+  Godot can handle this if the map is split into **chunks** (pieces loaded as needed), but it needs care.
 
 ## 4. The walking problem
 
 Because game time runs **120× faster** than real time, walking is either **very fast on screen**, or it **takes a
 long time in game time**. It cannot be both natural on screen and realistic in game time.
 
-| | Crossing the town (150 m) | Fields to the wall (500 m) | Across the wider map (2 km) |
-|---|---|---|---|
-| **Real-life walking** (1.4 m/s) | 2 game minutes | 6 game minutes | 24 game minutes |
-| …which on screen takes | **1 real second** | 3 real seconds | 12 real seconds |
+| | Crossing the town (1 km) | Across the whole map (4 km) |
+|---|---|---|
+| **Real-life walking** (1.4 m/s) | 12 game minutes | 48 game minutes |
+| …which on screen takes | **6 real seconds** | 24 real seconds |
 
-So with realistic walking, a person crosses the whole town in **about 1 real second**. On screen they move at
+So with realistic walking, a person crosses the whole town in **about 6 real seconds**. On screen they move at
 about 170 m per second.
 
 ## 5. Options
@@ -78,7 +89,7 @@ Walking takes the real-life game time. On screen, people zip across the town in 
 
 | Good | Bad |
 |---|---|
-| **Realistic daily life.** A trip to the market takes a few game minutes, so work and schedules make sense | **Hard to watch people move.** Following someone, sneaking up, or walking next to someone while talking is hard to see and control |
+| **Realistic daily life.** A trip across town takes about 12 game minutes, so work and schedules make sense | **Hard to watch people move.** Following someone, sneaking up, or walking next to someone while talking is hard to see and control |
 | **Simple and consistent** with the metre ranges | **Looks strange** if people are drawn walking |
 | **The 1-month chapter stays full of activity,** not of walking | Battle (with slower time steps) looks very different from daily life |
 
@@ -87,7 +98,7 @@ People walk at a natural speed on screen (about 1.5–2 m per real second). The 
 
 | Good | Bad |
 |---|---|
-| **Looks natural.** Easy to follow, sneak, eavesdrop and fight, the same in daily life and battle | **Walking eats the day.** Crossing the town (150 m) takes about 1.5 real minutes = **about 3 game hours**. A trip to the fields and back takes most of a day |
+| **Looks natural.** Easy to follow, sneak, eavesdrop and fight, the same in daily life and battle | **Walking eats the days.** Crossing the town (1 km) takes about 10 real minutes = **about 19 game hours**. Crossing the whole map (4 km) takes about **3 game days** |
 | | Daily schedules (work, market, tavern) no longer fit into one day |
 | | The 1-month chapter is mostly spent walking |
 
@@ -95,15 +106,15 @@ People walk at a natural speed on screen (about 1.5–2 m per real second). The 
 People move **fast but visibly** on screen, for example about **10 m per real second** (like the quick walking in
 many top-down games). The game clock keeps running.
 
-| | Crossing the town (150 m) | Fields to the wall (500 m) | Across the wider map (2 km) |
-|---|---|---|---|
-| Real time | 15 seconds | 50 seconds | 3.5 minutes |
-| Game time | 30 minutes | 1.7 hours | 7 hours |
+| | Crossing the town (1 km) | Across the whole map (4 km) |
+|---|---|---|
+| Real time | 100 seconds | 6.7 minutes |
+| Game time | 3.3 hours | 13 hours |
 
 | Good | Bad |
 |---|---|
-| **You can still see and follow people** | Not realistic: crossing a small town takes half a game hour |
-| **Daily life mostly fits:** a few trips in town per day | Long trips outside (to the forest, the border) take most of a day, so they need **travel by a faster mode** (see below) |
+| **You can still see and follow people** | **With a 1 km town, too slow:** crossing the town takes 3.3 game hours, so only one or two trips fit in a day |
+| | Trips outside the town (to the forest, the border) take most of a game day, so they need **a faster travel mode** |
 | Battle can use the same speed, with the finer time steps | |
 
 ### Option D: Two modes of walking
@@ -119,21 +130,28 @@ many top-down games). The game clock keeps running.
 
 ## 6. Recommendation (proposal)
 
-- **Size:** use §3: about **40–50 buildings**, **150 m × 150 m inside the walls**, fields out to **500 m**, and a
-  wider map of about **2 km × 2 km**.
-- **Walking:** **option C** (one middle speed) is the simplest that still looks and plays well. **Option D**
-  is better if realistic daily schedules matter a lot. Either way, long trips outside the town (2 km) probably
-  need a faster travel mode.
+- **Size:** decided by the owner (§8).
+- **Walking:** with a **1 km town and a 4 km map**, **option D** (two modes) now looks best. Option C was
+  suggested for the first, small town; at 1 km it is too slow (3.3 game hours to cross the town).
+  With option D, clicking a place uses realistic time (12 game minutes across town, 6 real seconds), and
+  following, sneaking and fighting use a natural speed.
 - **Another possible way** (not an option here, because it changes a decided rule): slow the game clock while
   characters walk. This would change the time unit, which is already decided.
 
 ## 7. Questions for the owner
 
-1. Do you agree with the **size** in §3 (150 m × 150 m inside the walls, about 40–50 buildings)?
+1. ~~Size~~: decided (§8).
 2. Which **walking option**: A, B, C or D?
-3. Should the **wider map** (2 km × 2 km, with the forest, river and border) be part of the same map, or a
-   separate map (MAP.md open question 3)?
+3. **Walls** for a 1 km town (§3.3): a small walled core, a fence around everything, or no wall?
+4. ~~One map or two~~: decided: one 4 km × 4 km map for Chapter 1 (§8).
 
 ## 8. The owner's decision (filled in when Final)
+
+**Decided so far (2026-11-27), while the report is still a Draft:**
+- **The town is 1 km × 1 km.**
+- **The whole Chapter 1 map is 4 km × 4 km.**
+- **The town has 30 households** (for about 100 inhabitants).
+- Still open: the walking option (§5) and walls (§3.3). The plan documents will be updated when the report
+  is Final.
 
 ## 9. Changes made to the plan documents (filled in when Final)
