@@ -217,10 +217,10 @@ person who **decides, then acts**:
 
 - **A plan, also called an idea, is a short list of actions** (proposal: 2–5). Plans are not chosen from a fixed
   list: an **event sparks them and the AI writes them** (see the false tax officer example in
-  [ACTIONS.md §2.3](ACTIONS.md)). Each entry is an **action**: something the game
+  [IDEAS.md §2](IDEAS.md)). Each entry is an **action**: something the game
   already knows how to do, with the details filled in. The actions are the same ones the player can do.
   The player picks them with the mouse and menus; the AI picks them by writing a plan.
-  The full list is in [ACTIONS.md](ACTIONS.md).
+  The full list is in [ACTIONS.md](ACTIONS.md). How ideas work is in [IDEAS.md](IDEAS.md).
 - **The rules carry out each action** in real time: pathfinding, work, trading, fighting. This costs nothing.
 - **When an action cannot be done** (the shop is closed, the target left town), the rules try an obvious fix.
   If that fails, the AI is asked to re-plan.

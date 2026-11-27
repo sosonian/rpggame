@@ -17,7 +17,8 @@ demo**: a frontier town in one county, facing an enemy invasion.
 |---|---|
 | [PLAN.md](PLAN.md) | Vision, pillars, systems overview, technical direction, roadmap, open questions. Start here |
 | [AI_CHARACTERS.md](AI_CHARACTERS.md) | Character tiers, AI-played characters, intents, real-time play, costs |
-| [ACTIONS.md](ACTIONS.md) | The shared list of actions, ideas (plans), and dialogue options chosen by chance |
+| [ACTIONS.md](ACTIONS.md) | The shared list of actions, and dialogue options chosen by chance |
+| [IDEAS.md](IDEAS.md) | Ideas (plans): how events spark them, how the AI writes them, ideas for the player |
 | [WARFARE.md](WARFARE.md) | War and battle design (in progress) |
 | [ITEMS.md](ITEMS.md) | Items, materials, production and the economy (in progress) |
 

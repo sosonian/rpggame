@@ -3,7 +3,7 @@
 > Design document for **actions**: everything a character can do in the world.
 > **Status: draft list, to be worked out together.**
 > Items marked **(proposal)** are suggestions waiting for a decision.
-> Related: [AI_CHARACTERS.md §5](AI_CHARACTERS.md) (plans), [ITEMS.md](ITEMS.md) (items and trade),
+> Related: [AI_CHARACTERS.md §5](AI_CHARACTERS.md) (plans), [IDEAS.md](IDEAS.md) (ideas), [ITEMS.md](ITEMS.md) (items and trade),
 > [WARFARE.md](WARFARE.md) (battle).
 
 ## 0. Decisions so far
@@ -16,9 +16,9 @@
 | 4 | **Two ways to take an action:** some by **clicking places and people**, others as **options in an event** (§2.1) | 2026-11-25 |
 | 5 | **Positions give some actions naturally.** Other characters may get the same action as an **event option**, often as a crime. Example: a liar gets the idea to pose as a tax officer and "collect tax" from others (§2.2) | 2026-11-25 |
 | 6 | **Some actions exist only through events.** After the event, the action appears as an option when you click the related item, place or character (§2.1) | 2026-11-25 |
-| 7 | **An idea (or plan) is made of several actions.** Ideas are **not limited to a fixed list**: they arise **after an event** and are **produced by the AI**. Impersonation is an idea, not a single action (§2.3) | 2026-11-25 |
+| 7 | **An idea (or plan) is made of several actions.** Ideas are **not limited to a fixed list**: they arise **after an event** and are **produced by the AI**. Impersonation is an idea, not a single action ([IDEAS.md](IDEAS.md)) | 2026-11-25 |
 | 8 | Which starting positions Chapter 1 has, and which ideas and options each trait opens, will be decided later with the event system | 2026-11-25 |
-| 9 | **The AI also suggests ideas to the player character**, based on the player's traits and situation. The player can follow or ignore them (§2.3) | 2026-11-25 |
+| 9 | **The AI also suggests ideas to the player character**, based on the player's traits and situation. The player can follow or ignore them ([IDEAS.md](IDEAS.md)) | 2026-11-25 |
 | 10 | **Dialogue options are chosen by chance.** Each possible option gets a chance from the character's **personality** and the **situation**. The system shows the **top 5**. Example: lying to someone vital to you has a low chance, so it rarely appears (§2.4) | 2026-11-25 |
 | 11 | Dialogue details: options below a **threshold** chance are not shown, so there can be fewer than 5. Very rarely, a **surprising option** appears from outside the top 5. **The player sees only the options, never the chances** (§2.4) | 2026-11-25 |
 
@@ -96,56 +96,8 @@ The same action can be open to a character in two ways:
   decides which other doors events may open.
 
 ### 2.3 Ideas: plans made of actions (decision 7)
-An **idea** (also called a **plan**) is a goal plus a list of actions to reach it. Ideas are not chosen from a
-fixed list: **an event sparks them, and the AI writes them**, from the character's traits, intents, knowledge
-and situation. So ideas are unlimited, but every action inside them comes from this document's list and must
-pass the game's checks.
-
-**Example: the false tax officer**
-
-> **Who:** Hobb, a labourer. Greedy, not very moral (Deceitful), likes to take risks. Ambition: *become rich*.
->
-> **The event:** one day Hobb watches the tax officer collect tax from a farmer. The process looks simple: a
-> few words, a wax tablet, and the farmer pays. *(The event gives Hobb the knowledge "tax collection seems easy".
-> It also unlocks `collect_tax` for him as an event option: decision 6.)*
->
-> **The idea (written by the AI):** *"Nobody on Tanner Street knows me. I could pretend to be a tax officer there
-> and collect the money myself."*
->
-> | # | Action | Details |
-> |---|---|---|
-> | 1 | `buy` | A dark coat and a wax tablet, so he looks like an official |
-> | 2 | `go_to` | Tanner Street, where nobody knows him |
-> | 3 | `talk_to` | A shopkeeper, **lying** that he is the new tax officer |
-> | 4 | `collect_tax` | Take the "tax" money; a check of Intrigue against the shopkeeper's suspicion |
-> | 5 | `go_to` | Leave before the real officer comes |
-> | 6 | `hide` | Hide the money at home |
->
-> **What can happen:**
-> - It works, and Hobb gets rich, and may try again (repeated fraud builds toward a "Swindler" reputation).
-> - The shopkeeper doubts him, and Hobb has to talk his way out or `flee`.
-> - The real officer hears of it, and Hobb is hunted. If caught: arrest, a fine or worse, and infamy.
-> - The player may see it happen, hear the rumour, or be the one he tries to fool.
-
-**How ideas work (proposal):**
-- **Sparked by events:** seeing something, hearing news, a change in needs ("I'm out of money"), an insult,
-  an opportunity. Not every event sparks an idea. The game asks the AI only when the event matters to the
-  character's traits or intents.
-- **Written by the AI** for AI-played characters ([AI_CHARACTERS.md §5.3](AI_CHARACTERS.md)).
-  The AI may also decide *not* to act: a cautious character may think of the idea and drop it because the risk
-  is too high.
-- **Checked by the rules:** every action must exist, be possible for this character, and follow the rules.
-  Lying happens inside a conversation, as a dialogue option (§2.4).
-- **Background characters** (rules only) can't call the AI. They get **simple ready-made ideas** instead
-  (e.g. "steal food when hungry").
-- **The player gets ideas too (decision 9):**
-  - After an event, the AI may suggest an idea that fits the **player character's** traits and situation,
-    shown as a thought: *"You think: nobody on Tanner Street knows you…"*.
-  - The player can **follow** it (its actions become available as a plan to carry out) or **ignore** it.
-  - A Greedy player character gets greedy ideas, a Kind one kind ideas. The player's personality is felt,
-    but the player still decides.
-  - **Proposal:** ideas are suggested only after events that matter, so they stay special
-    (perhaps a few per hour of play).
+An **idea** (also called a **plan**) is a goal plus a list of actions to reach it. Ideas now have their own
+document: **[IDEAS.md](IDEAS.md)**, with the false tax officer example and how ideas work.
 
 ### 2.4 Dialogue options by chance (decision 10)
 In a conversation, the game does not show every possible option. It works out a **chance** for each option and

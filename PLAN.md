@@ -189,7 +189,7 @@ Traits are the heart of every character, the player and every AI person alike.
 - **AI-played characters play like a human player.** They pursue their intents **in real time**, with the same
   actions, limits and knowledge as the player: working, trading, talking, plotting, competing, fighting.
   - The AI decides the **plan**, i.e. the next few **actions**. The player and all characters share one
-    list of actions: [ACTIONS.md](ACTIONS.md).
+    list of actions: [ACTIONS.md](ACTIONS.md). How ideas (plans) work: [IDEAS.md](IDEAS.md).
   - The rules carry the plan out moment to moment.
   - The AI only thinks again when the plan ends or fails, or something important happens.
   - Details are in [AI_CHARACTERS.md §5](AI_CHARACTERS.md).
