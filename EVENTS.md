@@ -46,6 +46,10 @@ These decisions were made in other documents. They are collected here because th
 | 29 | **Characters have perceptions of each other.** A character may know some of another character's traits, but not all; it depends on their perception of one another. To be designed in detail later (§7.3) | Owner | 2026-11-27 |
 | 30 | **Characters may hide their true ideas and their true personality** from others (§8) | Owner | 2026-11-27 |
 | 31 | **To learn another character's true personality, a character needs a way to see through them**, e.g. the **Observant** trait lets them learn more details about the other character (§8) | Owner | 2026-11-27 |
+| 32 | **Hiding is a contest:** Deceitful characters hide well, Honest ones badly; the rules compare the watcher's Observant trait with the hider's skill at hiding (§8.3) | Owner | 2026-11-27 |
+| 33 | **Each belief is stored with how it was learned** (seen, told, rumour). A belief from a rumour may be wrong (§8.3) | Owner | 2026-11-27 |
+| 34 | **Learning a hidden truth is a stimulus** and can start an event, even a major one such as betrayal (§8.3) | Owner | 2026-11-27 |
+| 35 | **The player sees other characters through the player character's perception**, not the truth. The character page shows what the player character believes, and how sure they are (§8.3) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -382,7 +386,7 @@ So what others believe about them (their perception, §7.3) can be **wrong**.
 To learn another character's **true** personality, a character needs a way to see through them.
 - The **Observant** trait (§1.6) helps: an Observant character **learns more details** about others.
 
-**More ways to learn the truth (proposal), many already in [AI_CHARACTERS.md §5.7](AI_CHARACTERS.md):**
+**More ways to learn the truth (proposal, not decided), many already in [AI_CHARACTERS.md §5.7](AI_CHARACTERS.md):**
 
 | Way | Example |
 |---|---|
@@ -393,21 +397,22 @@ To learn another character's **true** personality, a character needs a way to se
 | **Skills**, e.g. Intrigue (not decided, open question 5) | Noticing a lie in a conversation |
 | **Time and closeness** | Family and old friends know each other better than strangers do |
 
-**Proposals (not decided):**
-- **Hiding is a contest.** A Deceitful character is good at hiding; an Honest one is bad at it. When an
-  Observant character watches a Deceitful one, the rules compare them, and the truth may or may not come out.
-- **Each learned trait is stored with how it was learned** (seen, told, rumour), like intents
+### 8.3 Rules of perception (decisions 32–35)
+- **Hiding is a contest (decision 32).** A Deceitful character is good at hiding; an Honest one is bad at it.
+  When an Observant character watches a Deceitful one, the rules compare them, and the truth may or may not
+  come out.
+- **Each belief is stored with how it was learned (decision 33):** seen, told, or rumour, like intents
   ([AI_CHARACTERS.md §5.7](AI_CHARACTERS.md)). A belief from a rumour may be wrong.
-- **Learning a hidden truth can be a stimulus.** Finding out that a friend is not what he seemed can start an
-  event, even a major one (§1.3, row 5: betrayal).
-- **The player sees the other characters through the player character's perception**, not the truth: the
-  character page shows what the player character believes, and how sure they are.
+- **Learning a hidden truth is a stimulus (decision 34).** Finding out that a friend is not what he seemed
+  can start an event, even a major one (§1.3, row 5: betrayal).
+- **The player sees through the player character's eyes (decision 35).** The character page shows what the
+  player character **believes** about another character, not the truth, and how sure they are.
 
 ## 9. Open questions
 
 1. **The owner's ideas for events:** to be added.
-2. **Perception (§7.3 and §8):** which ways of seeing through (§8.2) and which proposals are wanted?
-   Is the example table in §7.3 the right idea?
+2. **Perception (§7.3 and §8):** which of the other ways of seeing through in §8.2 are wanted? Is the example
+   table in §7.3 the right idea? How is "how sure they are" shown to the player?
 3. **Changing the battle (§7.2):** which of the proposals are wanted? How can the player reach the general?
    What happens if the general is stopped, and what does surrender lead to?
 4. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
