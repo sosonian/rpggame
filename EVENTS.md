@@ -24,6 +24,7 @@ These decisions were made in other documents. They are collected here because th
 | 7 | Events get **their own document** (this one) | — | 2026-11-27 |
 | 8 | **Events happen by chance.** Each possible event has a chance (probability) of happening (§1.1) | Owner | 2026-11-27 |
 | 9 | **A major change in a character's life has a high chance of triggering an event for that character.** Example: their **lover** or a **close friend** is killed. The event can give a new intent (e.g. revenge) or **change how the character sees the world** (e.g. a naive character comes to believe the world is cruel) (§1.2) | Owner | 2026-11-27 |
+| 10 | **The player character gets major events in the same way** as other characters (§1.2) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -46,9 +47,11 @@ An **event** is something that happens to a character, or that a character notic
 When something **changes a character's life in a big way**, the system has a **high chance** of triggering
 (starting) an event for that character. The event shows how the character reacts.
 
-**Examples of a major change:**
+**Examples of a major change** (decided):
 - the character's **lover** is killed
 - a **close friend** of the character is killed
+
+More candidates are listed in §1.3.
 
 **What the event can do to the character:**
 
@@ -56,6 +59,10 @@ When something **changes a character's life in a big way**, the system has a **h
 |---|---|---|
 | **A new intent** (goal) | *"I want revenge."* | [AI_CHARACTERS.md §5.1](AI_CHARACTERS.md) |
 | **A change in how they see the world** | A naive character comes to believe *the world is cruel* | [AI_CHARACTERS.md §3](AI_CHARACTERS.md) (traits change through events) |
+
+**The player character too (decision 10):** the player character gets these events in the same way as other
+characters. The event can give the player character a new intent or change their view of the world.
+The player still decides what to do next.
 
 **Example:**
 > Aldric is young and naive: he trusts everyone. His lover, Wenna, is killed in a raid.
@@ -73,7 +80,43 @@ When something **changes a character's life in a big way**, the system has a **h
   decide *which* reaction they get. A Vengeful character is more likely to want revenge; a Craven one may
   become afraid instead.
 
-More examples, and how high the chance is, are still TBD (open question 3).
+How high the chance is will be decided later (open question 3).
+
+### 1.3 Candidate major changes (proposal)
+A list of **candidates** for the owner to choose from. Only the first two rows are decided (decision 9).
+"Vital person" means family, lover, lord, mentor or best friend.
+
+| # | Group | Candidate | Possible reactions (examples) |
+|---|---|---|---|
+| 1 | **Loss** | Lover is killed *(decided)* | Revenge; grief; the world is cruel |
+| 2 | Loss | Close friend is killed *(decided)* | Revenge; grief; trusts fewer people |
+| 3 | Loss | A family member is killed or dies (parent, child, brother or sister) | Revenge; grief; protect the rest of the family |
+| 4 | Loss | Your lord or mentor is killed | Revenge; take their place; lose loyalty to the realm |
+| 5 | **Betrayal** | Betrayed by a vital person (lied to, sold out, left to die) | Revenge; becomes suspicious (Paranoid); never trusts again |
+| 6 | Betrayal | Your lover is unfaithful | Anger; heartbreak; leaves them; revenge on the rival |
+| 7 | **Your own body** | Badly wounded or almost killed | Fear (Craven); or more courage (Brave); wants to quit the army |
+| 8 | Your own body | Crippled: loses an eye, a hand, a leg | Bitterness; gives up the sword; finds a new path |
+| 9 | Your own body | Captured, imprisoned or tortured | Hatred of the captors; fear; a hard heart |
+| 10 | **Violence you do** | Kills a person for the first time | Guilt and stress; or grows used to it (Cruel) |
+| 11 | Violence you do | Kills an innocent person, or a vital person, by mistake | Deep guilt; seeks forgiveness; faith |
+| 12 | **War** | Survives a lost battle, or a massacre | The world is cruel; fear; wants peace |
+| 13 | War | Your home town is captured, burned or looted | Revenge on the enemy; becomes a refugee; loses everything |
+| 14 | **Position** | Promoted, or given land or a title | Pride; ambition grows; new rivals |
+| 15 | Position | Demoted, dismissed, exiled or shamed in public | Anger at the lord; revenge on whoever caused it; despair |
+| 16 | Position | Falsely accused of a crime | Proving innocence; distrust of the law; revenge |
+| 17 | **Money and home** | Loses all money, or the home or business | Desperation; crime; starting again |
+| 18 | Money and home | Suddenly becomes rich | Greed; generosity; fear of thieves |
+| 19 | **Love and family** | Falls in love, or marries | Protect the lover; ambition for the family |
+| 20 | Love and family | A child is born | Protect the family; wants a safer life |
+| 21 | **Being saved** | Someone saves the character's life | Owes them a debt; loyalty; friendship |
+| 22 | **Secrets** | Learns a big secret, e.g. the father is not their real father, or the lord is a traitor | Confusion; a new goal; blackmail |
+| 23 | **Faith** | Sees a "miracle" or a dark omen | Becomes faithful; loses faith; fear |
+
+Notes:
+- Not all major changes are bad. Rows 14, 18, 19, 20 and 21 are good changes, and they can also change a
+  character's goals and view of the world.
+- Many of these come from **other characters' actions** (§2), e.g. a murder, a betrayal or a promotion.
+- The trait names here (Paranoid, Craven, Brave, Cruel) are examples; the trait list is not designed yet.
 
 ## 2. Where events come from
 
@@ -139,9 +182,8 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 
 1. **The owner's ideas for events:** to be added.
 2. **Chance (decision 8):** what raises or lowers an event's chance? For example: traits, the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
-3. **Major changes (decision 9):** what else counts as a major change? (For example: a family member is killed;
-   you are betrayed; you lose your home or job; you are promoted.) How high is "a high chance": almost always
-   (like 90%), or just higher than normal? Should the player character get these events the same way?
+3. **Major changes (decision 9):** which candidates in §1.3 should be used, and which are missing?
+   **Later:** how high is "a high chance": almost always (like 90%), or just higher than normal?
 4. **Sources:** is the list in §2 right? What should be added or removed?
 5. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
 6. **How often:** how many events with choices should the player see per hour, so they stay special but the
