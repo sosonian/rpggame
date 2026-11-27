@@ -52,6 +52,7 @@ These decisions were made in other documents. They are collected here because th
 | 35 | **The player sees other characters through the player character's perception**, not the truth. The character page shows what the player character believes, and how sure they are (§8.3) | Owner | 2026-11-27 |
 | 36 | **Every action takes a period of time, including conversations**, and an action can cause an event (§5.1) | Owner | 2026-11-27 |
 | 37 | **The time unit:** in normal life, **1 unit = 10 game minutes = 5 real seconds**, so 6 real hours ≈ 1 game month. Battles are different (§5.1) | Owner | 2026-11-27 |
+| 38 | **When the game checks for events:** every time unit (10 game minutes), plus **at once** when something big happens, plus **when an action ends** (§5.4) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -303,7 +304,7 @@ The question is when the game should **check** whether an event happens (roll th
 With a 10-game-minute unit, **option B is good for almost everything**. Its only real weakness is the few
 seconds of delay for big, sudden moments.
 
-### 5.4 Recommendation (proposal): B, plus checks at once and at the end of actions
+### 5.4 Chosen (decision 38): B, plus checks at once and at the end of actions
 
 | Check | When | What it catches | Example |
 |---|---|---|---|
@@ -495,8 +496,8 @@ To learn another character's **true** personality, a character needs a way to se
 9. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
 10. **The clock:** should events with choices always pause the game (§5.6)?
-13. **When to check for events (§5):** after every action (option A), every time unit (option B), or B plus
-    checks at once and at the end of actions (§5.4, recommended)?
+13. **Event checks (§5.4):** the "rules that make this work" are still proposals: small chances per unit,
+    spreading the checks, conversations, interrupting. Are they right?
 11. **Traits:** which events and options does each trait open (decision 6)?
 12. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.
