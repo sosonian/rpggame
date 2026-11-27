@@ -23,6 +23,7 @@ These decisions were made in other documents. They are collected here because th
 | 6 | Which ideas and options each **trait** opens will be decided together with the event system | [ACTIONS.md](ACTIONS.md) decision 8 | 2026-11-25 |
 | 7 | Events get **their own document** (this one) | — | 2026-11-27 |
 | 8 | **Events happen by chance.** Each possible event has a chance (probability) of happening (§1.1) | Owner | 2026-11-27 |
+| 9 | **Major events have a high chance of happening.** A major event is a big change in the character's life, such as their **lover** or a **close friend** being killed (§1.2) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -37,8 +38,19 @@ An **event** is something that happens to a character, or that a character notic
 
 ### 1.1 Events happen by chance (decision 8)
 - Events do not happen on a fixed schedule. **Each possible event has a chance of happening.**
-- **TBD:** what raises or lowers the chance (open question 2).
+- **TBD:** what else raises or lowers the chance (open question 2). Major events are the first known case
+  (§1.2).
 - This is like dialogue options, which are also chosen by chance ([ACTIONS.md §2.4](ACTIONS.md)).
+
+### 1.2 Major events (decision 9)
+- **Major events have a high chance of happening.**
+- A **major event** is a big change in the character's life. Examples:
+  - the character's **lover** is killed
+  - a **close friend** of the character is killed
+- More examples, and exactly how high the chance is, are still TBD (open question 3).
+- **Proposal:** these are the same people who count as **"vital to you"** in dialogue (family, lover, lord,
+  best friend; [ACTIONS.md §2.4](ACTIONS.md)). So the death of a family member or your lord could also be a
+  major event.
 
 ## 2. Where events come from
 
@@ -88,7 +100,7 @@ An event can have one or more of these results:
 
 The game runs in real time. [PLAN.md §7](PLAN.md) says that **dialogue and decision events pause the clock**,
 but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
-(open question 6).
+(open question 7).
 
 ## 6. Example: from event to idea
 
@@ -104,11 +116,14 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 
 1. **The owner's ideas for events:** to be added.
 2. **Chance (decision 8):** what raises or lowers an event's chance? For example: traits, the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
-3. **Sources:** is the list in §2 right? What should be added or removed?
-4. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
-5. **How often:** how many events with choices should the player see per hour, so they stay special but the
+3. **Major events (decision 9):** what else counts as a major event? (For example: a family member is killed;
+   you are betrayed; you lose your home or job; you are promoted.) How high is "a high chance": almost always
+   (like 90%), or just higher than normal?
+4. **Sources:** is the list in §2 right? What should be added or removed?
+5. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
+6. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
-6. **The clock:** should events with choices always pause the game (§5)?
-7. **Traits:** which events and options does each trait open (decision 6)?
-8. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
+7. **The clock:** should events with choices always pause the game (§5)?
+8. **Traits:** which events and options does each trait open (decision 6)?
+9. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.
