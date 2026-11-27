@@ -24,6 +24,7 @@
 | 12 | **Every action takes a period of time, including conversations.** An action can cause an event; when the game checks for events is in [EVENTS.md §5](EVENTS.md) | 2026-11-27 |
 | 13 | **New action `recall`** (回憶): can be done **at any time**. It opens a **memory screen**; the player chooses one memory and the character **talks to himself** about it. Memories come from what the character **saw, heard and did** (§3.1) | 2026-11-27 |
 | 14 | **For AI-played characters, `recall` is not a free action.** It appears only as an **option in an event** or an **action inside an idea**. AI-played characters still **store memories** and **forget** them, like the player (§3.1) | 2026-11-27 |
+| 15 | **What `recall` is for:** an **idea can jump out** of the inner talk, and the player can **check his memory inventory** (e.g. does he still remember the scene of the murder?). `recall` **costs stamina and time**. The memory system is in [MEMORIES.md](MEMORIES.md) | 2026-11-27 |
 
 ## 1. What an action is
 
@@ -170,14 +171,18 @@ Some names may merge or split as we design them.
 - **Where memories come from:** what the character **saw, heard and did** ([EVENTS.md §1.7](EVENTS.md)), stored
   with how sure they are. Memories **fade** over time; **Good Memory** and **Forgetful** change how fast
   ([TRAITS.md](TRAITS.md)).
+- **What it is for (decision 15):**
+  - **An idea can jump out** of the inner talk ([IDEAS.md](IDEAS.md)).
+  - **Checking the memory inventory:** e.g. does the player still remember the scene of the murder?
+  - **It costs stamina and time** (amounts TBD).
+  - The memory system itself is in **[MEMORIES.md](MEMORIES.md)**.
 - **Proposals (not decided):**
   - The memory screen shows for each memory: what happened, when, how it was learned (seen, heard, did, told),
     how sure the character is, and how faded it is.
   - **Recalling refreshes the memory**, so it fades more slowly afterwards.
-  - The inner thought is **written by the AI** in the character's voice. It may **spark an idea**
-    ([IDEAS.md](IDEAS.md)) or an insight, e.g. an Observant character notices something they missed before.
+  - The inner thought is **written by the AI** in the character's voice. Besides an idea, it may give an
+    insight, e.g. an Observant character notices something they missed before.
   - It may **change mood or stress**: a sad memory hurts; a proud one comforts.
-  - It takes a little time, e.g. one time unit (10 game minutes), like every action (decision 12).
 - **AI-played characters (decision 14):** they don't `recall` freely, but they **store memories** and
   **forget** them in the same way as the player, and Good Memory and Forgetful work for them too. Examples of
   `recall` for them: an event (seeing the place where a friend died) offers *remember him*; an idea for revenge

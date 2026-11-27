@@ -44,7 +44,7 @@ The same properties for every trait, so they can be compared and built the same 
 | **Hard of Hearing** | Fox Ear | Hears **less far** and less detail | Born with; old age; wounds | — |
 | **Observant** | Oblivious | More chance to **understand** what is seen and heard: the information about things and **the logic behind them**. Gets daily-life events more often, and helps see through people who hide their true personality. Does **not** make sight or hearing longer | TBD | TBD |
 | **Oblivious** | Observant | Rarely understands what is going on; gets fewer daily-life events | TBD | TBD |
-| **Good Memory** | Forgetful | Memories **fade more slowly** | TBD | TBD |
+| **Good Memory** | Forgetful | Memories **fade more slowly** ([MEMORIES.md §3](MEMORIES.md)) | TBD | TBD |
 | **Forgetful** | Good Memory | Memories **fade faster** | TBD (proposal: also old age) | TBD |
 
 The ranges these traits change are in [EVENTS.md §1.7](EVENTS.md) (full analysis in

@@ -23,7 +23,8 @@ demo**: a frontier town in one county, facing an enemy invasion.
 | [EVENTS.md](EVENTS.md) | Events: where they come from, what they do, how they start ideas (first draft) |
 | [WARFARE.md](WARFARE.md) | War and battle design (in progress) |
 | [ITEMS.md](ITEMS.md) | Items, materials, production and the economy (in progress) |
-| [TRAITS.md](TRAITS.md) | The table of traits: defined ones and candidates, defined one by one |
+| [TRAITS.md](TRAITS.md) | The table of traits: defined ones and candidates, developed one by one |
+| [MEMORIES.md](MEMORIES.md) | The memory (information storage) system: what is stored, forgetting, the memory inventory |
 | [analysis/](analysis/README.md) | **Analysis reports**, one per piece of analysis work, with an index and a template |
 
 Each design document starts with a **"Decisions so far"** table and ends with **open questions**.
