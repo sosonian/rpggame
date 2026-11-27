@@ -47,9 +47,8 @@ From the other documents, the Chapter 1 map must support:
 
 So the town itself holds about **200 people**, and the map must also have room for the enemy army outside.
 
-**To check (open question 2):** [WARFARE.md](WARFARE.md) decision 3 says the final battle has about **200–300
-men in total, on both sides**. With 100 soldiers in town and 200–300 enemies, a full battle would be about
-**300–400 men**, or more if townsfolk join as militia.
+**The final battle** is therefore about **300–400 men** in total, or more if townsfolk join as militia
+([WARFARE.md](WARFARE.md) decision 3, changed on 2026-11-27 to match).
 
 **Proposals (not decided):**
 - **About 20–25 households** for 100 inhabitants (4–5 people each), plus workshops, the market and the
@@ -74,8 +73,7 @@ None of these are decided as parts of the map yet. They are collected so we can 
 
 1. **The owner's ideas for the town map:** to be added.
 2. **Size and scale (decision 7):** the people are set. Still open: how many metres across is the town, and how
-   long does it take to walk from one side to the other? Should [WARFARE.md](WARFARE.md) decision 3 change from
-   "200–300 men in total" to "200–300 enemies" (about 300–400 in total)?
+   long does it take to walk from one side to the other?
 3. **One map or two?** Is there one map for the town and its surroundings, or a town map plus a small county
    map (with villages and the keep, [PLAN.md §8](PLAN.md) D1 and open question 5)?
 4. **Layout:** walls or no walls? Where are the gate(s), the keep, the market, the river? Which way is the border?

@@ -43,7 +43,7 @@
 | **The threat** | The enemy general has the emperor's order to take the town within 1 month |
 | **The player starts as** | A chosen starting position: e.g. a soldier, a low officer, the mayor's secretary, the lord's bodyguard. More important positions come with rivals from the start. Full list TBD |
 | **Cast** | About 8–12 story characters, the people the player meets, a few dozen background characters |
-| **The final battle** | About 200–300 men ([WARFARE.md](WARFARE.md)); it happens only if the general decides to attack |
+| **The final battle** | About 300–400 men: ~100 town soldiers against ~200–300 enemies ([WARFARE.md](WARFARE.md), [MAP.md §1.1](MAP.md)); it happens only if the general decides to attack |
 
 **Draft list of story roles** (from [AI_CHARACTERS.md §8.1](AI_CHARACTERS.md), not decided): the county lord, the
 lord's heir or daughter, the player's captain, a mentor (old veteran), a rival soldier, a friend, the priest or

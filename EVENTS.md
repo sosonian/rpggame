@@ -382,7 +382,7 @@ Big story events follow the same principle as every other event: **a stimulus re
 character acts.** There is no script that forces them to happen.
 
 ### 7.1 Example: the final battle of Chapter 1
-The final battle is the big event of Chapter 1's story ([WARFARE.md](WARFARE.md) plans about 200–300 men).
+The final battle is the big event of Chapter 1's story ([WARFARE.md](WARFARE.md) plans about 300–400 men).
 It happens like this:
 
 | Step | What happens | Kind |

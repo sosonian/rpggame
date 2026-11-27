@@ -11,7 +11,7 @@
 |---|----------|------|
 | 1 | Battles run in **real time** | 2026-11-22 |
 | 2 | **2D map** for the prototype (pure top-down); the final game is **2.5D** | 2026-11-22 |
-| 3 | Chapter 1 ends with a **small battle of about 200–300 men** | 2026-11-22 |
+| 3 | Chapter 1 ends with a **small battle of about 300–400 men** in total: about 100 town soldiers against an enemy force of about 200–300 (changed from "200–300 in total" on 2026-11-27, [MAP.md](MAP.md) decision 7) | 2026-11-22, changed 2026-11-27 |
 | 4 | The player is **one person** in battle: a team leader, a warrior, civilian staff, or a civilian | 2026-11-22 |
 | 5 | **Melee and ranged** attacks; characters can equip **weapons, armour, machines and other items** | 2026-11-22 |
 | 6 | Later, as a lord, the player is still **an individual on the same map**, with staff and guards around them, and commands other units **through messengers** | 2026-11-22 |
@@ -43,7 +43,8 @@
 ## 4. Chapter 1 battle (current focus)
 
 ### 4.1 Scale and setting
-- **The final battle of Chapter 1:** about **200–300 men in total** on both sides.
+- **The final battle of Chapter 1:** about **300–400 men in total**: about **100 town soldiers** against about
+  **200–300 enemies**, more if townsfolk join as militia ([MAP.md §1.1](MAP.md)).
 - **Location TBD:** e.g. a ford, a village, a bridge, or the walls of the keep.
 - **Smaller fights before it** use the same system: skirmishes, raids, ambushes, bandit fights.
 - **Forces TBD:** who is on each side (lord's men, militia, mercenaries, the invaders) and what kinds of troops.
@@ -128,7 +129,7 @@ The role is set by the player's story and choices earlier in the chapter.
 
 ## 6. Technical notes (proposal)
 
-- **Performance:** 200–300 individual soldiers is easily manageable in Godot 4. Each soldier updates a few
+- **Performance:** 300–400 individual soldiers is easily manageable in Godot 4. Each soldier updates a few
   times per second, not every frame. Squads plan, soldiers follow.
 - **Battle logic in plain data:** positions, health, morale and orders live in data objects. The 2D or 2.5D
   view only reads and draws them.
