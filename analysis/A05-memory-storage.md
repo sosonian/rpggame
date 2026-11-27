@@ -17,6 +17,7 @@ If faded memories are **marked** instead of deleted, the storage keeps growing. 
   **at night** (decision 12).
 - Individual characters stay **in the hundreds**; far places are group characters (AI_CHARACTERS.md decision 14).
 - Chapter 1 lasts about **1 game month ≈ 6 real hours**.
+- **Only a few AI-played characters pass on to the next chapter** (AI_CHARACTERS.md decision 15, 2026-11-27).
 
 ## 3. How big could it get? (rough estimate)
 
@@ -40,6 +41,11 @@ small: "a cart passed at noon"); Chapter 1 lasts 30 game days.
 
 **For the whole game** (many chapters), if nothing is ever removed, the storage keeps growing: several chapters
 in option A could reach many gigabytes. That is too much for save files and for the computer's working memory.
+
+**Update: only a few characters pass on to the next chapter** (AI_CHARACTERS.md decision 15). So most memories
+**do not** carry over: each chapter starts with a mostly new cast and a mostly empty storage. Only the player and
+the few characters who pass on bring their memories along. **The storage therefore does not grow from chapter
+to chapter;** the size of one chapter is what matters.
 
 **Conclusion: "mark, don't delete" is possible, but only if memories are stored compactly.** Stored naively, it
 would cause problems.
@@ -110,7 +116,7 @@ hours to weeks, so they don't pile up: each character only holds the recent ones
 |---|---|---|
 | Memories held per character at one time | Grows all chapter: up to 3,000 | Roughly **a few hundred** recent ones, plus the important ones |
 | Chapter 1, everyone | about 40 MB | about **5–15 MB** |
-| Over many chapters | Keeps growing slowly | **Grows only with important memories**, so stays small |
+| Over many chapters | Mostly reset each chapter (only a few characters pass on) | Mostly reset each chapter; the few who pass on keep only their important memories |
 
 **What it costs: speed.** Deleting is very cheap. The game can even know **in advance** on which night a
 memory will be fully faded (from its importance and the character's traits), and put it in that night's list.

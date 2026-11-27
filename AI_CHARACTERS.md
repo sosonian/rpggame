@@ -28,6 +28,7 @@
 | 12 | **Intents are hidden until learned** by talking, observing, rumours, spying or skills (§5.7). *(2026-11-24)* |
 | 13 | **Danger depends on the starting position.** The player can start in a more important position, such as the mayor's secretary or the lord's bodyguard, which naturally comes with rivals from the start. **A secret murder is very hard:** it needs skill, experience and courage, and a sensible character weighs the penalty of failure first (§5.6). *(2026-11-24)* |
 | 14 | **Individual characters stay in the hundreds,** even when later chapters make the world larger. **Far places are group characters:** e.g. the people of a town in a nearby foreign country are treated as **one character** (§2.3). *(2026-11-27)* |
+| 15 | **Only a few AI-played characters pass on to the next chapter** (§2.2). *(2026-11-27)* |
 
 **In short: rules everywhere, AI for the player's "circle", and that circle lives its own lives.**
 This is the hybrid approach from the earlier analysis (kept in §10). Its cost is still practical (see §8–§9).
@@ -61,6 +62,8 @@ Merely seeing a name in a list or on the map does **not** count.
   (e.g. 2–3 game years, or after the chapter ends), they go back to rules only. They keep their memories and
   intents, so if the player meets them again, they are promoted again and remember the past.
 - Story characters are never demoted while their story is active.
+- **Between chapters (decision 15):** only **a few** AI-played characters pass on to the next chapter.
+  What happens to the others is TBD (open question 12).
 
 ### 2.3 Group characters (decision 14)
 In later chapters the world grows larger, but the number of **individual** characters stays in the hundreds.
@@ -509,3 +512,6 @@ The AI cast stays at about 25–35 characters, so costs stay about **$0.50 per r
 11. **Group characters (§2.3):** are the proposals right: what a group has and does, important people staying
     individual, and a group splitting into individuals when the player arrives? Can an important group (e.g. a
     foreign town's council) be AI-played? Does Chapter 1 have any group characters, e.g. nearby villages?
+12. **Between chapters (decision 15):** who passes on to the next chapter, and how are they chosen? What
+    happens to the others: do they leave the story, become background characters, or become part of a group
+    character? Do the ones who pass on keep all their memories?
