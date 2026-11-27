@@ -49,7 +49,7 @@
 | **How it is taken** | By clicking a place or person, or as an event option (§2.1) | Click a person, or an event option ("the merchant is distracted…") |
 | **Access** | Who has it naturally (from position), and who can get it through an event (§2.2) | Nobody naturally; offered by events to Greedy, poor or desperate characters |
 | **Requirements** | Place, items, skills, traits, rank or authority, relationship | Be near the target; nobody watching closely |
-| **Duration** | How long it takes. Every action takes time, conversations too (decision 12). Exact lengths depend on the time unit, still TBD | A moment |
+| **Duration** | How long it takes. Every action takes time, conversations too (decision 12). Measured in game time, in steps of the 10-game-minute unit; short actions finish within one unit (proposal) | Within one unit |
 | **Cost** | Money, items, energy | — |
 | **Success check** | Automatic, or a check of skill against difficulty or an opponent | Intrigue vs the target's awareness |
 | **Visibility** | Public, private or secret; who might witness it | Secret; witnesses may notice |

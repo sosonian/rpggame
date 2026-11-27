@@ -199,7 +199,7 @@ Prices change through **supply and demand**, and the story moves both.
 
 - **Event items** change value through the story, e.g. a secret letter becomes priceless once the plot it
   reveals matters, and worthless after.
-- **Proposal:** prices update once per basic time unit (10 real minutes), with big story events causing
+- **Proposal:** prices update once per game day (about 12 real minutes), with big story events causing
   instant jumps.
 
 ## 7. Needs, inventory and trade
@@ -207,7 +207,7 @@ Prices change through **supply and demand**, and the story moves both.
 ### 7.1 Needs
 - **Food and drink:** every character must eat and drink. Hunger and thirst lower health, skill and mood,
   and in the end can kill. This matters for the player, since death means game over.
-- **How often:** depends on what the 10-minute time unit means in game time, which is still open
+- **How often (proposal):** two or three meals per game day; 1 game day is about 12 real minutes
   ([PLAN.md §10](PLAN.md)).
 - **Warmth and shelter (proposal):** clothing, firewood and a roof, especially in winter.
 - **Tools:** a farmer without a hoe or a woodcutter without an axe cannot work, so they earn nothing and

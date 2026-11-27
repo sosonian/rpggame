@@ -16,7 +16,7 @@
 | 1 | **Every character runs on rules.** A chosen set of important characters is *also* played by AI. |
 | 2 | The game has a **written plot with designed (story) characters**. The number of important characters is therefore limited. |
 | 3 | Other characters are **generated randomly, following the rules**. Once the player **encounters** one, that character is played by AI too. |
-| 4 | The game runs in **real time**. The basic time unit is **10 real-world minutes** (what game time it equals is TBD; see §7). |
+| 4 | The game runs in **real time**. The basic time unit is **10 game minutes = 5 real seconds** in normal life; battles use finer steps (§7). *(unit fixed 2026-11-27)* |
 | 5 | The first build is a **Chapter 1 demo**: one local county facing an enemy invasion. The number of AI-played characters is limited (see §8). |
 | 6 | **Dialogue is choice-based.** The player chooses from a few options, based on the characters' traits and backgrounds. There is no free typing. |
 | 7 | AI-played characters have **their own intents**, such as becoming famous, taking revenge on someone, or simply succeeding in life. These come from their **traits and background** (§5). *(2026-11-24)* |
@@ -257,7 +257,7 @@ An AI-played character's AI is called when:
   it hears important news; its target appears
 - it **meets the player** or another AI-played character with something to discuss
 - an **important decision** is pending (betray? desert? accept the offer?)
-- the **regular review** comes round: once per time unit (10 real minutes) at most, if nothing else triggered it
+- the **regular review** comes round, if nothing else triggered it: proposal about every 2 real minutes (about 4 game hours)
 
 **Full AI everywhere (decision 11):** every AI-played character thinks on every trigger, at most about once per
 real minute, **wherever it is**. Distance from the player does not matter.
@@ -361,29 +361,32 @@ Even with tiers, the active AI cast needs a cap to control cost and keep charact
 
 ---
 
-## 7. The 10-minute time unit (decision 4)
+## 7. The time unit (decision 4, decided 2026-11-27)
 
-The game runs in real time, with a basic unit of 10 real minutes. **What that unit equals in game time is
-still open.** It strongly affects how long one life lasts:
+**In normal life, 1 time unit = 10 minutes of game time = 5 seconds of real time.** The game clock moves in
+10-minute steps (07:00 → 07:10 → 07:20 …). Battles use finer steps ([WARFARE.md §5](WARFARE.md)).
 
-| 10 real minutes = | Game time per real hour | A 40-year career takes about | Notes |
-|---|---|---|---|
-| 1 game day | 6 days | ~2,400 hours | Far too long for a full life; fits a short chapter |
-| 1 game week | 6 weeks | ~320 hours | Very long |
-| 1 game month | 6 months | ~80 hours | Close to a typical long strategy game |
-| 1 game season | 1.5 years | ~27 hours | Fast; a lifetime fits a few long sessions |
+| Game time | Real time |
+|---|---|
+| 10 minutes (1 unit) | 5 seconds |
+| 1 hour (6 units) | 30 seconds |
+| 1 day (144 units) | 12 minutes |
+| 1 week | about 1.4 hours |
+| **1 month (Chapter 1)** | **about 6 hours** |
+| 1 year | about 72 hours |
 
 **Chapter 1 length (owner's decision, 2026-11-27):** Chapter 1 lasts about **1 month of game time**
-([EVENTS.md §7.1](EVENTS.md)). For example, at 10 real minutes = 1 game day, that is about 5 real hours.
+([EVENTS.md §7.1](EVENTS.md)), so about **6 real hours** of play.
 
-**Options to consider (TBD):**
-- **Variable pace:** time slows during tense chapters (an invasion, a battle) and speeds up between them.
-  For example, 10 minutes = 1 day during the invasion, and 1 month in peacetime.
+**A full life cannot be played at this pace.** A 40-year career would take about 2,900 real hours. So the full
+game needs time to move faster **between** chapters, or between busy periods (proposal):
+- **Time skips between chapters:** e.g. Chapter 2 starts a few years later, with a summary of what happened.
+- **Variable pace:** the normal pace during chapters, a much faster pace in quiet times.
 - **Pause on events:** dialogue and decision events always pause the clock, so the player never misses them.
-- **Speed control:** whether the player can fast-forward (e.g. 2× or 4×) or only pause.
+- **Speed control:** whether the player can fast-forward (e.g. 2× or 4×), e.g. while sleeping or travelling.
 
-For the AI, the time unit sets the pace of the **regular review** (§5.4). It also sets how much an AI character
-can do between two of the player's actions.
+For the AI, the time unit sets how often slow changes are checked ([EVENTS.md §5](EVENTS.md)). The regular
+review of plans (§5.4) does **not** run every unit, which would be far too often; see §5.4.
 
 ---
 
@@ -500,7 +503,7 @@ enough. That option stays rejected.
 
 ## 12. Open questions
 
-1. What does **10 real minutes** equal in game time? Should the pace vary between tense chapters and peacetime?
+1. How does time move faster between chapters or in quiet times (§7): time skips, a faster pace, fast-forward?
 2. Can the player **speed up** time, or only pause?
 3. Is AI a **core feature** of the demo, or an on/off option with hand-written fallback lines?
 4. Who pays for AI calls in the demo: our server, or the player's own key?

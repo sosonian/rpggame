@@ -51,6 +51,7 @@ These decisions were made in other documents. They are collected here because th
 | 34 | **Learning a hidden truth is a stimulus** and can start an event, even a major one such as betrayal (§8.3) | Owner | 2026-11-27 |
 | 35 | **The player sees other characters through the player character's perception**, not the truth. The character page shows what the player character believes, and how sure they are (§8.3) | Owner | 2026-11-27 |
 | 36 | **Every action takes a period of time, including conversations**, and an action can cause an event (§5.1) | Owner | 2026-11-27 |
+| 37 | **The time unit:** in normal life, **1 unit = 10 game minutes = 5 real seconds**, so 6 real hours ≈ 1 game month. Battles are different (§5.1) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -274,9 +275,9 @@ An event can have one or more of these results:
 - The game runs in **real time** (decision 36):
   - **Every action takes a period of time**, and so does a **conversation**.
   - **An action can cause an event** (decision 21).
-- The basic time unit is **10 real minutes**; what that equals in game time is still open
-  ([AI_CHARACTERS.md §7](AI_CHARACTERS.md)). If 10 real minutes = 1 game day, Chapter 1 (about 1 game month)
-  lasts about 5 real hours.
+- **The time unit (decided 2026-11-27):** in normal life, **1 unit = 10 game minutes = 5 real seconds**.
+  1 game day ≈ 12 real minutes; Chapter 1 (about 1 game month) ≈ 6 real hours
+  ([AI_CHARACTERS.md §7](AI_CHARACTERS.md)). Battles use finer steps.
 - An event **starts at once** when the character sees or does the change (decision 12).
 
 The question is when the game should **check** whether an event happens (roll the chance):
@@ -286,59 +287,56 @@ The question is when the game should **check** whether an event happens (roll th
 
 | Good | Bad |
 |---|---|
-| **Fits the main principle.** Events come from stimuli (decision 15), and most stimuli come from actions | **Long actions leave gaps.** A character who works at the market for 8 hours is checked only at the end. If he sees a murder at 9 o'clock, he reacts at 5 o'clock. This breaks "at once" (decision 12) |
-| **Clear cause.** The game knows which action caused the event ("Hobb watched the tax officer → idea") | **Unfair chances.** A character doing many short actions gets many more checks, so many more events, than one doing a few long actions. The chance would need to depend on how long the action took |
+| **Fits the main principle.** Events come from stimuli (decision 15), and most stimuli come from actions | **Long actions leave gaps.** A character who works at the market for 8 hours is checked only at the end. If he sees a murder at 9 o'clock, he reacts at 3 o'clock. This breaks "at once" (decision 12) |
+| **Clear cause.** The game knows which action caused the event ("Hobb watched the tax officer → idea") | **Unfair chances.** A character doing many short actions gets many more checks, so many more events, than one doing a few long actions |
 | **Reactions are quick** after short actions | **Misses stimuli that are not actions:** hunger growing, a deadline coming closer, news spreading through town, the weather |
-| **Spread out.** Characters finish actions at different moments, so checks (and AI calls) are spread over time | **Many checks.** Every tiny action (each step of walking) would be checked, unless small actions are left out |
 
-### 5.3 Option B: check every time unit (every 10 real minutes)
+### 5.3 Option B: check every time unit (every 10 game minutes = 5 real seconds)
 
 | Good | Bad |
 |---|---|
-| **Simple and steady.** Everyone is checked at the same rhythm | **Too slow for a real-time game.** At 1 tick = 1 game day, a character who sees his lover killed in the morning reacts only the next day. This breaks "at once" (decision 12) |
-| **Fair.** Every character gets the same number of checks, whatever they do | **The cause is lost.** At the tick, the game must look back over a whole day of actions to guess what caused what |
-| **Catches stimuli that are not actions:** hunger, deadlines, rumours spreading, weather, prices | **Bursts.** Every character is checked at the same moment, so many AI calls are sent at once, then nothing for 10 minutes. Characters near the player may freeze while they wait |
-| **Cheap** for background characters | **Order is lost.** Two events in the same tick come out together, not in the order they happened |
+| **Simple, steady and fair.** Everyone is checked at the same rhythm, whatever they do | **A short delay.** Up to 10 game minutes (5 real seconds). For small things this doesn't matter. For a major change seen with one's own eyes it can look odd: a man watches his lover killed and stands still for a few seconds |
+| **Fine enough.** A unit is only 10 game minutes, so it holds at most one or two actions, and the cause is usually clear | **Order inside one unit is lost.** Two things in the same 10 minutes come out together |
+| **Catches stimuli that are not actions:** hunger, deadlines, rumours spreading, weather, prices | **Many checks:** about 100 characters every 5 real seconds. This is fine for the rules (cheap), but the checks should be spread out (below) |
+| **No gaps in long actions.** An 8-hour job gets 48 checks | |
 
-### 5.4 Recommendation (proposal): a mix, checked by stimulus
-Neither option alone is enough. A fits events caused by actions; B fits slow changes over time. The proposal
-follows decision 15 directly: **check when a stimulus happens**, and use the time unit only for slow changes.
+With a 10-game-minute unit, **option B is good for almost everything**. Its only real weakness is the few
+seconds of delay for big, sudden moments.
+
+### 5.4 Recommendation (proposal): B, plus checks at once and at the end of actions
 
 | Check | When | What it catches | Example |
 |---|---|---|---|
-| **1. At once** | The moment something happens to a character, or in front of them | Major changes, witnessing, being hit, being told news, finding something | Aldric sees Wenna killed → the event starts that second |
-| **2. When an action ends** | Each time an action finishes, or fails | What the character did, and its result | Aldric kills a man for the first time; Hobb's fraud succeeds or fails |
-| **3. During long actions** | At steady moments inside a long action, e.g. once per game hour | Daily-life stimuli, small things noticed while busy | Hobb, working at the market, notices how the tax officer works |
-| **4. Every time unit** | Every 10 real minutes | Slow changes with no action behind them | Hunger grows; the general's deadline comes closer; a rumour spreads; prices change; weather |
+| **1. At once** | The moment something big happens to a character, or in front of them | Major changes (§1.3), being attacked, seeing a crime, hearing shocking news | Aldric sees Wenna killed → the event starts that second |
+| **2. When an action ends** | Each time an action finishes or fails | The result of what the character did | Aldric kills a man for the first time; Hobb's fraud succeeds or fails |
+| **3. Every time unit** (10 game minutes) | Every 5 real seconds | Daily-life stimuli noticed during any action (§1.6), and slow changes with no action behind them | Hobb notices the tax officer; hunger grows; the general's deadline comes closer; a rumour spreads |
 
 **Rules that make this work (proposal):**
-- **Chance by time, not by count.** For checks 2 and 3, the chance of a daily-life event depends on how much
-  time passed, not how many actions. So a character doing ten short actions gets about the same chance as one
-  doing one long action of the same length. This keeps it fair.
-- **Small actions don't count on their own.** A walk is one action (`go_to`), not each step.
+- **Small chances per unit.** The chance of a daily-life event in one unit is small, so over a day a character
+  gets only a few events. Because the check is per unit of time, it is fair: ten short actions and one long
+  action of the same length get the same number of checks.
+- **Spread the checks.** Not every character is checked in the same instant: their checks are spread across
+  the 5 seconds, so the game runs smoothly and AI calls don't come in bursts.
 - **Conversations:** big news or a lie told in a conversation is a check 1, at once. The general effect of the
   talk (opinion, memories) is a check 2, when the conversation ends.
-- **Stimuli for others.** When an action ends, the rules also find who **saw** it or was **affected** by it
-  (way C, §1.4). Each of them gets their own check 1, if they are aware of it (decision 12).
+- **Stimuli for others.** When something happens, the rules also find who **saw** it or was **affected**
+  (way C, §1.4). Each of them gets their own check, if they are aware of it (decision 12).
 - **Interrupting.** A major event at once (check 1) can **interrupt** the action the character is doing.
-  Aldric drops his tools when he hears the news. A small event does not interrupt; it waits until the action
-  ends.
-- **The rules check, the AI reacts.** All four checks are done by rules, which is cheap. The AI is called only
-  when an event happens to an AI-played character and matters to them (§4). This keeps AI calls spread
-  over time and the cost as estimated in [AI_CHARACTERS.md §8](AI_CHARACTERS.md).
+  Aldric drops his tools when he hears the news. A small event does not interrupt.
+- **The rules check, the AI reacts.** All checks are done by rules, which is cheap. The AI is called only when
+  an event happens to an AI-played character and matters to them (§4).
 
 ### 5.5 Example: one morning for Hobb
 
-| Game time | What happens | Check |
-|---|---|---|
-| 07:00 | Hobb starts `work` at the market (8 hours) | — |
-| 08:00, 09:00, … | Every game hour while working, a small check for daily-life stimuli. Being Greedy, he notices chances for money | 3 |
-| 10:00 | He notices the tax officer collecting tax. The event happens: knowledge *"tax collection seems easy"*, and `collect_tax` is unlocked | 3 |
-| 10:00 | The event matters to his ambition *become rich*, so the AI is asked and writes the false tax officer idea. He keeps working while the AI thinks | (AI) |
-| 12:00 | A brawl breaks out in front of him: a stimulus at once. He can watch, join or leave | 1 |
-| 15:00 | Work ends. He is paid; the end of the action is checked | 2 |
-| End of the day | The time unit passes: hunger grows, and news of the brawl spreads through town | 4 |
-
+| Game time | Real time from 07:00 | What happens | Check |
+|---|---|---|---|
+| 07:00 | 0 s | Hobb starts `work` at the market (8 hours = 48 units ≈ 4 real minutes) | — |
+| 07:10, 07:20, … | every 5 s | A small check each unit for daily-life stimuli. Being Greedy, he notices chances for money | 3 |
+| 10:00 | 1.5 min | He notices the tax officer collecting tax. The event happens: knowledge *"tax collection seems easy"*, and `collect_tax` is unlocked | 3 |
+| 10:00 | 1.5 min | The event matters to his ambition *become rich*, so the AI is asked and writes the false tax officer idea. He keeps working while the AI thinks | (AI) |
+| 12:00 | 2.5 min | A brawl breaks out in front of him: a stimulus at once. He can watch, join or leave | 1 |
+| 15:00 | 4 min | Work ends. He is paid; the end of the action is checked | 2 |
+| All day | — | Each unit: his hunger grows a little, and news of the brawl spreads through town | 3 |
 ### 5.6 Does an event pause the clock?
 [PLAN.md §7](PLAN.md) says **dialogue and decision events pause the clock**, but
 [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
@@ -497,8 +495,8 @@ To learn another character's **true** personality, a character needs a way to se
 9. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
 10. **The clock:** should events with choices always pause the game (§5.6)?
-13. **When to check for events (§5):** after every action (option A), every time unit (option B), or the mix
-    in §5.4 (recommended)? If the mix: is "once per game hour" right for checks during long actions?
+13. **When to check for events (§5):** after every action (option A), every time unit (option B), or B plus
+    checks at once and at the end of actions (§5.4, recommended)?
 11. **Traits:** which events and options does each trait open (decision 6)?
 12. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.

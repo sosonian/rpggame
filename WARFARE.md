@@ -118,7 +118,7 @@ The role is set by the player's story and choices earlier in the chapter.
 
 ## 5. Battle time
 
-- The world clock uses a **10-minute basic unit** ([PLAN.md §7](PLAN.md)). A battle needs a much finer pace,
+- In normal life the world clock moves in **10-game-minute steps, each 5 real seconds** ([PLAN.md §7](PLAN.md)). A battle needs a much finer pace,
   so it runs on its own **tactical time**, e.g. close to real time for the fighting itself.
 - **TBD:**
   - how long a battle lasts in real minutes (proposal for Chapter 1: about 10–20 minutes)

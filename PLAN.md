@@ -256,10 +256,10 @@ Items have their own design document: [ITEMS.md](ITEMS.md) (**design in progress
 
 - **Engine:** Godot 4.3+ (GDScript), PC first.
 - Everything is built in code (one scene, interface from scripts) so it is easy to change through text.
-- **Time:** the game runs in **real time**. The basic time unit is **10 real-world minutes**.
-  - **TBD:** what game time that equals (a day, week, month or season), whether the pace varies between tense
-    chapters and peacetime, and whether the player can speed time up.
-    See [AI_CHARACTERS.md §7](AI_CHARACTERS.md) for how each choice affects the length of a lifetime.
+- **Time:** the game runs in **real time**. In normal life, the basic time unit is **10 game minutes = 5 real
+  seconds**. So 1 game day ≈ 12 real minutes, and 1 game month (Chapter 1) ≈ 6 real hours.
+  - **TBD:** how time moves faster between chapters or in quiet times (time skips, a faster pace, fast-forward),
+    since a whole life can't be played at this pace. See [AI_CHARACTERS.md §7](AI_CHARACTERS.md).
   - Dialogue and decision events pause the clock.
   - Battles run on their own finer **tactical time** ([WARFARE.md §5](WARFARE.md)).
 - **View:** the prototype is pure top-down 2D. The final game is 2.5D (style TBD). Game logic is kept
@@ -291,7 +291,7 @@ The order and scope are **TBD**.
 |---|-----------|-------|
 | D1 | County map | A small local map: villages, a keep, roads, the border the enemy comes from |
 | D2 | Characters & rules | Traits, skills, backgrounds, opinion, relationships, memories, traits changing through events. Random character generation |
-| D3 | Player & time | The player character, the real-time clock (10-minute unit), basic jobs and orders, death means game over |
+| D3 | Player & time | The player character, the real-time clock (10 game minutes = 5 real seconds), basic jobs and orders, death means game over |
 | D4 | Items & town economy | Item types with value, quality and durability; needs (food, tools); inventory and equipment; repair; production chains and the frontier-town market ([ITEMS.md](ITEMS.md)) |
 | D5 | Dialogue | Choice-based dialogue with options from traits and backgrounds, and hand-written fallback lines |
 | D6 | Battle prototype | Pure 2D, real-time battle with 200–300 individual soldiers: squads, melee and ranged, wounds, morale, basic equipment, the player as one person in one of the roles ([WARFARE.md §4](WARFARE.md)) |
@@ -327,7 +327,7 @@ The order and scope are **TBD**.
 
 ## 10. Open questions
 
-1. What does the **10-minute time unit** equal in game time? Should the pace vary by chapter?
+1. How does time move faster between chapters or in quiet times, so a whole life fits (time skips, faster pace, fast-forward)?
 2. How long should a typical journey take from soldier to small lord, in play time and in game years?
 3. **Battle:** see the open questions in [WARFARE.md §8](WARFARE.md).
 4. **Items & economy:** see the open questions in [ITEMS.md §10](ITEMS.md).
