@@ -38,3 +38,13 @@ Each design document starts with a **"Decisions so far"** table and ends with **
 - **Write plainly.** Use short sentences and simple words; the owner reads English as a second language.
   Explain game-design jargon the first time it appears.
 - **Never put API keys or secrets in any file.**
+
+## Words used in the documents
+The owner sometimes thinks of a term in Chinese. Use these English words:
+
+| Chinese | English word in the documents | Meaning |
+|---|---|---|
+| 几率 | **chance** (probability) | How likely something is to happen |
+| 刺激 | **stimulus** (plural: stimuli) | Something from outside that a character reacts to |
+| 认知 | **perception** (not "recognition") | What one character believes about another, e.g. their traits |
+
