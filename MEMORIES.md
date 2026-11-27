@@ -19,6 +19,10 @@
 | 6 | **The player can check his memory inventory**, e.g. *does he still remember the scene of the murder?* | Owner | 2026-11-27 |
 | 7 | The `recall` action: talking to yourself about a memory can **make an idea jump out**. It **costs stamina and time** | Owner, [ACTIONS.md](ACTIONS.md) decision 15 | 2026-11-27 |
 | 8 | **AI-played characters also store and forget memories**; for them `recall` is only an event option or an action inside an idea | [ACTIONS.md](ACTIONS.md) decision 14 | 2026-11-27 |
+| 9 | **One storage holds everything a character knows:** memories of events, knowledge, beliefs about others, rumours (§1) | Owner | 2026-11-27 |
+| 10 | **Details fade first**; the main fact lasts longest (§3) | Owner | 2026-11-27 |
+| 11 | **Recalling a memory refreshes it** (§3, §5) | Owner | 2026-11-27 |
+| 12 | **The fading check happens at night** (§3) | Owner | 2026-11-27 |
 
 ## 1. What a memory is
 
@@ -35,7 +39,7 @@ A **memory** is one piece of information a character holds. Proposal for what ea
 | **Strength** | How clearly it is still remembered; falls as it fades (§3) |
 | **Details** | Smaller facts: "he wore a red scarf", "he ran towards the river" |
 
-**Proposal: one storage for all information.** Besides memories of events, the same storage holds
+**One storage for all information (decision 9).** Besides memories of events, the same storage holds
 **knowledge** ("the smith sells swords for 3 silver"), **beliefs about other characters** (their perception,
 [EVENTS.md §8](EVENTS.md)) and **rumours**. Everything a character "knows" lives here, and all of it can fade.
 
@@ -65,13 +69,16 @@ A **memory** is one piece of information a character holds. Proposal for what ea
 - **Seen or done oneself** is usually more important than **heard from others**.
 
 **How fading works (proposal):**
-- **Details fade first.** The main fact stays longest. After a while the character still remembers *"I saw a
+- **Details fade first (decision 10).** The main fact stays longest. After a while the character still remembers *"I saw a
   murder behind the tavern"*, but no longer *"the killer wore a red scarf"*. That can matter later, e.g. as a
   witness.
 - **Traits** (decision 5): **Good Memory** fades more slowly; **Forgetful** fades faster.
-- **Recalling** a memory may refresh it, so it fades more slowly afterwards (see §5).
+- **Recalling** a memory refreshes it (decision 11), so it fades more slowly afterwards (see §5).
+- **The fading check happens at night** (decision 12), e.g. while the character sleeps.
 - **Old age** may make characters more forgetful (proposal).
-- When a memory has faded completely, it is gone.
+- **What happens to a faded memory is being analysed** in [analysis/A05](analysis/A05-memory-storage.md)
+  (Draft). The owner's idea: a faded memory is **not deleted**; the storage **marks** which parts have faded,
+  or that the whole memory has faded.
 
 **A useful side effect:** forgetting keeps the storage small. Characters don't collect endless memories over a
 long chapter, which keeps the game fast and the AI calls short ([analysis/A04](analysis/A04-event-check-performance.md)).
@@ -112,10 +119,8 @@ Details are in [ACTIONS.md §3.1](ACTIONS.md). In short:
 ## 7. Open questions
 
 1. Is the list of parts of a memory in §1 right?
-2. Should **one storage** hold memories, knowledge, beliefs about others and rumours (§1)?
+2. **Faded memories:** marked or deleted? Being analysed in [analysis/A05](analysis/A05-memory-storage.md).
 3. How long should each kind of memory last (§3)? What makes a memory important?
-4. Should **details fade first** (§3)?
-5. Does **recalling refresh** a memory (§3, §5)?
-6. How much **stamina and time** does `recall` cost? How does stamina work in general?
-7. How is the memory inventory shown: sorted how, and what does it show (§4)?
-8. Do background characters and group characters have memories (§6)?
+4. How much **stamina and time** does `recall` cost? How does stamina work in general?
+5. How is the memory inventory shown: sorted how, and what does it show (§4)?
+6. Do background characters and group characters have memories (§6)?

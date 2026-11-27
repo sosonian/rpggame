@@ -29,6 +29,7 @@ WARFARE.md, ITEMS.md) hold only the **agreed design**.
 | A02 | [Who is affected, and who notices?](A02-who-is-affected.md) | 2026-11-27 | Final | EVENTS.md §1.4, §1.6, §1.7; TRAITS.md |
 | A03 | [When to check for events](A03-event-check-timing.md) | 2026-11-27 | Final | EVENTS.md §5 |
 | A04 | [Performance of event checks](A04-event-check-performance.md) | 2026-11-27 | Final | EVENTS.md §5.7, AI_CHARACTERS.md §2.3 |
+| A05 | [Storing faded memories: mark, don't delete](A05-memory-storage.md) | 2026-11-27 | **Draft** | — |
 
 ## Template for a new report
 
