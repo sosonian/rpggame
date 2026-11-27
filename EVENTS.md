@@ -29,10 +29,24 @@ These decisions were made in other documents. They are collected here because th
 | 12 | **A major event starts only when the character is aware of the change.** It starts **at once** if the character sees it or does it themselves; otherwise it starts when they learn of it. Until then, it is a normal day for them (§1.5) | Owner | 2026-11-27 |
 | 13 | **Way C (mix): the rules find who is affected** by a change, using the relationship data. **The AI decides how** an AI-played character reacts. Background characters react by rules (§1.4) | Owner | 2026-11-27 |
 | 14 | **False rumours** can start major events; **how the character learns** of a change affects the reaction; **hiding the truth** can become a plan (§1.5) | Owner | 2026-11-27 |
+| 15 | **The main principle: every event is triggered by a stimulus**, something from outside that the character reacts to (§1) | Owner | 2026-11-27 |
+| 16 | **There are two kinds of stimuli: major changes** (the list in §1.3) and **daily-life stimuli**, small things the character notices in everyday life, like Hobb watching the tax officer (§1.6) | Owner | 2026-11-27 |
+| 17 | **Traits change how often daily-life events happen.** A character with **keen observation** gets them more often than other characters (§1.6) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
 An **event** is something that happens to a character, or that a character notices.
+
+**The main principle (decision 15): every event is triggered by a stimulus.** A **stimulus** (plural:
+*stimuli*; Chinese 刺激) is something from outside that the character reacts to: something they see, hear,
+suffer or do. No stimulus, no event.
+
+**Two kinds of stimuli (decision 16):**
+
+| Kind | What it is | How often | Example | Section |
+|---|---|---|---|---|
+| **Major change** | A big change in the character's life | Rare | The character's lover is killed | §1.2–1.5 |
+| **Daily-life stimulus** | A small thing the character notices in everyday life | Common | Hobb watches the tax officer collect tax | §1.6 |
 
 - Some events **show a choice** on screen: *"You see the captain's purse left on the table."* →
   `steal`, `report`, ignore.
@@ -43,8 +57,10 @@ An **event** is something that happens to a character, or that a character notic
 
 ### 1.1 Events happen by chance (decision 8)
 - Events do not happen on a fixed schedule. **Each possible event has a chance of happening.**
-- **TBD:** what else raises or lowers the chance (open question 2). Major changes in a character's life
-  are the first known case (§1.2).
+- What raises or lowers the chance:
+  - **major changes** have a high chance (§1.2)
+  - for **daily-life stimuli**, **traits** change the chance; keen observation raises it (§1.6)
+  - **TBD:** what else (open question 2)
 - This is like dialogue options, which are also chosen by chance ([ACTIONS.md §2.4](ACTIONS.md)).
 
 ### 1.2 Major changes trigger events (decision 9)
@@ -156,6 +172,31 @@ This fits the rule that characters know only what they see or are told ([AI_CHAR
 - **Hiding the truth can become a plan.** A murderer may try to keep the lover from finding out
   ([IDEAS.md](IDEAS.md)), and another character may decide when to tell them.
 
+### 1.6 Daily-life stimuli (decisions 16 and 17)
+Most events come from **ordinary life**: the character sees, hears or notices something small, and it gives
+them knowledge, an option or an idea.
+
+**Examples:**
+- Hobb watches the tax officer collect tax and thinks it looks easy → the false tax officer idea
+  ([IDEAS.md §2](IDEAS.md))
+- someone notices the captain's purse left on the table → `steal`, `report`, ignore
+- someone overhears that the miller hides his savings under the floor → `steal` unlocked on the mill
+  ([ACTIONS.md §2.1](ACTIONS.md))
+
+**Traits change the chance (decision 17).** A character with **keen observation** notices more, so they get
+daily-life events **more often** than other characters. Two characters can stand in the same market and
+see the same thing; only the observant one may get the event.
+
+**Proposals (not decided):**
+- Call the trait **Observant**. Its opposite could be **Oblivious** (rarely notices anything), which gets
+  fewer daily-life events.
+- **Other traits decide *what* a character notices**, not only how often. A Greedy character notices chances
+  for money; a Kind one notices people in need ([ACTIONS.md §2.2](ACTIONS.md)). So an Observant, Greedy
+  character notices many chances for money.
+- **Skills may also help**, e.g. a high Intrigue skill helps notice secrets and lies.
+- **Daily-life events are usually small:** knowledge, an unlocked option, or an idea. They rarely change
+  traits on their own, but many small ones over time might (e.g. seeing cruelty again and again).
+
 ## 2. Where events come from
 
 The documents so far name these sources ([ACTIONS.md §2.1](ACTIONS.md)):
@@ -219,7 +260,8 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 ## 7. Open questions
 
 1. **The owner's ideas for events:** to be added.
-2. **Chance (decision 8):** what raises or lowers an event's chance? For example: traits, the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
+2. **Chance (decision 8):** besides major changes and traits (§1.6), what else raises or lowers an event's
+   chance? For example: the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
 3. **Major changes (decisions 9 and 11):** are any major changes missing from §1.3?
    **Later:** how high is "a high chance": almost always (like 90%), or just higher than normal?
 4. **Sources:** is the list in §2 right? What should be added or removed?
