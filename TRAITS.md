@@ -20,7 +20,7 @@
 | 6 | **Temporary traits, labelled "Emotion":** some traits can be **removed after a short time**. Examples from the owner: **angry, afraid / fear** (§2.2) | Owner | 2026-11-27 |
 | 7 | **A second group of temporary traits, labelled "Body status":** **Hot, Cold, Hungry, Thirsty** (§2.3). Cold and Hot moved here from Emotion | Owner | 2026-11-27 |
 | 8 | **Emotions and body status have strength levels,** and the levels are **linked to each other** (e.g. Starving makes Angry come more easily) (§2.4) | Owner | 2026-11-27 |
-| 9 | **More emotions:** **Ashamed** (shame), **Sad**, **Comforted** (comfort), **Envious** (envy) and **Jealous** (jealousy) (§2.2) | Owner | 2026-11-27 |
+| 9 | **More emotions:** **Ashamed** (shame), **Sad**, **Comforted** (comfort), **Envious** (envy), **Jealous** (jealousy) and **Joyful** (joy) (§2.2) | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -60,7 +60,7 @@ Most traits last a long time. **Emotions** are traits that come and **go away af
 They are labelled **Emotion** so the game (and the player) can tell them apart from lasting traits.
 
 **The owner's list:** **Angry**, **Afraid** (fear), **Ashamed** (shame), **Sad**, **Comforted** (comfort),
-**Envious** (envy), **Jealous** (jealousy). (Cold and Hot are now **Body status**, §2.3.)
+**Envious** (envy), **Jealous** (jealousy), **Joyful** (joy). (Cold and Hot are now **Body status**, §2.3.)
 
 **Proposals (not decided):**
 
@@ -71,6 +71,7 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 | **Ashamed** | Shamed in public, caught lying or stealing, failing at something important ([EVENTS.md §1.3](EVENTS.md) no. 15) | Avoids people and their eyes; worse at persuading; more chance to lie or hide; may try to make amends, or take revenge on whoever shamed him | Time passes; making amends; people forget |
 | **Sad** | Loss: a death, a lost love, a lost home; bad news | Works worse; talks less; less chance to start new plans; at level 3 (grief) may give up | Slowly with time; comfort from friends or family; `pray` |
 | **Comforted** *(a good emotion)* | Kind words from a friend, `pray`, `relax` at the tavern or at home, a warm meal, being safe | Pushes **Afraid**, **Sad** and **Angry** down; better at work and talk; more open to others | Time passes; a new shock |
+| **Joyful** *(a good emotion)* | Good news, a success, a gift, praise, a promotion, a wedding, a victory | Better at work and talk; higher opinion of whoever caused it; more generous; at level 3 a little careless (notices less) | Time passes; bad news |
 | **Envious** | Someone **else has** what he wants: rank, money, skill, praise, a lover | Lower opinion of that person; more chance to gossip about them, cheat or sabotage them; can **start an idea** to get the same, or to take it ([IDEAS.md](IDEAS.md)) | He gets what he wanted; the other person loses it; time passes |
 | **Jealous** | Fear of **losing someone he has** (a lover, a friend, the lord's favour) **to a rival** | Watches the loved one and the rival (`watch`); suspicious questions; lower opinion of the rival; at level 3 may attack the rival | Trust comes back; the rival is gone; the truth comes out |
 
@@ -84,7 +85,9 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
   **hide** them (Deceitful), like true personality ([EVENTS.md §8](EVENTS.md)).
 - **Envious and Jealous are different (proposal):** *envy* is wanting what **another person has**;
   *jealousy* is fear of **losing what you have** to someone else.
-- **More emotions:** e.g. Happy, Proud, Guilty (after hurting someone; [EVENTS.md §1.3](EVENTS.md) no. 10).
+- **Comforted and Joyful are different (proposal):** *comfort* is feeling **calm and safe**; *joy* is feeling
+  **happy** because something good happened.
+- **More emotions:** e.g. Proud, Guilty (after hurting someone; [EVENTS.md §1.3](EVENTS.md) no. 10).
 
 ### 2.3 Body status (temporary traits, decision 7)
 
@@ -122,6 +125,7 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Ashamed** (Emotion) | Embarrassed | Ashamed | Humiliated |
 | **Sad** (Emotion) | Downcast | Sad | Grief-stricken |
 | **Comforted** (Emotion) | At ease | Comforted | At peace |
+| **Joyful** (Emotion) | Pleased | Joyful | Elated |
 | **Envious** (Emotion) | Begrudging | Envious | Consumed by envy |
 | **Jealous** (Emotion) | Suspicious | Jealous | Wild with jealousy |
 | **Hot** (Body status) | Warm | Hot | Overheated |
@@ -155,10 +159,13 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Afraid** (level 2–3) | **Angry** is pushed down (fear wins in the moment); when the danger is gone, anger may come back |
 | **Furious** (level 3) | **Afraid** is pushed down: a Furious character may fight when he should flee |
 | **Comforted** | **Afraid**, **Sad** and **Angry** each go down **one level** when Comforted comes |
+| **Joyful** | **Sad** and **Angry** go down **one level**; at level 3 (Elated), the character notices less (less chance of daily-life events, [EVENTS.md §1.6](EVENTS.md)) |
+| **Sad** (level 2–3) | **Joyful** is hard to reach, and fades faster |
 | **Hungry**, **Cold**, **Afraid** (level 2–3) | **Comforted** is hard to reach: it is hard to feel at ease while starving, freezing or in danger |
 | **Ashamed** | **Angry** at whoever shamed him (if Proud or Vengeful), or **Sad** (if not) |
 | **Sad** (level 3, grief) | **Comforted** fades faster; **Angry** may follow if someone is to blame (revenge) |
 | **Jealous** (level 2–3) | **Angry** at the rival comes more easily; at level 3, **Furious** |
+| Someone else is **Joyful** about what he wanted | **Envious** comes more easily |
 | **Envious** for a long time | **Angry** at the envied person comes more easily |
 
 **Links with lasting traits (proposal):**
