@@ -69,6 +69,48 @@ The first draft proposed 150 m × 150 m for the town. The owner chose a much big
 - **Map size for the computer (note):** 4 km × 4 km with 1 m tiles is 16 million tiles; with 2 m tiles, 4 million.
   Godot can handle this if the map is split into **chunks** (pieces loaded as needed), but it needs care.
 
+### 3.4 Necessary parts of the random map (proposal)
+
+The map is generated randomly, but these parts must always be there (owner's decision, §8: market and barracks).
+The others are **proposals**, each with the reason it is needed.
+
+**Must have** (other documents already need them):
+
+| Part | Where | Why it is needed |
+|---|---|---|
+| **Market** | Walled core | Decided by the owner. Buying, selling, market day ([ITEMS.md §8](../ITEMS.md)) |
+| **Barracks** (with a training yard and an armoury) | Walled core | Decided by the owner. Beds and training for 100 soldiers |
+| **The keep** (the lord's small castle) | Walled core | The lord lives here; the last place to defend ([WARFARE.md §4](../WARFARE.md)) |
+| **Wall and gate(s)** of the core | Around the core | Defence; guards can watch who comes and goes |
+| **Prison** (cells in the keep or the barracks) | Walled core | Actions `capture`, `escape`, arrest, prisoners and ransom ([ACTIONS.md](../ACTIONS.md)) |
+| **Storehouse / granary** | Walled core | `store` / `take`; food for a siege ([ACTIONS.md](../ACTIONS.md), [ITEMS.md](../ITEMS.md)) |
+| **Tavern / inn** | Town | `relax`, meeting people, rumours, Marta's beer plan ([AI_CHARACTERS.md §5.3](../AI_CHARACTERS.md)) |
+| **Shrine** | Town | `pray` ([ACTIONS.md](../ACTIONS.md)) |
+| **Smithy** | Town | Weapons, tools, `repair`; works day and night in the war ([ITEMS.md §8](../ITEMS.md)) |
+| **Food workshops:** mill, bakery, brewery | Town (the mill by the river) | Bread and beer for everyone ([ITEMS.md §8](../ITEMS.md)) |
+| **30 homes** | Town | Decided by the owner (§8) |
+| **Farms and fields** | Town and outside | Food; jobs for farmers |
+| **River with a ford or a bridge** | Outside | Water, the mill, and a choke point for the battle ([WARFARE.md §4](../WARFARE.md)) |
+| **Road to the border** | Outside | The way the enemy comes ([STORY.md §2](../STORY.md)) |
+| **Forest** | Outside | Hunting, wood, hiding, scouting ([ACTIONS.md](../ACTIONS.md)) |
+
+**Recommended** (not needed by other documents yet, but useful):
+
+| Part | Why |
+|---|---|
+| **Bell or watchtower** | The town is 1 km wide, so most people cannot see or hear trouble. A bell is heard for hundreds of metres ([EVENTS.md §1.7](../EVENTS.md)); a tower lets guards see far |
+| **Wells** | Water; a natural meeting and gossip place |
+| **Other workshops:** butcher, tannery, carpenter, weaver | The rest of the town economy ([ITEMS.md §8](../ITEMS.md)) |
+| **Graveyard** | Funerals after deaths and the battle; a quiet, private place |
+| **Hidden and private spots:** back alleys, a barn, ruins | Secrets, crimes, meetings, hiding ([ACTIONS.md §3.6–3.7](../ACTIONS.md)) |
+| **A hill near the town** | Terrain for the battle, a place to watch the road |
+
+**Rules for the generator (proposal):**
+- The **walled core** holds the keep, barracks, market, prison and storehouse.
+- The **mill** is on the river. The **tannery** is downstream and away from homes (it smells).
+- The **border road** enters the map from the side the enemy comes from, and reaches a gate.
+- The **river crosses the road** at the ford or bridge, between the border and the town.
+
 ## 4. The walking problem
 
 Because game time runs **120× faster** than real time, walking is either **very fast on screen**, or it **takes a
@@ -143,7 +185,7 @@ many top-down games). The game clock keeps running.
 1. ~~Size~~: decided (§8).
 2. Which **walking option**: A, B, C or D? (to be discussed in detail later)
 3. ~~Walls~~: decided: a walled core, plus a market area (§8).
-5. **Necessary parts** of the random map: market, barracks, and what else?
+5. **Necessary parts** of the random map: which of the proposals in §3.4 are accepted?
 4. ~~One map or two~~: decided: one 4 km × 4 km map for Chapter 1 (§8).
 
 ## 8. The owner's decision (filled in when Final)
