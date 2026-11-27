@@ -3,7 +3,7 @@
 > Design document for **ideas**: the plans that characters make, built from actions.
 > **Status: draft, to be worked out together.**
 > Items marked **(proposal)** are suggestions waiting for a decision.
-> Related: [ACTIONS.md](ACTIONS.md) (the list of actions that ideas are made of),
+> Related: [EVENTS.md](EVENTS.md) (the events that start ideas), [ACTIONS.md](ACTIONS.md) (the list of actions that ideas are made of),
 > [AI_CHARACTERS.md §5.3](AI_CHARACTERS.md) (how AI-played characters plan and act in real time).
 
 ## 0. Decisions so far
@@ -56,7 +56,7 @@ Another example, Marta the innkeeper's beer plan, is in [AI_CHARACTERS.md §5.3]
 ## 3. How ideas work (proposal)
 
 ### 3.1 Sparked by events
-- Ideas come from events: seeing something, hearing news, a change in needs ("I'm out of money"), an insult,
+- Ideas come from events ([EVENTS.md](EVENTS.md)): seeing something, hearing news, a change in needs ("I'm out of money"), an insult,
   an opportunity.
 - Not every event sparks an idea. The game asks the AI only when the event matters to the character's traits
   or intents.

@@ -3,7 +3,7 @@
 > Design document for **actions**: everything a character can do in the world.
 > **Status: draft list, to be worked out together.**
 > Items marked **(proposal)** are suggestions waiting for a decision.
-> Related: [AI_CHARACTERS.md §5](AI_CHARACTERS.md) (plans), [IDEAS.md](IDEAS.md) (ideas), [ITEMS.md](ITEMS.md) (items and trade),
+> Related: [AI_CHARACTERS.md §5](AI_CHARACTERS.md) (plans), [IDEAS.md](IDEAS.md) (ideas), [EVENTS.md](EVENTS.md) (events), [ITEMS.md](ITEMS.md) (items and trade),
 > [WARFARE.md](WARFARE.md) (battle).
 
 ## 0. Decisions so far
@@ -91,7 +91,7 @@ The same action can be open to a character in two ways:
 - **Impostors face checks:** e.g. Intrigue against the victim's suspicion. Being caught means arrest, a fine
   or worse, plus infamy, and anger from the real tax officer and the lord.
 - **Personality shapes which options events open.** A Greedy character notices chances for money; a Kind one
-  notices people in need. The details belong to the event system and will be designed later (decision 8).
+  notices people in need. The details belong to the event system ([EVENTS.md](EVENTS.md)) and will be designed later (decision 8).
 - **The starting position** therefore decides the actions the player has naturally. Their **personality**
   decides which other doors events may open.
 
