@@ -105,9 +105,32 @@ more you learn. Only when you are close enough do you know **who** you saw or he
 | **Weather** | Rain and fog shorten sight; wind and rain shorten hearing |
 | **Attention** | Someone busy with work notices less; someone who is `watch`ing a person or place notices much more |
 | **Facing** (proposal, later) | Things behind a character are harder to see than things in front |
-| **Traits** | **Observant**: longer range and higher chance. **Oblivious**: shorter and lower |
+| **Traits** | **Hawk Eye** sees further and in more detail; **Fox Ear** hears further and in more detail. **Observant** understands more of what is seen and heard (§10.1) |
 | **Skills** (not decided) | e.g. Intrigue to notice secret things (EVENTS.md open question 5) |
 | **The actor's stealth** | `sneak`, `hide` and whispering make signals weaker; a contest of the actor's stealth against the watcher's attention |
+
+### 10.1 Traits of the senses and the mind (owner, 2026-11-27)
+The owner separates **noticing** (the senses) from **understanding** (the mind):
+
+| Trait | What it does | Example |
+|---|---|---|
+| **Hawk Eye** | **Sees further, and sees more detail** at a distance. Very helpful in battle | Recognises who is fighting from 40 m instead of 30 m; spots enemy scouts on the hills; an archer who aims better at long range |
+| **Fox Ear** | **Hears further, and hears more detail** at a distance. Very helpful in battle | Hears the words of a normal talk from further away; hears enemies `sneak`ing at night |
+| **Observant** | **More chance to understand** what they see and hear: the information about things, and **the logic behind them**. It does **not** make sight or hearing longer | Hobb watches the tax officer and understands *"the process is simple; anyone with a tablet could do it"*. An Observant captain sees through an officer's act of loyalty |
+
+So two characters can stand side by side and see the same scene:
+- the one with **Hawk Eye** sees it **clearly** from further away;
+- the **Observant** one **understands** what it means;
+- a character with both does both.
+
+**Proposals (not decided):**
+- **Opposites:** Hawk Eye ↔ **Poor Sight**; Fox Ear ↔ **Hard of Hearing**; Observant ↔ **Oblivious** (already decided).
+- **How characters get them:** Hawk Eye and Fox Ear are mostly **born with** (congenital traits), but can also
+  be gained by long practice, e.g. a hunter or a scout. They can be **lost**: old age, or a wound (a blow to the
+  head, an explosion of noise in battle) can cause Poor Sight or Hard of Hearing.
+- **In battle** ([WARFARE.md](../WARFARE.md)): Hawk Eye helps archers, scouts and lookouts; Fox Ear helps
+  sentries, especially at night. Both help spot ambushes.
+- **Size of the effect:** e.g. Hawk Eye or Fox Ear makes the ranges in §9 about **1.5× longer**.
 
 **Chance falls with distance (proposal):** close up, a character almost always notices; at the edge of the
 range, only sometimes. Example: normal talk is heard for sure at 1 m, about half the time at 3 m, and rarely at 5 m.
@@ -153,7 +176,12 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
   (b) **seeing and hearing add up**: seeing tells you who, hearing tells you what.
 - **2026-11-27, question 4:** Chapter 1 uses **walls, night (light), noise, attention, traits and stealth** (§10).
   Weather and skills are not chosen for Chapter 1 yet.
-- Question 5: still open. Also open: are the sight ranges fine as they are?
+- **2026-11-27:** **attention, traits and stealth** are all kept in the game.
+- **2026-11-27, traits (§10.1):** **Observant** means a character has **more chance to understand** the
+  information about things, or **the logic behind them**. New traits **Hawk Eye** (see more detail at a longer
+  distance) and **Fox Ear** (hear more detail at a longer distance); both are very helpful in battle.
+  *When Final, this changes the meaning of Observant in EVENTS.md (decisions 17, 18, 31).*
+- Question 5: still open. Also open: the proposals in §10.1, and whether the sight ranges are fine. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
