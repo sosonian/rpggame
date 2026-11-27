@@ -17,6 +17,7 @@
 | 3 | **Observant** means a character has **more chance to understand** the information about things, or **the logic behind them**. Its opposite is **Oblivious** | [A02 §10.1](analysis/A02-who-is-affected.md), [EVENTS.md](EVENTS.md) decision 18 | 2026-11-27 |
 | 4 | **Hawk Eye** (see further and in more detail) and **Fox Ear** (hear further and in more detail), with opposites **Poor Sight** and **Hard of Hearing** | [A02 §10.1](analysis/A02-who-is-affected.md) | 2026-11-27 |
 | 5 | **Good Memory** (memories fade **more slowly**) and its opposite **Forgetful** (memories fade **faster**) | Owner | 2026-11-27 |
+| 6 | **Temporary traits, labelled "Emotion":** some traits can be **removed after a short time**. Examples from the owner: **angry, afraid / fear, cold, hot** (§2.2) | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -25,7 +26,7 @@ The same properties for every trait, so they can be compared and built the same 
 | Property | Meaning |
 |---|---|
 | **Name** | e.g. *Hawk Eye* |
-| **Group** | Personality, senses and mind, body and health, education, lifestyle, fame (see [PLAN.md §6.2](PLAN.md)) |
+| **Group** | Personality, senses and mind, body and health, education, lifestyle, fame (see [PLAN.md §6.2](PLAN.md)), and **Emotion** (temporary traits, §2.2) |
 | **Opposite** | The trait it excludes, if any (a character can't have both) |
 | **Effects** | What it changes: ranges, chances of events, dialogue option chances, skills, opinions of others |
 | **How it is gained** | Born with, learned by practice, given by an event |
@@ -50,6 +51,32 @@ The same properties for every trait, so they can be compared and built the same 
 The ranges these traits change are in [EVENTS.md §1.7](EVENTS.md) (full analysis in
 [analysis/A02 Part 2](analysis/A02-who-is-affected.md)).
 
+### 2.2 Emotions (temporary traits, decision 6)
+
+Most traits last a long time. **Emotions** are traits that come and **go away after a short time**.
+They are labelled **Emotion** so the game (and the player) can tell them apart from lasting traits.
+
+**The owner's examples:** **Angry**, **Afraid** (fear), **Cold**, **Hot**.
+
+**Proposals (not decided):**
+
+| Emotion | Possible causes | Possible effects | Goes away when |
+|---|---|---|---|
+| **Angry** | Insulted, cheated, hurt; a major event such as betrayal ([EVENTS.md §2](EVENTS.md)) | More chance of rough dialogue options (insult, threaten, `attack`, `challenge`); worse at persuading and at hiding feelings | Time passes; revenge; an apology; `relax` |
+| **Afraid** | Danger, threats, a battle, wounds, a dark omen | More chance to `flee`, obey, give in or lie; less chance to fight; Brave characters resist it, Craven ones get it more easily | The danger is gone; time passes; comfort from a friend; `pray` |
+| **Cold** | Winter, rain, night outside, poor clothing ([ITEMS.md](ITEMS.md)) | Works and fights a little worse; more chance to fall ill if it lasts long | Warm clothes, a fire, going inside |
+| **Hot** | Summer sun, heavy armour, hard work | Tires faster; more chance to make mistakes | Rest in the shade, water, taking off armour |
+
+**Ideas to decide later (proposals):**
+- **Strength:** an emotion could be **weak or strong** (e.g. *a bit angry* / *furious*), and fade step by step.
+- **How long:** e.g. minutes to a few game hours for Angry; until the cause is gone for Cold and Hot.
+- **Lasting traits change emotions:** e.g. a Vengeful character stays Angry longer; a Brave one is Afraid less.
+- **Emotions can become lasting traits:** e.g. being Afraid very often in battle may turn a character Craven
+  (like [EVENTS.md §2](EVENTS.md), where events add or remove traits).
+- **Others can see emotions** with seeing and hearing ([EVENTS.md §1.7](EVENTS.md)), and some characters can
+  **hide** them (Deceitful), like true personality ([EVENTS.md §8](EVENTS.md)).
+- **More emotions:** e.g. Sad (grief), Happy, Ashamed, Jealous, Drunk, Hungry, Tired.
+
 ## 3. Candidates (mentioned in the documents, not defined yet)
 
 These names appear in the documents as examples. Each still needs its effects, gains and losses decided.
@@ -73,4 +100,11 @@ expecting the worst).
 1. Which candidates from §3 are needed for Chapter 1? Which should be defined first?
 2. **Observant / Oblivious:** how are they gained and lost?
 3. How should the *Cynical* clash in §3 be solved?
-4. Are the groups in §1 right (personality, senses and mind, body and health, education, lifestyle, fame)?
+4. Are the groups in §1 right (personality, senses and mind, body and health, education, lifestyle, fame, emotion)?
+5. **Emotions (§2.2):** are *Cold* and *Hot* emotions, or a separate group for the body's feelings (with e.g.
+   Hungry, Tired)? Are *Afraid* and *Fear* one emotion?
+6. **Emotions (§2.2):** which proposals are accepted: strength levels, how long they last, links to lasting
+   traits, and the list of other emotions?
+7. **Emotions and mood:** [AI_CHARACTERS.md](AI_CHARACTERS.md) mentions **mood** (e.g. a group's mood: angry
+   about high taxes) and [PLAN.md](PLAN.md) mentions **stress**. Are emotions the same thing as mood, or
+   separate?
