@@ -26,6 +26,7 @@ These decisions were made in other documents. They are collected here because th
 | 9 | **A major change in a character's life has a high chance of triggering an event for that character.** Example: their **lover** or a **close friend** is killed. The event can give a new intent (e.g. revenge) or **change how the character sees the world** (e.g. a naive character comes to believe the world is cruel) (§1.2) | Owner | 2026-11-27 |
 | 10 | **The player character gets major events in the same way** as other characters (§1.2) | Owner | 2026-11-27 |
 | 11 | **All 23 candidates in §1.3 are major changes** | Owner | 2026-11-27 |
+| 12 | **A major event starts only when the character is aware of the change.** It starts **at once** if the character sees it or does it themselves; otherwise it starts when they learn of it. Until then, it is a normal day for them (§1.5) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -120,7 +121,7 @@ Notes:
 - The trait names here (Paranoid, Craven, Brave, Cruel) are examples; the trait list is not designed yet.
 - The reactions are examples (proposal), not fixed results.
 
-### 1.4 How does the game know a major change happened? (TBD, open question 4)
+### 1.4 How does the game know who is affected? (TBD, open question 4)
 Three ways to decide which characters get a major event:
 
 | Way | How it works | Good | Bad |
@@ -133,10 +134,25 @@ Three ways to decide which characters get a major event:
 ([AI_CHARACTERS.md §4.2](AI_CHARACTERS.md)). The relationship data (lover, friend, family, lord) already
 exists in the shared character data ([AI_CHARACTERS.md §3](AI_CHARACTERS.md)).
 
-**Proposal: the event starts when the character learns of the change**, not when it happens. Characters know
-only what they see or are told ([AI_CHARACTERS.md §5.2](AI_CHARACTERS.md)). If Wenna is killed far away,
-Aldric's major event starts when he sees the body, or when news or a rumour reaches him. A false rumour
-could even start a major event for something that never happened.
+### 1.5 When the event starts: awareness (decision 12)
+**A major event starts only when the character is aware of the change.**
+
+| Case | When the event starts | Example |
+|---|---|---|
+| **The character sees it** | **At once** | Aldric sees something cruel with his own eyes, e.g. the raiders kill his lover in front of him |
+| **The character does it** | **At once** | Aldric kills a person for the first time (§1.3, row 10) |
+| **It happens somewhere else** | **When the character learns of it:** finds the body, hears the news, hears a rumour | Wenna is killed far away. The event starts when the news reaches Aldric |
+| **The character does not know** | **Not yet.** For them it is just a normal day | Aldric goes on working and does not know Wenna is dead |
+
+This fits the rule that characters know only what they see or are told ([AI_CHARACTERS.md §5.2](AI_CHARACTERS.md)).
+
+**Proposals (not decided):**
+- **A false rumour** could start a major event for something that never happened, e.g. a rival spreads the
+  lie that Wenna is dead (`spread_rumour`, [ACTIONS.md §3.4](ACTIONS.md)).
+- **How it was learned can change the reaction.** Seeing it yourself hits harder than hearing a rumour, and a
+  rumour may be doubted at first.
+- **Hiding the truth becomes a plan.** A murderer may try to keep the lover from finding out
+  ([IDEAS.md](IDEAS.md)), and another character may decide when to tell them.
 
 ## 2. Where events come from
 
@@ -204,8 +220,7 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 2. **Chance (decision 8):** what raises or lowers an event's chance? For example: traits, the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
 3. **Major changes (decision 9):** which candidates in §1.3 should be used, and which are missing?
    **Later:** how high is "a high chance": almost always (like 90%), or just higher than normal?
-4. **Detecting major changes (§1.4):** rules only (A), AI judges (B), or a mix (C)? Does the event start when
-   the change happens, or when the character learns of it?
+4. **Detecting major changes (§1.4):** rules only (A), AI judges (B), or a mix (C)?
 5. **Sources:** is the list in §2 right? What should be added or removed?
 6. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
 7. **How often:** how many events with choices should the player see per hour, so they stay special but the
