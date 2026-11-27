@@ -50,7 +50,8 @@ would cause problems.
 |---|---|---|---|
 | **1. Delete when fully faded** | A memory is removed when every part has faded | Smallest storage | The memory can never come back; the owner doesn't want this |
 | **2. Mark, keep everything as it is** | Faded parts are marked; nothing is ever removed or made smaller | Simple; any memory can come back | Storage grows without limit, especially with text (§3, option A) |
-| **3. Mark + store compactly + shrink old memories** | See §5 | Keeps the owner's idea; storage stays small; fast | More work to build |
+| **3. Mark + store compactly + shrink old memories** | See §5 | Keeps the owner's idea; storage stays small; fast | More work to build; storage still grows slowly |
+| **4. Option 3 + delete unimportant memories once fully faded** (owner's idea, 2026-11-27) | Like option 3, but a **not important** memory is **deleted** when **all its details** have faded. Important memories are kept and marked | Much smaller storage; it stops growing; simpler than shrinking everything | An unimportant memory can never come back once deleted (§6.1) |
 
 ## 5. Option 3 in detail (recommended)
 
@@ -93,6 +94,39 @@ can be removed when **nobody** remembers it any more and it has no story importa
   needed (e.g. when something reminds the character of them).
 - **Save files** can be compressed; compact data compresses well.
 
+## 5.6 Option 4: delete unimportant memories once fully faded (owner's idea)
+
+**The rule:** when a **not important** memory has faded completely (all its details are marked faded), its
+record is **deleted**. **Important** memories are never deleted; they stay marked as in option 3.
+
+**What counts as "not important"** (proposal): the **small** and **ordinary** memories in
+[MEMORIES.md §3](../MEMORIES.md) (e.g. "a cart passed at noon", "Hobb owes me 2 silver"). **Important** and
+**life-changing** memories are kept.
+
+**What it costs: storage.** Most memories are small or ordinary; a rough guess is **85–90%**. They fade within
+hours to weeks, so they don't pile up: each character only holds the recent ones.
+
+| | Option 3 (keep all, compact) | **Option 4 (delete unimportant)** |
+|---|---|---|
+| Memories held per character at one time | Grows all chapter: up to 3,000 | Roughly **a few hundred** recent ones, plus the important ones |
+| Chapter 1, everyone | about 40 MB | about **5–15 MB** |
+| Over many chapters | Keeps growing slowly | **Grows only with important memories**, so stays small |
+
+**What it costs: speed.** Deleting is very cheap. The game can even know **in advance** on which night a
+memory will be fully faded (from its importance and the character's traits), and put it in that night's list.
+That night, the list is deleted in one go; if the memory was refreshed by `recall` in the meantime, it simply
+moves to a later night's list. There is no need to search through all memories.
+
+**What it costs: the game.** This is the real trade-off:
+- **A deleted memory is gone for good.** A reminder can't bring it back; the character would learn it as new.
+- **Something small can turn out to matter later.** Example: a cart passed at noon, a small memory, and it
+  faded. A week later it turns out the killer escaped in that cart. Nobody remembers it any more. This is
+  **realistic**, and it can make good stories ("if only someone had remembered").
+- **A softer version (proposal):** if an event becomes important later, the memories of it that **still exist**
+  are raised to important, so they stop fading towards deletion. Memories already deleted stay deleted.
+- **The world's event record** (§5.1) is deleted when nobody remembers the event and it has no story
+  importance. While anyone still remembers it, it stays.
+
 ## 6. Can a faded memory come back?
 Keeping faded memories is useful only if they can **come back**. Proposals:
 - **Reminders:** someone tells you about it, or you return to the place where it happened. A faded memory comes
@@ -101,16 +135,23 @@ Keeping faded memories is useful only if they can **come back**. Proposals:
 - **A memory that comes back may be less sure**, or slightly wrong.
 
 ## 7. Recommendation
-**Option 3: mark, don't delete, but store compactly.**
+**Option 4** (the owner's idea, built on option 3): store compactly, mark fading, **keep important memories**,
+and **delete unimportant ones once fully faded**. It is cheaper and simpler than keeping everything, and losing
+small memories is realistic.
+
+Option 3 alone, for comparison: **mark, don't delete, but store compactly.**
 - One shared **event record** per event; each character keeps only a small link and marks (§5.1).
 - Fading is **calculated when needed**, counting nights (§5.2).
 - Old, fully faded memories shrink to a **skeleton** (§5.3).
 - Background and group characters store less (§5.4).
 
-With this, Chapter 1 needs roughly **tens of megabytes** at most, and the game stays fast.
+With option 3, Chapter 1 needs roughly **tens of megabytes** at most; with option 4, **about 5–15 MB**. Both
+keep the game fast.
 
 ## 8. Questions for the owner
-1. Is option 3 right?
+1. Option 3 or **option 4** (delete unimportant memories once fully faded)?
+1b. If option 4: do **small and ordinary** memories count as "not important" (§5.6)? Should the softer version
+    apply (memories of an event that later becomes important are raised to important)?
 2. Can a faded memory **come back** (§6)? If yes, how: reminders, places, conversations?
 3. Is **calculating fading when needed** (counting nights) acceptable, instead of a real nightly loop (§5.2)?
 4. Should **background characters** store fewer kinds of memory (§5.4)?
