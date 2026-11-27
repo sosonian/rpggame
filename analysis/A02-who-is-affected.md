@@ -151,7 +151,9 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
   **who** you saw. **The same logic applies to hearing** (§9).
 - **2026-11-27, question 3 proposals confirmed:** (a) you recognise a voice **only if you know that person**;
   (b) **seeing and hearing add up**: seeing tells you who, hearing tells you what.
-- Questions 4–5: still open. Also open: are the sight ranges fine as they are?
+- **2026-11-27, question 4:** Chapter 1 uses **walls, night (light), noise, attention, traits and stealth** (§10).
+  Weather and skills are not chosen for Chapter 1 yet.
+- Question 5: still open. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
