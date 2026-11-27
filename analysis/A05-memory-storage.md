@@ -94,7 +94,7 @@ can be removed when **nobody** remembers it any more and it has no story importa
   needed (e.g. when something reminds the character of them).
 - **Save files** can be compressed; compact data compresses well.
 
-## 5.6 Option 4: delete unimportant memories once fully faded (owner's idea)
+### 5.6 Option 4: delete unimportant memories once fully faded (owner's idea)
 
 **The rule:** when a **not important** memory has faded completely (all its details are marked faded), its
 record is **deleted**. **Important** memories are never deleted; they stay marked as in option 3.
