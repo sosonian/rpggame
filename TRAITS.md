@@ -19,6 +19,7 @@
 | 5 | **Good Memory** (memories fade **more slowly**) and its opposite **Forgetful** (memories fade **faster**) | Owner | 2026-11-27 |
 | 6 | **Temporary traits, labelled "Emotion":** some traits can be **removed after a short time**. Examples from the owner: **angry, afraid / fear** (§2.2) | Owner | 2026-11-27 |
 | 7 | **A second group of temporary traits, labelled "Body status":** **Hot, Cold, Hungry, Thirsty** (§2.3). Cold and Hot moved here from Emotion | Owner | 2026-11-27 |
+| 8 | **Emotions and body status have strength levels,** and the levels are **linked to each other** (e.g. Starving makes Angry come more easily) (§2.4) | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -63,15 +64,15 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 
 | Emotion | Possible causes | Possible effects | Goes away when |
 |---|---|---|---|
-| **Angry** | Insulted, cheated, hurt; a major event such as betrayal ([EVENTS.md §2](EVENTS.md)) | More chance of rough dialogue options (insult, threaten, `attack`, `challenge`); worse at persuading and at hiding feelings | Time passes; revenge; an apology; `relax` |
+| **Angry** | Insulted, cheated, hurt; a major event such as betrayal ([EVENTS.md §1.3](EVENTS.md)) | More chance of rough dialogue options (insult, threaten, `attack`, `challenge`); worse at persuading and at hiding feelings | Time passes; revenge; an apology; `relax` |
 | **Afraid** | Danger, threats, a battle, wounds, a dark omen | More chance to `flee`, obey, give in or lie; less chance to fight; Brave characters resist it, Craven ones get it more easily | The danger is gone; time passes; comfort from a friend; `pray` |
 
 **Ideas to decide later (proposals):**
-- **Strength:** an emotion could be **weak or strong** (e.g. *a bit angry* / *furious*), and fade step by step.
+- **Strength:** accepted (decision 8), see §2.4.
 - **How long:** e.g. minutes to a few game hours for Angry; until the cause is gone for Cold and Hot.
 - **Lasting traits change emotions:** e.g. a Vengeful character stays Angry longer; a Brave one is Afraid less.
 - **Emotions can become lasting traits:** e.g. being Afraid very often in battle may turn a character Craven
-  (like [EVENTS.md §2](EVENTS.md), where events add or remove traits).
+  (like [EVENTS.md §3](EVENTS.md), where events add or remove traits).
 - **Others can see emotions** with seeing and hearing ([EVENTS.md §1.7](EVENTS.md)), and some characters can
   **hide** them (Deceitful), like true personality ([EVENTS.md §8](EVENTS.md)).
 - **More emotions:** e.g. Sad (grief), Happy, Ashamed, Jealous.
@@ -93,10 +94,65 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 | **Thirsty** | Time without water; heat; hard work or battle | Tires faster; worse than hunger if it lasts long | Drinking water or beer |
 
 **Ideas to decide later (proposals):**
-- **Strength:** like emotions, e.g. *Hungry* → *Starving*; *Cold* → *Freezing*. A strong status that lasts long
-  can wound or kill (e.g. starving in a siege).
-- **Body status can cause emotions:** e.g. Hungry makes a character Angry more easily.
+- **Strength:** accepted (decision 8), see §2.4.
 - **More body status:** e.g. Tired, Drunk, In Pain.
+
+### 2.4 Strength levels and how they are linked (decision 8)
+
+**The owner's decision:** every emotion and body status has **strength levels**, and the levels are **linked**:
+one can make another come more easily, or make it stronger. The details below are **proposals**.
+
+#### Levels (proposal)
+
+Each one has **3 levels**. Only one level of the same emotion or status at a time.
+
+| Name | Level 1 (weak) | Level 2 | Level 3 (strong) |
+|---|---|---|---|
+| **Angry** (Emotion) | Annoyed | Angry | Furious |
+| **Afraid** (Emotion) | Uneasy | Afraid | Terrified |
+| **Hot** (Body status) | Warm | Hot | Overheated |
+| **Cold** (Body status) | Chilly | Cold | Freezing |
+| **Hungry** (Body status) | Peckish | Hungry | Starving |
+| **Thirsty** (Body status) | Dry | Thirsty | Parched |
+
+**What each level means (proposal):**
+- **Level 1:** a small effect. Mostly flavour, and a small change in dialogue chances.
+- **Level 2:** a clear effect on work, fighting and choices (the effects in §2.2 and §2.3).
+- **Level 3:** a strong effect. The character may **lose control**: a Furious character may attack, a Terrified
+  one may flee or freeze. A **body status at level 3 that lasts long** can cause illness, wounds or death
+  (e.g. Starving in a siege, Freezing on a winter night, Parched in a battle in summer).
+
+**How levels go up and down (proposal):**
+- **Up:** each cause adds one level (an insult → Annoyed; a second insult → Angry). A big cause can add two or
+  three levels at once (a lover killed → Furious; an ambush → Terrified).
+- **Down:** levels fade **one step at a time** as time passes, or drop at once when the cause is gone
+  (eating removes Hungry; going inside removes Cold, step by step).
+
+#### Links between them (proposal)
+
+| When a character is… | …it makes this come more easily, or stronger |
+|---|---|
+| **Hungry** (level 2) | **Angry**: insults and bad news add one more level |
+| **Starving** (level 3) | **Angry** and **Afraid** (desperation); more chance to steal, beg or leave town |
+| **Thirsty** / **Parched** | **Hot** rises faster; tires faster |
+| **Hot** (level 2–3) | **Angry**: short tempers in the heat |
+| **Cold** (level 2–3) | **Hungry** comes faster (the body burns food to stay warm) |
+| **Cold** + **Hungry** together | More chance to fall **ill** |
+| **Afraid** (level 2–3) | **Angry** is pushed down (fear wins in the moment); when the danger is gone, anger may come back |
+| **Furious** (level 3) | **Afraid** is pushed down: a Furious character may fight when he should flee |
+
+**Links with lasting traits (proposal):**
+
+| Lasting trait | Effect on emotions and body status |
+|---|---|
+| **Brave** / **Craven** | Brave: Afraid is **one level lower**. Craven: Afraid is **one level higher** |
+| **Vengeful** | Angry fades **more slowly** |
+| **Patient** | Angry comes **more slowly** (needs one more cause per level) |
+| **Strong** / **Sickly** | Strong: body status hurts less at level 3. Sickly: falls ill sooner when Cold or Hungry |
+
+**Emotions can turn into lasting traits (proposal):** being Terrified often in battle may turn a character
+**Craven**; staying Furious at one person for a long time may make him **Vengeful** ([EVENTS.md §3](EVENTS.md):
+events add or remove traits).
 
 ## 3. Candidates (mentioned in the documents, not defined yet)
 
@@ -123,8 +179,8 @@ expecting the worst).
 3. How should the *Cynical* clash in §3 be solved?
 4. Are the groups in §1 right (personality, senses and mind, body and health, education, lifestyle, fame, emotion)?
 5. **Emotions (§2.2):** are *Afraid* and *Fear* one emotion? (*Cold* and *Hot* are Body status: decision 7.)
-6. **Emotions and body status (§2.2, §2.3):** which proposals are accepted: strength levels, how long they last, links to lasting
-   traits, and the list of other emotions?
+6. **Emotions and body status (§2.2–2.4):** which proposals are accepted: the 3 levels and their names, how
+   levels go up and down, the links between them, the links to lasting traits, and the list of other emotions?
 7. **Emotions and mood:** [AI_CHARACTERS.md](AI_CHARACTERS.md) mentions **mood** (e.g. a group's mood: angry
    about high taxes) and [PLAN.md](PLAN.md) mentions **stress**. Are emotions the same thing as mood, or
    separate?
