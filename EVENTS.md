@@ -22,6 +22,7 @@ These decisions were made in other documents. They are collected here because th
 | 5 | **The plot is fully free.** The story must react to whatever happens, so story events are written as situations, not a fixed script | [AI_CHARACTERS.md](AI_CHARACTERS.md) decision 9 | 2026-11-24 |
 | 6 | Which ideas and options each **trait** opens will be decided together with the event system | [ACTIONS.md](ACTIONS.md) decision 8 | 2026-11-25 |
 | 7 | Events get **their own document** (this one) | — | 2026-11-27 |
+| 8 | **Events happen by chance.** Each possible event has a chance (probability) of happening (§1.1) | Owner | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -33,6 +34,11 @@ An **event** is something that happens to a character, or that a character notic
   watches the tax officer at work and learns "tax collection seems easy".
 - **The player and AI-played characters get the same events.** Background characters (run by rules only)
   get them too, but react by rules ([ACTIONS.md §2.1](ACTIONS.md)).
+
+### 1.1 Events happen by chance (decision 8)
+- Events do not happen on a fixed schedule. **Each possible event has a chance of happening.**
+- **TBD:** what raises or lowers the chance (open question 2).
+- This is like dialogue options, which are also chosen by chance ([ACTIONS.md §2.4](ACTIONS.md)).
 
 ## 2. Where events come from
 
@@ -82,7 +88,7 @@ An event can have one or more of these results:
 
 The game runs in real time. [PLAN.md §7](PLAN.md) says that **dialogue and decision events pause the clock**,
 but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to consider. This needs a decision
-(open question 5).
+(open question 6).
 
 ## 6. Example: from event to idea
 
@@ -97,11 +103,12 @@ but [AI_CHARACTERS.md §7](AI_CHARACTERS.md) still lists this as an option to co
 ## 7. Open questions
 
 1. **The owner's ideas for events:** to be added.
-2. **Sources:** is the list in §2 right? What should be added or removed?
-3. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
-4. **How often:** how many events with choices should the player see per hour, so they stay special but the
+2. **Chance (decision 8):** what raises or lowers an event's chance? For example: traits, the place, the time, who is nearby, needs, or the story. Is the chance shown to the player, or hidden like dialogue chances?
+3. **Sources:** is the list in §2 right? What should be added or removed?
+4. **How events are written:** by hand, made by rules from the situation, made by the AI, or a mix?
+5. **How often:** how many events with choices should the player see per hour, so they stay special but the
    world still feels alive?
-5. **The clock:** should events with choices always pause the game (§5)?
-6. **Traits:** which events and options does each trait open (decision 6)?
-7. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
+6. **The clock:** should events with choices always pause the game (§5)?
+7. **Traits:** which events and options does each trait open (decision 6)?
+8. **Chapter 1:** which story and world events does the demo need (e.g. the enemy's arrival)? Also asked in
    [AI_CHARACTERS.md §12](AI_CHARACTERS.md), question 8.
