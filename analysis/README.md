@@ -26,7 +26,7 @@ WARFARE.md, ITEMS.md) hold only the **agreed design**.
 | # | Report | Date | Status | Plan documents updated |
 |---|---|---|---|---|
 | A01 | [AI-played characters: approaches and cost](A01-ai-characters-and-cost.md) | 2026-11-20 (updated 2026-11-27) | Final | AI_CHARACTERS.md |
-| A02 | [Who is affected by a major change?](A02-who-is-affected.md) | 2026-11-27 | Final | EVENTS.md §1.4 |
+| A02 | [Who is affected, and who notices?](A02-who-is-affected.md) | 2026-11-27 | Part 1 Final · Part 2 (seeing and hearing by distance) **Draft** | EVENTS.md §1.4 (Part 1 only) |
 | A03 | [When to check for events](A03-event-check-timing.md) | 2026-11-27 | Final | EVENTS.md §5 |
 | A04 | [Performance of event checks](A04-event-check-performance.md) | 2026-11-27 | Final | EVENTS.md §5.7, AI_CHARACTERS.md §2.3 |
 
