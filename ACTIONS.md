@@ -21,6 +21,7 @@
 | 9 | **The AI also suggests ideas to the player character**, based on the player's traits and situation. The player can follow or ignore them ([IDEAS.md](IDEAS.md)) | 2026-11-25 |
 | 10 | **Dialogue options are chosen by chance.** Each possible option gets a chance from the character's **personality** and the **situation**. The system shows the **top 5**. Example: lying to someone vital to you has a low chance, so it rarely appears (§2.4) | 2026-11-25 |
 | 11 | Dialogue details: options below a **threshold** chance are not shown, so there can be fewer than 5. Very rarely, a **surprising option** appears from outside the top 5. **The player sees only the options, never the chances** (§2.4) | 2026-11-25 |
+| 12 | **Every action takes a period of time, including conversations.** An action can cause an event; when the game checks for events is in [EVENTS.md §5](EVENTS.md) | 2026-11-27 |
 
 ## 1. What an action is
 
@@ -48,7 +49,7 @@
 | **How it is taken** | By clicking a place or person, or as an event option (§2.1) | Click a person, or an event option ("the merchant is distracted…") |
 | **Access** | Who has it naturally (from position), and who can get it through an event (§2.2) | Nobody naturally; offered by events to Greedy, poor or desperate characters |
 | **Requirements** | Place, items, skills, traits, rank or authority, relationship | Be near the target; nobody watching closely |
-| **Duration** | How long it takes (depends on the time unit, still TBD) | A moment |
+| **Duration** | How long it takes. Every action takes time, conversations too (decision 12). Exact lengths depend on the time unit, still TBD | A moment |
 | **Cost** | Money, items, energy | — |
 | **Success check** | Automatic, or a check of skill against difficulty or an opponent | Intrigue vs the target's awareness |
 | **Visibility** | Public, private or secret; who might witness it | Secret; witnesses may notice |
