@@ -104,7 +104,7 @@ more you learn. Only when you are close enough do you know **who** you saw or he
 | **Noise** | A busy market or a loud tavern shortens hearing ranges |
 | **Weather** | Rain and fog shorten sight; wind and rain shorten hearing |
 | **Attention** | Someone busy with work notices less; someone who is `watch`ing a person or place notices much more |
-| **Facing** (proposal, later) | Things behind a character are harder to see than things in front |
+| **Facing** (owner: in Chapter 1) | Every character faces a direction. **Sight:** full chance in front, lower at the sides, very low behind. **Hearing:** the same in every direction |
 | **Traits** | **Hawk Eye** sees further and in more detail; **Fox Ear** hears further and in more detail. **Observant** understands more of what is seen and heard (§10.1) |
 | **Skills** (not decided) | e.g. Intrigue to notice secret things (EVENTS.md open question 5) |
 | **The actor's stealth** | `sneak`, `hide` and whispering make signals weaker; a contest of the actor's stealth against the watcher's attention |
@@ -183,7 +183,9 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
   *When Final, this changes the meaning of Observant in EVENTS.md (decisions 17, 18, 31).*
 - **2026-11-27, §10.1 proposals confirmed:** opposites (Poor Sight, Hard of Hearing); mostly born with, can be
   gained by practice and lost by age or wounds; their use in battle; about **1.5×** longer ranges.
-- Question 5: still open. Also open: whether the sight ranges are fine. Also open: are the sight ranges fine as they are?
+- **2026-11-27, question 5:** **facing is in Chapter 1.** Every character faces a direction; sight is best in
+  front, lower at the sides, very low behind; hearing works the same in every direction.
+- Still open: whether the sight ranges are fine. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
