@@ -288,7 +288,7 @@ It happens like this:
 
 | Step | What happens | Kind |
 |---|---|---|
-| 1 | The **enemy emperor** sends an order to his **general**: *take the frontier town before a deadline* (e.g. before June) | A stimulus for the general |
+| 1 | The **enemy emperor** sends an order to his **general**: *take the frontier town within 1 month* | A stimulus for the general |
 | 2 | The general, an **AI-played major character**, gets an event from the order | Event |
 | 3 | The order gives him the intent *take the town*; his AI makes plans: gather troops, march, attack | Intent and ideas ([IDEAS.md](IDEAS.md)) |
 | 4 | The battle starts because of **his** decision, not because of a script | Result |
