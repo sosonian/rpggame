@@ -512,6 +512,6 @@ The AI cast stays at about 25–35 characters, so costs stay about **$0.50 per r
 11. **Group characters (§2.3):** are the proposals right: what a group has and does, important people staying
     individual, and a group splitting into individuals when the player arrives? Can an important group (e.g. a
     foreign town's council) be AI-played? Does Chapter 1 have any group characters, e.g. nearby villages?
-12. **Between chapters (decision 15):** who passes on to the next chapter, and how are they chosen? What
-    happens to the others: do they leave the story, become background characters, or become part of a group
-    character? Do the ones who pass on keep all their memories?
+12. **Between chapters (decision 15):** the owner decided that it depends on how the story develops, and the
+    important characters related to the player are selected ([STORY.md §3.2](STORY.md)). Still open: what
+    happens to the others, and do the ones who pass on keep all their memories?

@@ -68,8 +68,10 @@ the player gets to know, are brought to life by AI (see §6.3 and [AI_CHARACTERS
     and dangers from the start. The full list is **TBD**.
   - The cast is small: about 8–12 story characters, the people the player meets, and a few dozen
     background characters.
-  - **TBD:** the story outline, the cast list, possible endings of the chapter, and how the player's choices
-    lead into Chapter 2.
+  - **TBD:** the story outline, the cast list and the possible endings of the chapter.
+- **Chapter 2:** the player moves to the **major city of the province**, or, if he betrayed his country, to a
+  **major city of an enemy province**. Only a few important characters related to him pass on.
+- **The full story plan is in [STORY.md](STORY.md).**
 
 ## 4. The player's journey
 

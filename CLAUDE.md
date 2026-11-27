@@ -24,6 +24,7 @@ demo**: a frontier town in one county, facing an enemy invasion.
 | [WARFARE.md](WARFARE.md) | War and battle design (in progress) |
 | [ITEMS.md](ITEMS.md) | Items, materials, production and the economy (in progress) |
 | [TRAITS.md](TRAITS.md) | The table of traits: defined ones and candidates, developed one by one |
+| [STORY.md](STORY.md) | The story and plot: chapters, settings, how one chapter leads to the next |
 | [MEMORIES.md](MEMORIES.md) | The memory (information storage) system: what is stored, forgetting, the memory inventory |
 | [analysis/](analysis/README.md) | **Analysis reports**, one per piece of analysis work, with an index and a template |
 
