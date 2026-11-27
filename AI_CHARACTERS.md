@@ -121,7 +121,9 @@ character sees through others more easily. See [EVENTS.md §7.3 and §8](EVENTS.
 - Repeated behaviour builds toward a trait: many duels lead to Duelist, many lies to Deceitful.
 - Memories feed opinions, relationships and **intents**. Each memory has a weight, and it fades over time.
   The traits **Good Memory** and **Forgetful** make it fade more slowly or faster ([TRAITS.md](TRAITS.md)), and the
-  action `recall` lets a character look back on a memory ([ACTIONS.md §3.1](ACTIONS.md)).
+  action `recall` lets a character look back on a memory ([ACTIONS.md §3.1](ACTIONS.md)). For AI-played
+  characters, `recall` is only an event option or an action inside an idea, but they store and forget
+  memories like everyone else.
 - For AI-played characters, the AI may *suggest* a trait change ("this experience hardened him").
   The rules decide whether it happens.
 

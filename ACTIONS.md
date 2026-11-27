@@ -23,6 +23,7 @@
 | 11 | Dialogue details: options below a **threshold** chance are not shown, so there can be fewer than 5. Very rarely, a **surprising option** appears from outside the top 5. **The player sees only the options, never the chances** (§2.4) | 2026-11-25 |
 | 12 | **Every action takes a period of time, including conversations.** An action can cause an event; when the game checks for events is in [EVENTS.md §5](EVENTS.md) | 2026-11-27 |
 | 13 | **New action `recall`** (回憶): can be done **at any time**. It opens a **memory screen**; the player chooses one memory and the character **talks to himself** about it. Memories come from what the character **saw, heard and did** (§3.1) | 2026-11-27 |
+| 14 | **For AI-played characters, `recall` is not a free action.** It appears only as an **option in an event** or an **action inside an idea**. AI-played characters still **store memories** and **forget** them, like the player (§3.1) | 2026-11-27 |
 
 ## 1. What an action is
 
@@ -162,7 +163,8 @@ Some names may merge or split as we design them.
 | `recall` (回憶) | Look back on a memory: open the memory screen, choose a memory, and talk to yourself about it (see below) | Ch. 1 |
 
 **`recall` (回憶), decision 13:**
-- **When:** at any time.
+- **When:** the **player** can do it at any time. For **AI-played characters** it is only an option in an
+  event or an action inside an idea (decision 14).
 - **How:** opens the **memory screen**, a list of the character's memories. The player chooses one, and the
   character **talks to himself** about it, as a short inner thought.
 - **Where memories come from:** what the character **saw, heard and did** ([EVENTS.md §1.7](EVENTS.md)), stored
@@ -176,7 +178,10 @@ Some names may merge or split as we design them.
     ([IDEAS.md](IDEAS.md)) or an insight, e.g. an Observant character notices something they missed before.
   - It may **change mood or stress**: a sad memory hurts; a proud one comforts.
   - It takes a little time, e.g. one time unit (10 game minutes), like every action (decision 12).
-  - AI-played characters can `recall` too (the same list of actions for everyone).
+- **AI-played characters (decision 14):** they don't `recall` freely, but they **store memories** and
+  **forget** them in the same way as the player, and Good Memory and Forgetful work for them too. Examples of
+  `recall` for them: an event (seeing the place where a friend died) offers *remember him*; an idea for revenge
+  starts with *recall what happened at Ashford*.
 
 ### 3.2 Work and economy
 
