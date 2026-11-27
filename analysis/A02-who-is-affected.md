@@ -78,15 +78,15 @@ Distances are in metres on the game map (the map scale is not decided yet).
 | Fighting, a scream, breaking things | Hearing | 30–60 m (shortened to match) | A brawl; a cry for help |
 | A horn, a bell | Hearing | Hundreds of metres | The alarm bell of the town |
 | Seeing that something happens (people fighting, someone running) | Sight | 50–100 m (daylight) | Seeing a fight across the square |
-| Seeing **who** it is, and **what** exactly they do | Sight | 15–30 m (daylight) | Recognising Hobb taking the money |
-| Small details (a hidden knife, a coin passed in secret) | Sight | 2–5 m | Seeing a pickpocket's hand |
+| Seeing **who** it is, and **what** exactly they do | Sight | **10–20 m** (daylight; owner: shorter) | Recognising Hobb taking the money |
+| Small details (a hidden knife, a coin passed in secret) | Sight | **1–3 m** (owner: shorter) | Seeing a pickpocket's hand |
 
 **Closer means you know more (owner's decision, question 3).** For both senses, the shorter the distance, the
 more you learn. Only when you are close enough do you know **who** you saw or heard.
 
 | Sense | Far (inside the range) | Closer | Very close |
 |---|---|---|---|
-| **Seeing** | *That* something happens: "two people are fighting" (50–100 m) | **Who** it is, and **what** they do: "Hobb took the money" (15–30 m) | Small details: "he hid a coin in his sleeve" (2–5 m) |
+| **Seeing** | *That* something happens: "two people are fighting" (50–100 m) | **Who** it is, and **what** they do: "Hobb took the money" (10–20 m) | Small details: "he hid a coin in his sleeve" (1–3 m) |
 | **Hearing** | *That* someone is talking or shouting, but not the words | **What** is said: the words (normal talk 3–5 m; whisper 1 m) | **Who** is speaking, by the voice: as close as hearing the words, and **only if you know that person's voice** (owner confirmed) |
 
 - **Seeing and hearing add up (owner confirmed).** If you only **see** a conversation from 20 m, you know *"Hobb talked with
@@ -114,7 +114,7 @@ The owner separates **noticing** (the senses) from **understanding** (the mind):
 
 | Trait | What it does | Example |
 |---|---|---|
-| **Hawk Eye** | **Sees further, and sees more detail** at a distance. Very helpful in battle | Recognises who is fighting from 40 m instead of 30 m; spots enemy scouts on the hills; an archer who aims better at long range |
+| **Hawk Eye** | **Sees further, and sees more detail** at a distance. Very helpful in battle | Recognises who is fighting from 30 m instead of 20 m; spots enemy scouts on the hills; an archer who aims better at long range |
 | **Fox Ear** | **Hears further, and hears more detail** at a distance. Very helpful in battle | Hears the words of a normal talk from further away; hears enemies `sneak`ing at night |
 | **Observant** | **More chance to understand** what they see and hear: the information about things, and **the logic behind them**. It does **not** make sight or hearing longer | Hobb watches the tax officer and understands *"the process is simple; anyone with a tablet could do it"*. An Observant captain sees through an officer's act of loyalty |
 
@@ -185,7 +185,8 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
   gained by practice and lost by age or wounds; their use in battle; about **1.5×** longer ranges.
 - **2026-11-27, question 5:** **facing is in Chapter 1.** Every character faces a direction; sight is best in
   front, lower at the sides, very low behind; hearing works the same in every direction.
-- Still open: whether the sight ranges are fine. Also open: are the sight ranges fine as they are?
+- **2026-11-27, sight ranges:** the owner wants **shorter** ranges for seeing **who and what** (now 10–20 m)
+  and **small details** (now 1–3 m). Seeing *that* something happens stays 50–100 m. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
