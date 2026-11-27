@@ -141,7 +141,7 @@ many top-down games). The game clock keeps running.
 ## 7. Questions for the owner
 
 1. ~~Size~~: decided (§8).
-2. Which **walking option**: A, B, C or D?
+2. Which **walking option**: A, B, C or D? (to be discussed in detail later)
 3. ~~Walls~~: decided: a walled core, plus a market area (§8).
 5. **Necessary parts** of the random map: market, barracks, and what else?
 4. ~~One map or two~~: decided: one 4 km × 4 km map for Chapter 1 (§8).
@@ -152,10 +152,10 @@ many top-down games). The game clock keeps running.
 - **The town is 1 km × 1 km.**
 - **The whole Chapter 1 map is 4 km × 4 km.**
 - **The town has 30 households** (for about 100 inhabitants).
-- **The town has a walled core,** and **also a market area** (§3.3; where the market is, inside or outside
-  the walled core, is to be confirmed).
+- **The town has a walled core,** and **also a market area. The market is inside the walled core** (§3.3).
 - **The map is generated randomly,** but some **necessary parts must always be generated**: the **market** and
   the **barracks**, and more to be listed by the owner (MAP.md open question 7).
+- **The walking option (§5) will be discussed in detail later.**
 - Still open: the walking option (§5), and the full list of necessary parts. The plan documents will be updated
   when the report is Final.
 
