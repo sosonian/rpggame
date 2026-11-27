@@ -44,9 +44,8 @@ The same properties for every trait, so they can be compared and built the same 
 | **Observant** | Oblivious | More chance to **understand** what is seen and heard: the information about things and **the logic behind them**. Gets daily-life events more often, and helps see through people who hide their true personality. Does **not** make sight or hearing longer | TBD | TBD |
 | **Oblivious** | Observant | Rarely understands what is going on; gets fewer daily-life events | TBD | TBD |
 
-Ranges are in [analysis/A02 §9](analysis/A02-who-is-affected.md).
-Note: A02 Part 2 is still a Draft. When it becomes Final, [EVENTS.md](EVENTS.md) (decisions 17, 18, 31) will be
-updated to the meaning of Observant above.
+The ranges these traits change are in [EVENTS.md §1.7](EVENTS.md) (full analysis in
+[analysis/A02 Part 2](analysis/A02-who-is-affected.md)).
 
 ## 3. Candidates (mentioned in the documents, not defined yet)
 

@@ -31,8 +31,8 @@ These decisions were made in other documents. They are collected here because th
 | 14 | **False rumours** can start major events; **how the character learns** of a change affects the reaction; **hiding the truth** can become a plan (§1.5) | Owner | 2026-11-27 |
 | 15 | **The main principle: every event is triggered by a stimulus**, something from outside that the character reacts to (§1) | Owner | 2026-11-27 |
 | 16 | **There are two kinds of stimuli: major changes** (the list in §1.3) and **daily-life stimuli**, small things the character notices in everyday life, like Hobb watching the tax officer (§1.6) | Owner | 2026-11-27 |
-| 17 | **Traits change how often daily-life events happen.** A character with **keen observation** gets them more often than other characters (§1.6) | Owner | 2026-11-27 |
-| 18 | The keen-observation trait is called **Observant**; its opposite, **Oblivious**, gets fewer daily-life events (§1.6) | Owner | 2026-11-27 |
+| 17 | **Traits change how often daily-life events happen.** An **Observant** character gets them more often than other characters (§1.6) | Owner | 2026-11-27 |
+| 18 | **Observant** means **more chance to understand** the information about things and the logic behind them (updated by [A02](analysis/A02-who-is-affected.md)); its opposite, **Oblivious**, gets fewer daily-life events (§1.6) | Owner | 2026-11-27 |
 | 19 | **Other traits decide *what* a character notices**, e.g. Greedy notices chances for money, Kind notices people in need (§1.6) | Owner | 2026-11-27 |
 | 20 | **Daily-life events are usually small** (knowledge, an option, an idea), but **many small ones over time can change a trait** (§1.6) | Owner | 2026-11-27 |
 | 21 | **Every action of a character, and every impact on a character, has a chance to trigger an event** (§1) | Owner | 2026-11-27 |
@@ -53,6 +53,7 @@ These decisions were made in other documents. They are collected here because th
 | 36 | **Every action takes a period of time, including conversations**, and an action can cause an event (§5.1) | Owner | 2026-11-27 |
 | 37 | **The time unit:** in normal life, **1 unit = 10 game minutes = 5 real seconds**, so 6 real hours ≈ 1 game month. Battles are different (§5.1) | Owner | 2026-11-27 |
 | 38 | **When the game checks for events:** every time unit (10 game minutes), plus **at once** when something big happens, plus **when an action ends** (§5.4) | Owner | 2026-11-27 |
+| 39 | **Who notices is decided by distance, walls and chance.** Hearing has short ranges, seeing longer ones; the closer, the more one learns. Facing matters for sight. Details in §1.7 and [A02 Part 2](analysis/A02-who-is-affected.md) | [A02](analysis/A02-who-is-affected.md) | 2026-11-27 |
 
 ## 1. What an event is
 
@@ -83,7 +84,7 @@ trigger an event.**
 - Events do not happen on a fixed schedule. **Each possible event has a chance of happening.**
 - What raises or lowers the chance:
   - **major changes** have a high chance (§1.2)
-  - for **daily-life stimuli**, **traits** change the chance; keen observation raises it (§1.6)
+  - for **daily-life stimuli**, **traits** change the chance; Observant raises it (§1.6)
   - **TBD:** what else (open question 4)
 - This is like dialogue options, which are also chosen by chance ([ACTIONS.md §2.4](ACTIONS.md)).
 
@@ -205,12 +206,14 @@ them knowledge, an option or an idea.
 - someone overhears that the miller hides his savings under the floor → `steal` unlocked on the mill
   ([ACTIONS.md §2.1](ACTIONS.md))
 
-**Traits change the chance (decision 17).** A character with **keen observation** notices more, so they get
-daily-life events **more often** than other characters. Two characters can stand in the same market and
-see the same thing; only the observant one may get the event.
+**Traits change the chance (decision 17).** An **Observant** character gets daily-life events **more often**
+than other characters. Two characters can stand in the same market and see the same thing; only the Observant
+one may **understand** what it means and get the event.
 
-**The Observant trait (decision 18).** The keen-observation trait is called **Observant**. Its opposite is
-**Oblivious**: an Oblivious character rarely notices anything, so they get fewer daily-life events.
+**The Observant trait (decision 18, updated by [A02](analysis/A02-who-is-affected.md)).** **Observant** means
+more chance to **understand** the information about things and **the logic behind them**. It does **not** make
+sight or hearing reach further: that is **Hawk Eye** and **Fox Ear** ([TRAITS.md](TRAITS.md)). Its opposite is
+**Oblivious**: an Oblivious character rarely understands what is going on, so they get fewer daily-life events.
 
 **Other traits decide *what* a character notices (decision 19)**, not only how often. A Greedy character
 notices chances for money; a Kind one notices people in need ([ACTIONS.md §2.2](ACTIONS.md)). So an Observant,
@@ -222,6 +225,32 @@ who sees cruelty again and again may become hard-hearted.
 
 **Proposal (not decided):** **skills may also help** a character notice things, e.g. a high Intrigue skill
 helps notice secrets and lies (open question 5).
+
+### 1.7 Who notices: seeing and hearing (decision 39)
+A character becomes aware of something (decision 12) by **seeing** or **hearing** it, decided by
+**distance + walls + chance**. The full analysis is in [analysis/A02 Part 2](analysis/A02-who-is-affected.md).
+
+| Signal | Sense | Range |
+|---|---|---|
+| Whisper | Hearing | up to 1 m |
+| Normal talk | Hearing | 3–5 m |
+| Shouting, an argument | Hearing | 15–30 m |
+| Fighting, a scream | Hearing | 30–60 m |
+| A horn, a bell | Hearing | hundreds of metres |
+| Seeing *that* something happens | Sight | 50–100 m (daylight) |
+| Seeing **who** it is and **what** they do | Sight | 10–20 m (daylight) |
+| Small details (a coin passed in secret) | Sight | 1–3 m |
+
+**The rules:**
+- **The closer, the more you learn.** Far away you see or hear *that* something happens; closer, *who* and
+  *what*; very close, the details. The chance also falls with distance.
+- **You recognise a voice only if you know that person.**
+- **Seeing and hearing add up:** seeing tells you who, hearing tells you what was said.
+- **What changes it in Chapter 1:** walls, night (light), noise, attention, traits (**Hawk Eye**, **Fox Ear**,
+  about 1.5× the ranges; [TRAITS.md](TRAITS.md)), the actor's stealth, and **facing**: sight is best in front,
+  lower at the sides, very low behind; hearing works the same in every direction.
+- **What you learn is stored with how sure you are** (decision 35).
+- These ranges are starting values, to be tuned in playtesting.
 
 ## 2. Where events come from
 

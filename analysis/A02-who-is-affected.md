@@ -1,6 +1,6 @@
 # A02 — Who is affected, and who notices?
 
-> **Status:** Part 1 **Final** · Part 2 **Draft**
+> **Status:** Final (Part 1 and Part 2)
 > **Date:** 2026-11-27 (Part 2 added 2026-11-27)
 > **Asked by the owner:**
 > - Part 1: how the game knows which characters are affected when something big happens (e.g. a lover is killed)
@@ -43,7 +43,7 @@ affected, and **how** they react?
 
 ---
 
-# Part 2: Who notices? Seeing and hearing by distance (Draft)
+# Part 2: Who notices? Seeing and hearing by distance (Final)
 
 ## 7. The question
 Part 1 finds who is **affected** through relationships. But a character can only react once they are **aware**
@@ -189,4 +189,7 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
   and **small details** (now 1–3 m). Seeing *that* something happens stays 50–100 m. Also open: are the sight ranges fine as they are?
 
 ## 16. Changes made to the plan documents
-*(to be filled in when Part 2 is Final; nothing has changed yet)*
+Part 2 became **Final on 2026-11-27**.
+- [EVENTS.md](../EVENTS.md): decision 39 and a new §1.7 (who notices: ranges and rules); decisions 17 and 18 and
+  §1.6 updated to the new meaning of **Observant**.
+- [TRAITS.md](../TRAITS.md): Hawk Eye, Fox Ear, Observant and their opposites (§2.1).
