@@ -72,10 +72,10 @@ Distances are in metres on the game map (the map scale is not decided yet).
 
 | Signal | Sense | Proposed range | Example |
 |---|---|---|---|
-| Whisper | Hearing | 1–2 m | Two plotters whispering in the tavern |
-| Normal talk | Hearing | 5–8 m | Hobb lying to the shopkeeper |
-| Shouting, an argument | Hearing | 20–40 m | A quarrel in the street |
-| Fighting, a scream, breaking things | Hearing | 40–80 m | A brawl; a cry for help |
+| Whisper | Hearing | **up to 1 m** (owner) | Two plotters whispering in the tavern |
+| Normal talk | Hearing | **3–5 m** (owner: 8 m is too far) | Hobb lying to the shopkeeper |
+| Shouting, an argument | Hearing | 15–30 m (shortened to match) | A quarrel in the street |
+| Fighting, a scream, breaking things | Hearing | 30–60 m (shortened to match) | A brawl; a cry for help |
 | A horn, a bell | Hearing | Hundreds of metres | The alarm bell of the town |
 | Seeing that something happens (people fighting, someone running) | Sight | 50–100 m (daylight) | Seeing a fight across the square |
 | Seeing **who** it is, and **what** exactly they do | Sight | 15–30 m (daylight) | Recognising Hobb taking the money |
@@ -102,7 +102,7 @@ Distances are in metres on the game map (the map scale is not decided yet).
 | **The actor's stealth** | `sneak`, `hide` and whispering make signals weaker; a contest of the actor's stealth against the watcher's attention |
 
 **Chance falls with distance (proposal):** close up, a character almost always notices; at the edge of the
-range, only sometimes. Example: normal talk is heard for sure at 2 m, about half the time at 5 m, and rarely at 8 m.
+range, only sometimes. Example: normal talk is heard for sure at 1 m, about half the time at 3 m, and rarely at 5 m.
 
 ## 11. Options for how to compute it
 
@@ -136,7 +136,10 @@ For the 2D prototype, walls can be simple: inside a building or outside it.
 
 ## 15. The owner's decision
 - **2026-11-27, question 1:** **option C** (distance + walls + chance) is accepted.
-- Questions 2–5: still open.
+- **2026-11-27, question 2 (ranges):** the owner wants **shorter** hearing ranges: a whisper only within
+  **1 m**, normal talk **3–5 m** (8 m is too far). Shouting and fighting were shortened to match (proposal).
+  Sight ranges are unchanged for now.
+- Questions 3–5: still open.
 
 ## 16. Changes made to the plan documents
 *(to be filled in when Part 2 is Final; nothing has changed yet)*
