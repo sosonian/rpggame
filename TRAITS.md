@@ -21,6 +21,8 @@
 | 7 | **A second group of temporary traits, labelled "Body status":** **Hot, Cold, Hungry, Thirsty** (§2.3). Cold and Hot moved here from Emotion | Owner | 2026-11-27 |
 | 8 | **Emotions and body status have strength levels,** and the levels are **linked to each other** (e.g. Starving makes Angry come more easily) (§2.4) | Owner | 2026-11-27 |
 | 9 | **More emotions:** **Ashamed** (shame), **Sad**, **Comforted** (comfort), **Envious** (envy), **Jealous** (jealousy) and **Joyful** (joy) (§2.2) | Owner | 2026-11-27 |
+| 10 | **Envious and Jealous are merged into one emotion, Jealous.** It covers both wanting what another person has (envy) and fearing to lose what you have (jealousy); its **reason** tells which (§2.2) | Owner | 2026-11-27 |
+| 11 | **Every emotion has a target and a reason:** **who** it is about and **what** it is about, e.g. *Angry at Edric, because he insulted me* (§2.5) | Owner | 2026-11-27 |
 
 ## 1. What every trait defines
 
@@ -60,7 +62,7 @@ Most traits last a long time. **Emotions** are traits that come and **go away af
 They are labelled **Emotion** so the game (and the player) can tell them apart from lasting traits.
 
 **The owner's list:** **Angry**, **Afraid** (fear), **Ashamed** (shame), **Sad**, **Comforted** (comfort),
-**Envious** (envy), **Jealous** (jealousy), **Joyful** (joy). (Cold and Hot are now **Body status**, §2.3.)
+**Jealous** (envy and jealousy, merged: decision 10), **Joyful** (joy). (Cold and Hot are now **Body status**, §2.3.)
 
 **Proposals (not decided):**
 
@@ -72,8 +74,7 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
 | **Sad** | Loss: a death, a lost love, a lost home; bad news | Works worse; talks less; less chance to start new plans; at level 3 (grief) may give up | Slowly with time; comfort from friends or family; `pray` |
 | **Comforted** *(a good emotion)* | Kind words from a friend, `pray`, `relax` at the tavern or at home, a warm meal, being safe | Pushes **Afraid**, **Sad** and **Angry** down; better at work and talk; more open to others | Time passes; a new shock |
 | **Joyful** *(a good emotion)* | Good news, a success, a gift, praise, a promotion, a wedding, a victory | Better at work and talk; higher opinion of whoever caused it; more generous; at level 3 a little careless (notices less) | Time passes; bad news |
-| **Envious** | Someone **else has** what he wants: rank, money, skill, praise, a lover | Lower opinion of that person; more chance to gossip about them, cheat or sabotage them; can **start an idea** to get the same, or to take it ([IDEAS.md](IDEAS.md)) | He gets what he wanted; the other person loses it; time passes |
-| **Jealous** | Fear of **losing someone he has** (a lover, a friend, the lord's favour) **to a rival** | Watches the loved one and the rival (`watch`); suspicious questions; lower opinion of the rival; at level 3 may attack the rival | Trust comes back; the rival is gone; the truth comes out |
+| **Jealous** (envy and jealousy) | **Wants what another has** (rank, money, skill, praise, a lover), or **fears losing what he has** (a lover, a friend, the lord's favour) **to a rival** | **Shared:** lower opinion of the target; more chance to gossip, cheat or sabotage; at level 3 may attack the target. **By reason:** *wants what he has* → more chance to **start an idea** to get it or take it ([IDEAS.md](IDEAS.md)); *fears losing* → `watch` the loved one and the rival, suspicious questions | He gets what he wanted; the target loses it; trust comes back; the rival is gone; the truth comes out; time passes |
 
 **Ideas to decide later (proposals):**
 - **Strength:** accepted (decision 8), see §2.4.
@@ -83,8 +84,9 @@ They are labelled **Emotion** so the game (and the player) can tell them apart f
   (like [EVENTS.md §3](EVENTS.md), where events add or remove traits).
 - **Others can see emotions** with seeing and hearing ([EVENTS.md §1.7](EVENTS.md)), and some characters can
   **hide** them (Deceitful), like true personality ([EVENTS.md §8](EVENTS.md)).
-- **Envious and Jealous are different (proposal):** *envy* is wanting what **another person has**;
-  *jealousy* is fear of **losing what you have** to someone else.
+- **Envy and jealousy are one emotion (decision 10).** The **reason** (§2.5) keeps the difference:
+  > *Jealous of Edric — wants his rank.* (envy)
+  > *Jealous of Edric — fears losing Wenna to him.* (jealousy)
 - **Comforted and Joyful are different (proposal):** *comfort* is feeling **calm and safe**; *joy* is feeling
   **happy** because something good happened.
 - **More emotions:** e.g. Proud, Guilty (after hurting someone; [EVENTS.md §1.3](EVENTS.md) no. 10).
@@ -126,8 +128,7 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Sad** (Emotion) | Downcast | Sad | Grief-stricken |
 | **Comforted** (Emotion) | At ease | Comforted | At peace |
 | **Joyful** (Emotion) | Pleased | Joyful | Elated |
-| **Envious** (Emotion) | Begrudging | Envious | Consumed by envy |
-| **Jealous** (Emotion) | Suspicious | Jealous | Wild with jealousy |
+| **Jealous** (Emotion) | Begrudging | Jealous | Consumed by jealousy |
 | **Hot** (Body status) | Warm | Hot | Overheated |
 | **Cold** (Body status) | Chilly | Cold | Freezing |
 | **Hungry** (Body status) | Peckish | Hungry | Starving |
@@ -165,8 +166,8 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Ashamed** | **Angry** at whoever shamed him (if Proud or Vengeful), or **Sad** (if not) |
 | **Sad** (level 3, grief) | **Comforted** fades faster; **Angry** may follow if someone is to blame (revenge) |
 | **Jealous** (level 2–3) | **Angry** at the rival comes more easily; at level 3, **Furious** |
-| Someone else is **Joyful** about what he wanted | **Envious** comes more easily |
-| **Envious** for a long time | **Angry** at the envied person comes more easily |
+| Someone else is **Joyful** about what he wanted | **Jealous** comes more easily |
+| **Jealous** for a long time | **Angry** at the target comes more easily |
 
 **Links with lasting traits (proposal):**
 
@@ -176,14 +177,42 @@ Each one has **3 levels**. Only one level of the same emotion or status at a tim
 | **Vengeful** | Angry fades **more slowly** |
 | **Patient** | Angry comes **more slowly** (needs one more cause per level) |
 | **Honest** / **Deceitful** | Honest: more **Ashamed** when caught lying. Deceitful: less |
-| **Greedy** / **Ambitious** / **Content** | Greedy and Ambitious: **Envious** comes more easily. Content: less |
-| **Paranoid** / **Trusting** | Paranoid: **Jealous** comes more easily. Trusting: less |
+| **Greedy** / **Ambitious** / **Content** | Greedy and Ambitious: **Jealous** (wanting what another has) comes more easily. Content: less |
+| **Paranoid** / **Trusting** | Paranoid: **Jealous** (fear of losing) comes more easily. Trusting: less |
 | **Strong** / **Sickly** | Strong: body status hurts less at level 3. Sickly: falls ill sooner when Cold or Hungry |
 
 **Emotions can turn into lasting traits (proposal):** being Terrified often in battle may turn a character
-**Craven**; staying Furious at one person for a long time may make him **Vengeful**; being Envious for a long
+**Craven**; staying Furious at one person for a long time may make him **Vengeful**; being Jealous for a long
 time may make him **Greedy** or **Ambitious** ([EVENTS.md §3](EVENTS.md):
 events add or remove traits).
+
+### 2.5 Target and reason (decision 11)
+
+**Every emotion has a target and a reason.**
+
+| Part | Meaning | Example |
+|---|---|---|
+| **Emotion and level** | Which emotion, how strong (§2.4) | Angry (level 2) |
+| **Target** | **Who** (or what) it is about | Edric |
+| **Reason** | **What** it is about: the cause | He insulted me at the tavern |
+
+> *Angry at Edric (level 2), because he insulted me at the tavern.*
+> *Afraid of the general (level 3), because his army is at the border.*
+> *Jealous of Edric (level 1), because he wants Edric's rank.*
+
+**Proposals (not decided):**
+- **The target changes what he does.** Being Angry at Edric makes rough options more likely **with Edric**, and
+  only a little with others.
+- **Some emotions may have no person as target:** e.g. *Afraid of the dark*, *Sad about the burned farm*,
+  *Joyful about the harvest*. The target can then be a thing, a place or a situation.
+- **The same emotion can have more than one target:** e.g. *Angry at Edric* and *Angry at the tax officer* at
+  the same time, each with its own level.
+- **The reason links to a memory:** the cause is stored as a memory ([MEMORIES.md](MEMORIES.md)), so the
+  character can `recall` why he feels this way, and the AI can use it when it writes dialogue or ideas.
+- **Others can see the target, not always the reason:** people may see that he is angry **at Edric**, but not
+  know **why** ([EVENTS.md §1.7](EVENTS.md), [EVENTS.md §8](EVENTS.md)).
+- **Body status has no target** (being Hungry is not *about* anyone), but it can have a reason (*no food
+  since yesterday*).
 
 ## 3. Candidates (mentioned in the documents, not defined yet)
 
